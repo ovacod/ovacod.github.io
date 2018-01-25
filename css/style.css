@@ -28,13 +28,22 @@ html, body {
 	min-height: 650px;
 	min-width: 940px;		
 }
-.section-1 {
-	background: url('../img/background/bg-1.jpg') center center no-repeat;
-	background-size: cover;	
+.title {
+	font-family: 'GagalinRegular';
+	font-weight: 100;
+	font-size: 14px;
 }
 
 
 
+
+
+
+.one-screen {
+	background: url('../img/background/bg-1.jpg') center center no-repeat;
+	background-size: cover;	
+	background-position: center;
+}
 .header {
 	width: 100%;
 	display: flex;	
@@ -122,9 +131,13 @@ html, body {
 
 
 
-.section-2 {
+
+
+
+.advantages {
 	background: url('../img/background/bg-2.jpg') center center no-repeat;
-	background-size: cover;
+	background-size: cover;	
+	background-position: center;
 }
 .main__offer-advantages {
 	text-align: center;
@@ -161,6 +174,271 @@ html, body {
 
 
 
+
+
+
+
+
+.slider {
+	background-image: url(../img/background/bg-3.jpg);
+	background-position: center;
+	background-size: cover; 
+	display: flex;	
+}
+
+.slider__left, .slider__right {
+	width: 450px;
+	height: 100%;
+}
+.slider__left {
+	background-image: url(../img/image/burger_black.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.slider__right {
+	display: flex;
+	flex-flow: column;
+	margin-top: 145px;
+	margin-left: 30px;
+}
+.main__offer-slider {
+	color: #fff;	
+	margin-bottom: 30px;
+}
+.slider__text {
+	font-family: UbuntuLight;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.slider__price {
+	display: flex;
+	align-items: baseline;
+}
+.slider__offer {
+	color: #e35028;
+	margin-right: 30px;
+}
+.slider__offer span {
+	font-size: 40px;
+}
+.slider__mark-up {
+	width: 90px;
+	height: 90px;
+	background-color: #f08d35;
+	border-radius: 5px;
+	position: absolute;
+	top: 90px;
+}
+.slider__mark-down {
+	opacity: 0.5;
+}
+.mark-up__icon {
+	position: absolute;
+	top: 15%;
+	left: 25%;
+}
+.mark-down__icon {
+	position: absolute;
+	bottom: 105px;
+}
+.mark__title {
+	position: absolute;
+	text-align: center;	
+	font-family: GagalinRegular;
+	font-size: 14px;
+	font-weight: 300;
+	color: #fff;
+}
+.mark__title-up {
+	top: 100%;
+	left: 5%;
+}
+.mark__title-down {
+	font-size: 14px;
+	line-height: 1.7;
+	bottom: 88px;
+	left: 15px;
+}
+.mark__title-down span {
+	font-size: 20px
+}
+
+
+
+
+
+
+
+
+
+
+.team {
+	background: url('../img/background/bg-4.jpg');
+	background-size: cover;
+	background-position: top;		
+	position: relative;		
+}
+.team__wrap {
+	position: absolute;
+	background-color: rgba(47, 50, 52, 0.9);
+	width: 50%;
+	height: 100%;
+	left: 50%;
+	padding: 100px 97px;
+}
+.main__offer-team {
+	color: #f9b43b;
+	padding-bottom: 56px;
+}
+.team__content {
+	position: relative;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;	
+}
+.title__team:before {
+	content: '';
+    position: absolute;
+    top: 5px;
+    left: -20px;    
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #f9b43b;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+} 
+.team__person {
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 0px;
+	overflow: hidden;
+}
+.team__content:hover .team__person { 
+	height: 120px;
+}
+.team__content:hover .title__team {
+	color: #f9b43b;
+}
+.team__content:hover .title__team:before {
+	transform: rotateX(180deg);
+	transition: 0.3s;
+}
+.team__content-active .team__person {
+	height: 120px;
+}
+.team__person-photo {
+	max-width: 100px;
+	max-height: 100px;	
+	background-size: cover;
+	border-radius: 50%;
+	margin-right: 20px; 
+}
+.team__person-position {
+	max-width: 210px;
+	font-size: 14px;
+	line-height: 1.8; 
+}
+.team__person-caption {
+	font-family: UbuntuBold;
+}
+ .team__person-text {
+	font-family: UbuntuLight;
+	padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+.menu {
+	background-image: url(../img/background/bg-5.jpg);
+	background-position: center;
+	background-size: cover; 
+	height: 100vh;
+  	width: 100vw;
+	display: flex;	
+	justify-content: space-between;	
+	color: white;
+	font-family: UbuntuLight;
+	font-size: 14px;
+	line-height: 1.6;	
+}
+.main__offer-menu {
+	margin-left: 95px;
+	margin-top: 100px;
+}
+.menu__accordion {		
+	display: flex;		
+}
+.menu__item {
+	display: flex;	
+	height: 100%;
+	background-color: rgba(62, 62, 62, 0.9);
+}
+.menu__name {
+	width: 80px;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+}
+.menu__name-meat {
+	background-image: url(../img/background/acc_1.jpg);		
+}
+.menu__name-vegan {
+	background-image: url(../img/background/acc_2.jpg);		
+}
+.menu__name-diet {
+	background-image: url(../img/background/acc_3.jpg);		
+}
+.menu__title {
+    font-family: GagalinRegular;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    width: 400px;
+    z-index: 25;
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -152px;
+    bottom: 186px;	
+}
+.menu__text {
+	width: 0px;
+	overflow: hidden;		
+}
+.menu__item:hover {		
+	cursor: pointer;
+	transition: 2s;
+} 
+.menu__item:hover .menu__title {
+	color: #f9b43b;	
+}
+.menu__item:hover .menu__text {
+	width: 550px;
+	padding-top: 50px;
+	padding-left: 30px;
+	padding-right: 50px;	
+} 
+
+
+
+
+
+
+
+
+
+
 .reviews {	
 	height: 100vh;
 	min-height: 650px;
@@ -181,6 +459,7 @@ html, body {
 }
 .reviews__photo {	
 	background-size: cover;
+	background-position: center;
 	filter: grayscale(1);
 	height: 100%;
 	width: 100%;		
@@ -193,10 +472,6 @@ html, body {
 	line-height: 2;
 	padding: 40px 25px;
 	transition: 0.5s;
-}
-.reviews__title {
-	font-family: 'GagalinRegular';
-	font-weight: 100;
 }
 .reviews__text {
 	font-family: 'UbuntuRegular';
@@ -211,11 +486,204 @@ html, body {
 .reviews__item:hover .reviews__content {
 	opacity: 1;
 }
-.btn__link-section-5 {
+.btn__link-reviews {
 	max-width: 110px;
 	background-color: #2f3234;
 	padding: 10px 15px;
 }
+
+
+
+
+
+
+
+
+
+.order {
+	background-image: url(../img/background/bg_form_2.jpg);
+	background-size: cover;
+}
+.main__offer-form {
+	color: #f9b43b;
+	margin-top: 110px;
+	margin-bottom: 40px;
+}
+.form, .form__row {
+	display: flex;
+} 
+.form__left, .form__right {		
+	width: 470px;
+}
+.form__row-right {
+	display: flex;	
+	flex-direction: column;
+}
+.form__block {
+	width: 100%;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.form__title {
+	font-family: UbuntuLight;
+	font-size: 14px;
+	color: white;
+	margin-bottom: 8px;
+	margin-right: 20px;	
+}
+.form__block-radio, .form__block-checkbox {
+	display: flex;	
+	flex-direction: row;
+}
+.form__input, .comment {
+
+	background-color: white;
+	border: 2px solid #fff;
+	padding: 10px;
+	border-radius: 5px;
+	width: 100%;
+}
+.comment {	
+	resize: none;
+	height: 133px;
+}
+.btn__form-clear {
+	font-family: UbuntuLight;
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+	margin-left: 20px;
+}
+.btn__form-clear:hover {
+	color: #f9b43b;
+}
+.form__input:focus, .form__input:hover, .comment:focus, .comment:hover {
+    border: 2px solid #f9b43b;    
+}
+.form__radio, .form__checkbox {
+	margin-right: 10px;
+	opacity: 0;	
+}
+.form__block-radio {
+	position: relative;	
+	padding: 0 auto;
+}
+.form__title-radio:before, .form__title-checkbox:before {
+	content: '';
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background-color: #fff;	
+	margin-left: -25px;
+	margin-right: 10px;
+}
+.form__title-radio:before {	
+	border-radius: 50%;	
+}
+
+.form__title-radio:after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;    
+    background-color: #e45028;    
+    top: 3px;
+    opacity: 0;
+    position: absolute;
+}
+.form__radio:checked + .form__title-radio:after {
+    opacity: 1;
+}
+
+
+	
+
+
+
+
+
+
+
+.map {
+	background-image: url(../img/background/bg-8.jpg);
+	background-size: cover;
+	background-position: center;		
+	position: relative;	
+	height: 650px;
+	display: flex;	
+}
+.map__list {
+	display: flex;
+	flex-flow: column wrap;	
+	justify-content: space-around;
+	height: 100%;	
+	margin-left: 160px;	
+}
+.map__marker-1 {
+	margin-top: 100px;
+	margin-left: 70px;
+}
+.map__marker-2 {
+	margin-left: 200px;
+}
+.map__marker-3 {
+	margin-left: 350px;
+}
+.footer {	
+	width: 100%;
+	min-height: 60px;
+	background: url(../img/background/futer.jpg) center center no-repeat;
+	background-size: cover;	
+	position: absolute;
+}
+.footer__wrap {
+	display: flex;
+	width: 100%;
+	padding-top: 10px;
+}
+.footer__contscts {		
+	width: 50%;
+	line-height: 1.5;
+	font-family: UbuntuLight;
+	font-size: 14px;
+	color: white;
+}
+.footer__phone {
+	display: block;
+	font-family: UbuntuBold;
+	color: #e45028;
+}
+.footer__phone:before {
+	content: '';     
+    width: 10px;
+    height: 10px;
+    display: inline-block; 
+    background-image: url(../img/icons/phone.svg);
+    margin-right: 8px;
+}
+.footer__social-list {	
+	display: flex;
+	width: 50%;	
+	justify-content: flex-end;	
+	align-items: center;
+	text-decoration: none;
+}
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  fill: #5a5a5a;
+  width: 25px;
+  height: 25px; }
+  .icon:hover {
+    fill: #fff; }
+  .icon:first-child {
+    margin-left: 0; }
+
+
+
+
 
 
 
