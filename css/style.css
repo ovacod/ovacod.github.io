@@ -7,26 +7,32 @@
 	list-style: none;
 }
 html, body {
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
 }
 .wrapper {
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
+	overflow: hidden;
 }
 .container {
-	width: 940px;
+	max-width: 940px;
+	width: 95%;
+	height: 100%;
 	margin: 0 auto;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;	
 }
+.container__header {
+	justify-content: space-between;
+}
 .section {
 	height: 100vh;
 	width: 100vw;
 	min-height: 650px;
-	min-width: 940px;		
+	min-width: 940px;
 }
 .title {
 	font-family: 'GagalinRegular';
@@ -97,6 +103,7 @@ html, body {
 }
 .btn:hover {
 	background-color: #f8b43a;
+	cursor: pointer;
 }
 
 .main {
@@ -126,7 +133,7 @@ html, body {
 	margin-top: 20px;
 }
 .scroll {
-	margin-top: 5rem;
+	margin-bottom: 3rem;
 }
 
 
@@ -140,9 +147,8 @@ html, body {
 	background-position: center;
 }
 .main__offer-advantages {
-	text-align: center;
-	margin-top: 100px;
-	margin-bottom: 60px;
+	text-align: center;	
+	margin-bottom: 50px;
 	color: #2f3234;
 }
 .advantages__list {
@@ -295,9 +301,16 @@ html, body {
 }
 .team__content {
 	position: relative;
-	cursor: pointer;
+	
 	text-decoration: none;
 	color: white;	
+}
+.title {
+	text-decoration: none;	
+	font-family: GagalinRegular;
+	font-size: 14px;
+	font-weight: 100;
+	color: #fff;	
 }
 .title__team:before {
 	content: '';
@@ -319,6 +332,7 @@ html, body {
 }
 .team__content:hover .team__person { 
 	height: 120px;
+	transition: 0.3s;
 }
 .team__content:hover .title__team {
 	color: #f9b43b;
@@ -331,24 +345,25 @@ html, body {
 	height: 120px;
 }
 .team__person-photo {
-	max-width: 100px;
-	max-height: 100px;	
+	background-image: url(../img/photos/team-2.jpg);
 	background-size: cover;
+	background-position: center;
+	width: 100px;
+	height: 100px;		
 	border-radius: 50%;
 	margin-right: 20px; 
 }
 .team__person-position {
 	max-width: 210px;
+	font-family: UbuntuBold;
 	font-size: 14px;
 	line-height: 1.8; 
 }
-.team__person-caption {
-	font-family: UbuntuBold;
-}
- .team__person-text {
+.team__person-position p {
 	font-family: UbuntuLight;
 	padding-top: 10px;
 }
+
 
 
 
@@ -387,7 +402,7 @@ html, body {
 	width: 80px;
 	position: relative;
 	background-position: center;
-	background-size: cover;
+	background-size: cover;	
 }
 .menu__name-meat {
 	background-image: url(../img/background/acc_1.jpg);		
@@ -402,6 +417,7 @@ html, body {
     font-family: GagalinRegular;
     font-size: 40px;
     font-weight: 300;
+    color: #fff;
     margin: 0;
     padding: 0;
     height: 80px;
@@ -410,14 +426,13 @@ html, body {
     position: absolute;
     transform: rotate(-90deg);
     left: -152px;
-    bottom: 186px;	
+    bottom: 200px;	
 }
 .menu__text {
 	width: 0px;
 	overflow: hidden;		
 }
-.menu__item:hover {		
-	cursor: pointer;
+.menu__item:hover {			
 	transition: 2s;
 } 
 .menu__item:hover .menu__title {
@@ -425,9 +440,10 @@ html, body {
 }
 .menu__item:hover .menu__text {
 	width: 550px;
-	padding-top: 50px;
-	padding-left: 30px;
-	padding-right: 50px;	
+	padding-top: 80px;
+	padding-left: 50px;
+	padding-right: 50px;
+	transition: 1.5s;	
 } 
 
 
@@ -440,9 +456,9 @@ html, body {
 
 
 .reviews {	
+	width: 100vw;	
 	height: 100vh;
-	min-height: 650px;
-	width: 100%;	
+	min-height: 650px;	
 	background-color: #b5babd;	
 }
 .reviews__list {
@@ -502,18 +518,19 @@ html, body {
 
 .order {
 	background-image: url(../img/background/bg_form_2.jpg);
-	background-size: cover;
+	background-size: cover;	
 }
 .main__offer-form {
-	color: #f9b43b;
-	margin-top: 110px;
+	color: #f9b43b;	
 	margin-bottom: 40px;
 }
 .form, .form__row {
 	display: flex;
+	width: 100%;
 } 
 .form__left, .form__right {		
-	width: 470px;
+	max-width: 470px;
+	width: 50%;
 }
 .form__row-right {
 	display: flex;	
@@ -536,7 +553,6 @@ html, body {
 	flex-direction: row;
 }
 .form__input, .comment {
-
 	background-color: white;
 	border: 2px solid #fff;
 	padding: 10px;
@@ -548,14 +564,13 @@ html, body {
 	height: 133px;
 }
 .btn__form-clear {
-	font-family: UbuntuLight;
-	font-size: 14px;
-	color: white;
-	text-decoration: none;
-	margin-left: 20px;
+	font-family: UbuntuLight;	
+	background: none;	
+	text-transform: none;	
 }
 .btn__form-clear:hover {
 	color: #f9b43b;
+	background: none;	
 }
 .form__input:focus, .form__input:hover, .comment:focus, .comment:hover {
     border: 2px solid #f9b43b;    
@@ -610,6 +625,7 @@ html, body {
 	background-size: cover;
 	background-position: center;		
 	position: relative;	
+	width: 100%;
 	height: 650px;
 	display: flex;	
 }
@@ -636,6 +652,7 @@ html, body {
 	background: url(../img/background/futer.jpg) center center no-repeat;
 	background-size: cover;	
 	position: absolute;
+	bottom: 0;
 }
 .footer__wrap {
 	display: flex;
@@ -666,20 +683,22 @@ html, body {
 	display: flex;
 	width: 50%;	
 	justify-content: flex-end;	
-	align-items: center;
+	align-items: center;	
+}
+.icon {	
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+	fill: #5a5a5a;
+	width: 25px;
+	height: 25px; }
+		.icon:hover {
+		fill: #fff; }
+		.icon:first-child {
+		margin-left: 0; }
+.social__wrap {
 	text-decoration: none;
 }
-.icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 20px;
-  fill: #5a5a5a;
-  width: 25px;
-  height: 25px; }
-  .icon:hover {
-    fill: #fff; }
-  .icon:first-child {
-    margin-left: 0; }
 
 
 
