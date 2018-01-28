@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 0.9375rem; } }
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 0.8125rem; } }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column wrap;
+    flex-direction: column wrap; } }
+
+@media screen and (max-width: 768px) {
+  .advantages__item {
+    max-width: 13rem; } }

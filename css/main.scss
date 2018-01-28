@@ -1,0 +1,37 @@
+@mixin tablets {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+html {
+  @include tablets {
+    font-size: 0.9375rem;
+  }
+  @include phones {
+    font-size: 0.8125rem;
+  }
+}
+
+
+.nav {
+  @include tablets {
+    display: none;
+  }
+}
+.main {
+  @include tablets {
+    display: flex;
+    flex-direction: column wrap;    
+  }
+}
+.advantages__item {
+  @include tablets {
+    max-width: 13rem; 
+  }
+}

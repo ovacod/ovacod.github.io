@@ -1,4 +1,5 @@
 @import "fonts.css";
+@import "main.css";
 
 *, *:before, *:after {
 	box-sizing: border-box;
@@ -8,15 +9,16 @@
 }
 html, body {
 	min-height: 100%;
-	width: 100%;
+	width: 100%;	 
 }
+
 .wrapper {
 	min-height: 100%;
 	width: 100%;
 	overflow: hidden;
 }
 .container {
-	max-width: 940px;
+	max-width: 58.75rem;
 	width: 95%;
 	height: 100%;
 	margin: 0 auto;
@@ -31,13 +33,13 @@ html, body {
 .section {
 	height: 100vh;
 	width: 100vw;
-	min-height: 650px;
-	min-width: 940px;
+	min-height: 40.625rem;
+	min-width: 58.75rem;
 }
 .title {
 	font-family: 'GagalinRegular';
 	font-weight: 100;
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 
@@ -55,21 +57,21 @@ html, body {
 	display: flex;	
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 10px;
+	padding-top: 0.625rem;
 }
 .header__logo {
 	margin-right: auto;
 }
 .nav__list {
 	display: flex;	
-	margin-right: 15px;	
+	margin-right: 0.9375rem;	
 }
 .nav__item {
 	margin: 0;
 }
 .nav__link {
-	font-family: UbuntuMedium;
-	font-size: 13px;
+	font-family: 'UbuntuMedium';
+	font-size: 0.8125rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: white;
@@ -79,58 +81,57 @@ html, body {
 }
 .nav__item:after {
 	content: " ";
-	width: 5px;
-	height: 5px;
+	width: 0.3125rem;
+	height: 0.3125rem;
 	display: inline-block;
 	background-color: white;
 	border-radius: 50%;
-	margin: 0 15px;
+	margin: 0rem 0.9375rem;
 }
 .nav__item:last-child:after {
 	display: none;
 }
 .btn {
-	min-width: rem(97px);
-	padding: 13px 16px;
+	min-width: 6.0625rem;
+	padding: 0.8125rem 1rem;
 	border: none; 
-	border-radius: 3px;
+	border-radius: 0.1875rem;
 	background-color: #e45028;
-	font-family: UbuntuMedium;
-	font-size: 13px;
+	font-family: 'UbuntuMedium';
+	font-size: 0.8125rem;
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 .btn:hover {
-	background-color: #f8b43a;
-	cursor: pointer;
+	background-color: #f8b43a;	
 }
 
 .main {
 	width: 100%;
-	display: flex;	
+	display: flex;		
 	justify-content: space-between;
 	align-items: center;	
 }
 .main__offer {
-	font-family: GagalinRegular;
+	font-family: 'GagalinRegular';
 	font-weight: 300;
-	font-size: 72px;	
+	font-size: 4.5rem;	
 }
 .main__offer-burger {		
 	color: #f9b43b;
 	margin: 0 auto;
-	margin-left: 12px;
-	margin-top: 80px;
+	margin-left: 0.75rem;
+	margin-top: 5rem;
 }
 .main__offer-burger span {
 	display: block;
-	font-family: LifehackMedium;
-	font-size: 65px;
+	font-family: 'LifehackMedium';
+	font-size: 4.0625rem;
 	font-weight: 100;
 	line-height: 1;
 	color: #fff;	
-	margin-top: 20px;
+	margin-top: 1.25rem;
 }
 .scroll {
 	margin-bottom: 3rem;
@@ -148,7 +149,7 @@ html, body {
 }
 .main__offer-advantages {
 	text-align: center;	
-	margin-bottom: 50px;
+	margin-bottom: 3.125rem;
 	color: #2f3234;
 }
 .advantages__list {
@@ -159,21 +160,20 @@ html, body {
 	display: flex;
 	flex-flow: column wrap;
 	align-items: center;	
-	width: 33.3%;
-	min-width: 300px;
+	width: 33%;	
 	text-align: center;
-	padding: 0 12px;	
+	padding: 0rem 0.75rem;	
 }
 .advantages__title {
-	font-family: LifehackMedium;
-	font-size: 24px;
-	margin-top: 40px;
-	margin-bottom: 25px;
+	font-family: 'LifehackMedium';
+	font-size: 1.5rem;
+	margin-top: 2.5rem;
+	margin-bottom: 1.5625rem;
 	color: #2f3234;
 }
 .advantages__text {
-	font-family: UbuntuLight;
-	font-size: 14px;
+	font-family: 'UbuntuLight';
+	font-size: 0.875rem;
 	color: #787777;
 	line-height: 1.7;
 }
@@ -191,9 +191,8 @@ html, body {
 	background-size: cover; 
 	display: flex;	
 }
-
 .slider__left, .slider__right {
-	width: 450px;
+	width: 28.125rem;
 	height: 100%;
 }
 .slider__left {
@@ -205,19 +204,19 @@ html, body {
 .slider__right {
 	display: flex;
 	flex-flow: column;
-	margin-top: 145px;
-	margin-left: 30px;
+	margin-top: 9.0625rem;
+	margin-left: 1.875rem;
 }
 .main__offer-slider {
 	color: #fff;	
-	margin-bottom: 30px;
+	margin-bottom: 1.875rem;
 }
 .slider__text {
-	font-family: UbuntuLight;
-	font-size: 14px;
+	font-family: 'UbuntuLight';
+	font-size: 0.875rem;
 	line-height: 1.7;
 	color: #fff;
-	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
 }
 .slider__price {
 	display: flex;
@@ -225,18 +224,18 @@ html, body {
 }
 .slider__offer {
 	color: #e35028;
-	margin-right: 30px;
+	margin-right: 1.875rem;
 }
 .slider__offer span {
-	font-size: 40px;
+	font-size: 2.5rem;
 }
 .slider__mark-up {
-	width: 90px;
-	height: 90px;
+	width: 5.625rem;
+	height: 5.625rem;
 	background-color: #f08d35;
 	border-radius: 5px;
 	position: absolute;
-	top: 90px;
+	top: 5.625rem;
 }
 .slider__mark-down {
 	opacity: 0.5;
@@ -248,13 +247,13 @@ html, body {
 }
 .mark-down__icon {
 	position: absolute;
-	bottom: 105px;
+	bottom: 6.5625rem;
 }
 .mark__title {
 	position: absolute;
 	text-align: center;	
-	font-family: GagalinRegular;
-	font-size: 14px;
+	font-family: 'GagalinRegular';
+	font-size: 0.875rem;
 	font-weight: 300;
 	color: #fff;
 }
@@ -263,13 +262,13 @@ html, body {
 	left: 5%;
 }
 .mark__title-down {
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 1.7;
-	bottom: 88px;
-	left: 15px;
+	bottom: 5.5rem;
+	left: 0.9375rem;
 }
 .mark__title-down span {
-	font-size: 20px
+	font-size: 1.25rem;
 }
 
 
@@ -293,45 +292,44 @@ html, body {
 	width: 50%;
 	height: 100%;
 	left: 50%;
-	padding: 100px 97px;
+	padding: 6.25rem 6.0625rem;
 }
 .main__offer-team {
 	color: #f9b43b;
-	padding-bottom: 56px;
+	padding-bottom: 3.5rem;
 }
 .team__content {
-	position: relative;
-	
+	position: relative;	
 	text-decoration: none;
 	color: white;	
 }
 .title {
 	text-decoration: none;	
-	font-family: GagalinRegular;
-	font-size: 14px;
+	font-family: 'GagalinRegular';
+	font-size: 0.875rem;
 	font-weight: 100;
 	color: #fff;	
 }
 .title__team:before {
 	content: '';
     position: absolute;
-    top: 5px;
-    left: -20px;    
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 8px solid #f9b43b;
+    top: 0.3125rem;
+    left: -1.25rem;    
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-top: 0.5rem solid #f9b43b;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
 } 
 .team__person {
 	display: flex;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	height: 0px;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+	height: 0rem;
 	overflow: hidden;
 }
 .team__content:hover .team__person { 
-	height: 120px;
+	height: 7.5rem;
 	transition: 0.3s;
 }
 .team__content:hover .title__team {
@@ -342,26 +340,26 @@ html, body {
 	transition: 0.3s;
 }
 .team__content-active .team__person {
-	height: 120px;
+	height: 7.5rem;
 }
 .team__person-photo {
 	background-image: url(../img/photos/team-2.jpg);
 	background-size: cover;
 	background-position: center;
-	width: 100px;
-	height: 100px;		
+	width: 6.25rem;
+	height: 6.25rem;		
 	border-radius: 50%;
-	margin-right: 20px; 
+	margin-right: 1.25rem; 
 }
 .team__person-position {
-	max-width: 210px;
-	font-family: UbuntuBold;
-	font-size: 14px;
+	max-width: 13.125rem;
+	font-family: 'UbuntuBold';
+	font-size: 0.875rem;
 	line-height: 1.8; 
 }
 .team__person-position p {
-	font-family: UbuntuLight;
-	padding-top: 10px;
+	font-family: 'UbuntuLight';
+	padding-top: 0.625rem;
 }
 
 
@@ -382,13 +380,13 @@ html, body {
 	display: flex;	
 	justify-content: space-between;	
 	color: white;
-	font-family: UbuntuLight;
-	font-size: 14px;
+	font-family: 'UbuntuLight';
+	font-size: 0.875rem;
 	line-height: 1.6;	
 }
 .main__offer-menu {
-	margin-left: 95px;
-	margin-top: 100px;
+	margin-left: 5.9375rem;
+	margin-top: 6.25rem;
 }
 .menu__accordion {		
 	display: flex;		
@@ -399,7 +397,7 @@ html, body {
 	background-color: rgba(62, 62, 62, 0.9);
 }
 .menu__name {
-	width: 80px;
+	width: 5rem;
 	position: relative;
 	background-position: center;
 	background-size: cover;	
@@ -414,22 +412,22 @@ html, body {
 	background-image: url(../img/background/acc_3.jpg);		
 }
 .menu__title {
-    font-family: GagalinRegular;
-    font-size: 40px;
+    font-family: 'GagalinRegular';
+    font-size: 2.5rem;
     font-weight: 300;
     color: #fff;
     margin: 0;
     padding: 0;
-    height: 80px;
-    width: 400px;
+    height: 5rem;
+    width: 25rem;
     z-index: 25;
     position: absolute;
     transform: rotate(-90deg);
-    left: -152px;
-    bottom: 200px;	
+    left: -9.5rem;
+    bottom: 13.75rem;	
 }
 .menu__text {
-	width: 0px;
+	width: 0rem;
 	overflow: hidden;		
 }
 .menu__item:hover {			
@@ -439,10 +437,10 @@ html, body {
 	color: #f9b43b;	
 }
 .menu__item:hover .menu__text {
-	width: 550px;
-	padding-top: 80px;
-	padding-left: 50px;
-	padding-right: 50px;
+	width: 34.375rem;
+	padding-top: 5rem;
+	padding-left: 3.125rem;
+	padding-right: 3.125rem;
 	transition: 1.5s;	
 } 
 
@@ -458,7 +456,7 @@ html, body {
 .reviews {	
 	width: 100vw;	
 	height: 100vh;
-	min-height: 650px;	
+	min-height: 40.625rem;	
 	background-color: #b5babd;	
 }
 .reviews__list {
@@ -484,16 +482,16 @@ html, body {
 	position: absolute;	
 	opacity: 0;
 	color: white;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 2;
-	padding: 40px 25px;
+	padding: 2.5rem 1.5625rem;
 	transition: 0.5s;
 }
 .reviews__text {
 	font-family: 'UbuntuRegular';
-	padding-top: 12px;
-	padding-bottom: 25px;
-	max-height: 160px;
+	padding-top: 0.75rem;
+	padding-bottom: 1.5625rem;
+	max-height: 10rem;
 	overflow: hidden;	
 }
 .reviews__item:hover .reviews__photo {
@@ -503,9 +501,9 @@ html, body {
 	opacity: 1;
 }
 .btn__link-reviews {
-	max-width: 110px;
+	max-width: 6.875rem;
 	background-color: #2f3234;
-	padding: 10px 15px;
+	padding: 0.625rem 0.9375rem;
 }
 
 
@@ -522,14 +520,14 @@ html, body {
 }
 .main__offer-form {
 	color: #f9b43b;	
-	margin-bottom: 40px;
+	margin-bottom: 2.5rem;
 }
 .form, .form__row {
 	display: flex;
 	width: 100%;
 } 
 .form__left, .form__right {		
-	max-width: 470px;
+	max-width: 29.375rem;
 	width: 50%;
 }
 .form__row-right {
@@ -538,15 +536,15 @@ html, body {
 }
 .form__block {
 	width: 100%;
-	margin-right: 20px;
-	margin-bottom: 20px;
+	margin-right: 1.25rem;
+	margin-bottom: 1.25rem;
 }
 .form__title {
-	font-family: UbuntuLight;
-	font-size: 14px;
+	font-family: 'UbuntuLight';
+	font-size: 0.875rem;
 	color: white;
-	margin-bottom: 8px;
-	margin-right: 20px;	
+	margin-bottom: 0.5rem;
+	margin-right: 1.25rem;	
 }
 .form__block-radio, .form__block-checkbox {
 	display: flex;	
@@ -554,17 +552,17 @@ html, body {
 }
 .form__input, .comment {
 	background-color: white;
-	border: 2px solid #fff;
-	padding: 10px;
-	border-radius: 5px;
+	border: 0.125rem solid #fff;
+	padding: 0.625rem;
+	border-radius: 0.3125rem;
 	width: 100%;
 }
 .comment {	
 	resize: none;
-	height: 133px;
+	height: 8.3125rem;
 }
 .btn__form-clear {
-	font-family: UbuntuLight;	
+	font-family: 'UbuntuLight';	
 	background: none;	
 	text-transform: none;	
 }
@@ -573,10 +571,10 @@ html, body {
 	background: none;	
 }
 .form__input:focus, .form__input:hover, .comment:focus, .comment:hover {
-    border: 2px solid #f9b43b;    
+    border: 0.125rem solid #f9b43b;    
 }
 .form__radio, .form__checkbox {
-	margin-right: 10px;
+	margin-right: 0.625rem;
 	opacity: 0;	
 }
 .form__block-radio {
@@ -586,11 +584,11 @@ html, body {
 .form__title-radio:before, .form__title-checkbox:before {
 	content: '';
 	display: inline-block;
-	width: 13px;
-	height: 13px;
+	width: 0.8125rem;
+	height: 0.8125rem;
 	background-color: #fff;	
-	margin-left: -25px;
-	margin-right: 10px;
+	margin-left: -1.5625rem;
+	margin-right: 0.625rem;
 }
 .form__title-radio:before {	
 	border-radius: 50%;	
@@ -599,11 +597,11 @@ html, body {
 .form__title-radio:after {
     content: '';
     display: inline-block;
-    width: 7px;
-    height: 7px;
+    width: 0.4375rem;
+    height: 0.4375rem;
     border-radius: 50%;    
     background-color: #e45028;    
-    top: 3px;
+    top: 0.1875rem;
     opacity: 0;
     position: absolute;
 }
@@ -634,21 +632,21 @@ html, body {
 	flex-flow: column wrap;	
 	justify-content: space-around;
 	height: 100%;	
-	margin-left: 160px;	
+	margin-left: 10rem;	
 }
 .map__marker-1 {
-	margin-top: 100px;
-	margin-left: 70px;
+	margin-top: 6.25rem;
+	margin-left: 4.375rem;
 }
 .map__marker-2 {
-	margin-left: 200px;
+	margin-left: 12.5rem;
 }
 .map__marker-3 {
-	margin-left: 350px;
+	margin-left: 20rem;
 }
 .footer {	
 	width: 100%;
-	min-height: 60px;
+	min-height: 3.75rem;
 	background: url(../img/background/futer.jpg) center center no-repeat;
 	background-size: cover;	
 	position: absolute;
@@ -657,27 +655,27 @@ html, body {
 .footer__wrap {
 	display: flex;
 	width: 100%;
-	padding-top: 10px;
+	padding-top: 0.625rem;
 }
 .footer__contscts {		
 	width: 50%;
 	line-height: 1.5;
-	font-family: UbuntuLight;
-	font-size: 14px;
+	font-family: 'UbuntuLight';
+	font-size: 0.875rem;
 	color: white;
 }
 .footer__phone {
 	display: block;
-	font-family: UbuntuBold;
+	font-family: 'UbuntuBold';
 	color: #e45028;
 }
 .footer__phone:before {
 	content: '';     
-    width: 10px;
-    height: 10px;
+    width: 0.625rem;
+    height: 0.625rem;
     display: inline-block; 
     background-image: url(../img/icons/phone.svg);
-    margin-right: 8px;
+    margin-right: 0.5rem;
 }
 .footer__social-list {	
 	display: flex;
@@ -688,10 +686,10 @@ html, body {
 .icon {	
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: 20px;
+	margin-left: 1.25rem;
 	fill: #5a5a5a;
-	width: 25px;
-	height: 25px; }
+	width: 1.625rem;
+	height: 1.625rem; }
 		.icon:hover {
 		fill: #fff; }
 		.icon:first-child {
@@ -712,15 +710,15 @@ html, body {
 .navigation {
 	display: block;
 	position: fixed;
-	top: 100px;
-	right: 90px;
-	width: 50px;		
+	top: 6.25rem;
+	right: 5.625rem;
+	width: 3.125rem;		
 }
 .navigation__link {
     position: relative;
     display: block;
     width: 100%;
-    height: 20px;    
+    height: 1.25rem;    
 }
 .navigation__link:after, .navigation__link:before {
     content: '';
@@ -734,18 +732,18 @@ html, body {
     border-radius: 50%;
 }
 .navigation__link:after {
-    width: 6px;
-    height: 6px;
+    width: 0.375rem;
+    height: 0.375rem;
     background-color: #fff;
 }
 .navigation__link:before {
-    width: 0px;
-    height: 0px;
+    width: 0rem;
+    height: 0rem;
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 0.0625rem solid #fff;
     transition: 0.3s;
 }  
 .navigation__link_active:before, .navigation__link:hover:before {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
 }    
