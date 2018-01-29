@@ -1,5 +1,157 @@
 @import "fonts.css";
-@import "main.css";
+@media screen and (max-width: 768px) {
+	html {
+	  font-size: 0.9375rem; } }
+  
+@media screen and (max-width: 480px) {
+html {
+	font-size: 0.75rem; } }
+
+@media screen and (max-width: 768px) {
+.nav {
+	display: none; } }
+
+@media screen and (max-width: 768px) {
+.btn__header {
+	margin-right: 5rem; } }
+
+@media screen and (max-width: 768px) {
+.main {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column; } }
+
+@media screen and (max-width: 768px) {
+.team__wrap {
+	left: 0%;
+	min-width: 100%;
+	text-align: center; } }
+
+@media screen and (max-width: 768px) {
+.team__content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column; } }
+
+@media screen and (max-width: 768px) {
+.team__person {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%; } }
+
+@media screen and (max-width: 768px) {
+.title__team {
+	display: inline-block; } }
+
+@media screen and (max-width: 768px) {
+.team__person-photo {
+	left: 1.25rem; } }
+
+@media screen and (max-width: 480px) {
+.advantages__list {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column; } }
+
+@media screen and (max-width: 480px) {
+.advantages__item {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row; } }
+
+@media screen and (max-width: 768px) {
+.reviews__item {
+	width: 25%;
+	height: 50%; } }
+
+@media screen and (max-width: 768px) {
+.reviews__content {
+	text-align: center; } }
+
+@media screen and (max-width: 480px) {
+.footer__wrap {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	text-align: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center; } }
+
+@media screen and (max-width: 480px) {
+.footer__contscts {
+	margin-bottom: 0.5rem; } }
+
+@media screen and (max-width: 480px) {
+.footer__social-list {
+	margin-bottom: 1rem;
+	margin-left: 0; } }
+
+@media screen and (max-width: 480px) {
+.icon {
+	margin-right: 0.6rem; } }
+
+@media screen and (max-width: 768px) {
+.form {
+	margin-left: 0;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column wrap;
+	flex-flow: column wrap; } }
+
+@media screen and (max-width: 768px) {
+.navigation {
+	margin-right: -5rem; } }
+
+.hamburger-menu__link {
+vertical-align: middle;
+position: relative;
+height: 1.5rem;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+margin-left: 7.5rem;
+margin-top: -1.3rem;
+display: none; }
+@media screen and (max-width: 768px) {
+	.hamburger-menu__link {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex; } }
+  
+  .hamburger-menu__bars, .hamburger-menu__bars:before, .hamburger-menu__bars:after {
+	background: #fff;
+	width: 2rem;
+	height: 0.25rem;
+	border-radius: 0.25rem; }
+  
+  .hamburger-menu__bars:before, .hamburger-menu__bars:after {
+	content: "";
+	display: block;
+	position: absolute; }
+  
+  .hamburger-menu__bars:before {
+	top: 0; }
+  
+  .hamburger-menu__bars:after {
+	bottom: 0; }
+  
 
 *, *:before, *:after {
 	box-sizing: border-box;
@@ -11,7 +163,6 @@ html, body {
 	min-height: 100%;
 	width: 100%;	 
 }
-
 .wrapper {
 	min-height: 100%;
 	width: 100%;
@@ -32,9 +183,7 @@ html, body {
 }
 .section {
 	height: 100vh;
-	width: 100vw;
-	min-height: 40.625rem;
-	min-width: 58.75rem;
+	width: 100vw;	
 }
 .title {
 	font-family: 'GagalinRegular';
@@ -47,10 +196,15 @@ html, body {
 
 
 
+
+
+
 .one-screen {
 	background: url('../img/background/bg-1.jpg') center center no-repeat;
 	background-size: cover;	
 	background-position: center;
+	position: relative;
+	
 }
 .header {
 	width: 100%;
@@ -108,11 +262,12 @@ html, body {
 }
 
 .main {
-	width: 100%;
-	display: flex;		
-	justify-content: space-between;
+	width: 100%;	
+	display: flex;		 
+	
 	align-items: center;	
 }
+
 .main__offer {
 	font-family: 'GagalinRegular';
 	font-weight: 300;
@@ -146,6 +301,7 @@ html, body {
 	background: url('../img/background/bg-2.jpg') center center no-repeat;
 	background-size: cover;	
 	background-position: center;
+	
 }
 .main__offer-advantages {
 	text-align: center;	
@@ -287,11 +443,11 @@ html, body {
 	position: relative;		
 }
 .team__wrap {
-	position: absolute;
+	
 	background-color: rgba(47, 50, 52, 0.9);
 	width: 50%;
 	height: 100%;
-	left: 50%;
+	margin-left: auto;
 	padding: 6.25rem 6.0625rem;
 }
 .main__offer-team {
@@ -299,6 +455,7 @@ html, body {
 	padding-bottom: 3.5rem;
 }
 .team__content {
+	
 	position: relative;	
 	text-decoration: none;
 	color: white;	
@@ -323,13 +480,13 @@ html, body {
 } 
 .team__person {
 	display: flex;
-	margin-top: 1.25rem;
-	margin-bottom: 1.25rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	height: 0rem;
 	overflow: hidden;
 }
 .team__content:hover .team__person { 
-	height: 7.5rem;
+	height: 10%;
 	transition: 0.3s;
 }
 .team__content:hover .title__team {
@@ -340,7 +497,7 @@ html, body {
 	transition: 0.3s;
 }
 .team__content-active .team__person {
-	height: 7.5rem;
+	height: 30%;
 }
 .team__person-photo {
 	background-image: url(../img/photos/team-2.jpg);
@@ -352,7 +509,7 @@ html, body {
 	margin-right: 1.25rem; 
 }
 .team__person-position {
-	max-width: 13.125rem;
+	max-width: 20rem;
 	font-family: 'UbuntuBold';
 	font-size: 0.875rem;
 	line-height: 1.8; 
@@ -455,14 +612,14 @@ html, body {
 
 .reviews {	
 	width: 100vw;	
-	height: 100vh;
-	min-height: 40.625rem;	
+	height: 100vh;		
 	background-color: #b5babd;	
 }
 .reviews__list {
+	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	height: 100%;
 }
 .reviews__item {	
 	display: flex;
@@ -516,7 +673,7 @@ html, body {
 
 .order {
 	background-image: url(../img/background/bg_form_2.jpg);
-	background-size: cover;	
+	background-size: cover;
 }
 .main__offer-form {
 	color: #f9b43b;	
@@ -671,8 +828,8 @@ html, body {
 }
 .footer__phone:before {
 	content: '';     
-    width: 0.625rem;
-    height: 0.625rem;
+    width: 0.75rem;
+    height: 0.75rem;
     display: inline-block; 
     background-image: url(../img/icons/phone.svg);
     margin-right: 0.5rem;

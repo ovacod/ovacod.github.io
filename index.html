@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Бургерная</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
 	
 </head>
 <body>
@@ -28,13 +28,16 @@
 								<li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
 							</ul>					
 						</nav>
-						<a class="btn" href="#">Заказать</a>						
+						<div class="header__links">
+							<a class="btn btn__header" href="#">Заказать</a>
+							<a class="hamburger-menu__link" href="">
+								<div class="hamburger-menu__bars"></div>
+							</a>
+						</div>													
 					</header>
 
 					<div class="main">
-						<div class="main__burger">
-							<img src="./img/image/main_burger.png" alt="main__burger">							
-						</div>
+						<div class="main__burger"><img src="./img/image/main_burger.png" alt="burger"></div>
 						<h1 class="main__offer main__offer-burger">Мы делаем<br><span>натуральные бургеры</span></h1>
 					</div>
 
@@ -68,36 +71,7 @@
 				</div>				
 			</section>
 
-
-			<section class="section slider">
-				<div class="container">					
-					<div class="slider__left">
-						<div class="slider__mark-up">
-							<a class="mark-up__icon" href="#">
-								<img src="./img/icons/burger.svg">
-								<div class="mark__title mark__title-up">Состав</div>
-							</a>
-														
-						</div>
-						<div class="slider__mark-down">
-							<a class="mark-down__icon" href="#"><img src="./img/icons/kkal.svg"></a>
-							<div class="mark__title mark__title-down"><span>1200</span><br>ккал</div>
-						</div>
-					</div>
-					<div class="slider__right">
-						<h2 class="main__offer main__offer-slider">Dark BEEF Burger</h2>
-						<div class="slider__text">
-							Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
-						</div>
-						<div class="slider__price">
-							<h2 class="main__offer slider__offer">500<span> рублей</span></h2>
-							<a class="btn btn__slider" href="#">Заказать</a>
-						</div>						
-					</div>						
-				</div>
-			</section>
-
-
+			
 			<section class="section team">				
 				<div class="team__wrap">
 					<h2 class="main__offer main__offer-team">Команда</h2>
