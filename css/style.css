@@ -76,8 +76,8 @@ html {
 
 @media screen and (max-width: 768px) {
 .reviews__item {
-	width: 25%;
-	height: 50%; } }
+	width: 50%;
+	height: 25%; } }
 
 @media screen and (max-width: 768px) {
 .reviews__content {
