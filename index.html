@@ -6,12 +6,54 @@
 	<title>Бургерная</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-	
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 <body>
-	<div class="wrapper">
-		<div class="maincontent">
 
+
+	<div class="wrapper">
+
+		<div class="section dropdown">
+			<div class="container container__dropdown">
+				<div class="dropdown__up">
+					<div class="dropdown__logo">
+						<a class="dropdown__logo-img" href="#">
+							<img src="./img/image/logo.svg" alt="logo">
+						</a>
+					</div>
+					<a class="dropdown__close" id="dropdown__close" href="#">&#10006;</a>
+				</div>				
+				<nav class="dropdown__menu">
+					<ul class="dropdown__list">
+						<li class="dropdown__item">
+							<a class="dropdown__link" href="#">О нас</a>
+							<div class="dropdown__punto"></div>
+						</li>
+						<li class="dropdown__item">
+							<a class="dropdown__link" href="#">Бургеры</a>
+							<div class="dropdown__punto"></div>
+						</li>
+						<li class="dropdown__item">
+							<a class="dropdown__link" href="#">Команда</a>
+							<div class="dropdown__punto"></div>
+						</li>
+						<li class="dropdown__item">
+							<a class="dropdown__link" href="#">Меню</a>
+							<div class="dropdown__punto"></div>
+						</li>						
+						<li class="dropdown__item">
+							<a class="dropdown__link" href="#">Отзывы</a>
+							<div class="dropdown__punto"></div>
+						</li>
+						<li class="dropdown__item"><a class="dropdown__link" href="#">Контакты</a></li>
+					</ul>					
+				</nav>														
+			</div>
+		</div>
+
+
+
+		<div class="maincontent">
 			<section class="section one-screen">
 				<div class="container container__header">
 					<header class="header">
@@ -30,14 +72,14 @@
 						</nav>
 						<div class="header__links">
 							<a class="btn btn__header" href="#">Заказать</a>
-							<a class="hamburger-menu__link" href="">
+							<a class="hamburger-menu__link" id="hamburger-menu__link" href="#">
 								<div class="hamburger-menu__bars"></div>
 							</a>
 						</div>													
 					</header>
 
 					<div class="main">
-						<div class="main__burger"><img src="./img/image/main_burger.png" alt="burger"></div>
+						<div class="main__burger"><img class="main__burger-photo" src="./img/image/main_burger.png" alt="burger"></div>
 						<h1 class="main__offer main__offer-burger">Мы делаем<br><span>натуральные бургеры</span></h1>
 					</div>
 
@@ -81,12 +123,54 @@
 				</div>				
 			</section>
 
+
+			<section class="section slider">
+				<div class="container">	
+					<a class="arrow__left" href="#"><img src="./img/image/arrow-scroll.svg" alt="arrow"></a>
+					<a class="arrow__right" href="#"><img src="./img/image/arrow-scroll.svg" alt="arrow"></a>
+					<ul class="slider__list">
+						<li class="slider__item">
+							<div class="slider__left">
+								<img class="slider__left-photo" src="./img/image/burger_black.png" alt="burger_black">
+							</div>
+							<div class="slider__right">
+								<h2 class="main__offer main__offer-slider">Dark BEEF Burger</h2>
+								<div class="slider__text">
+									Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+								</div>
+								<div class="slider__price">
+									<h2 class="main__offer slider__offer">500<span> рублей</span></h2>
+									<a class="btn btn__slider" href="#">Заказать</a>
+								</div>						
+							</div>	
+							<div class="slider__mark">
+								<div class="slider__mark-up">
+									<a class="mark-up__icon" href="#">
+										<img src="./img/icons/burger.svg" alt="burger">
+										<div class="mark__title mark__title-up">Состав</div>
+									</a>														
+								</div>
+								<div class="slider__mark-down">
+									<div class="mark-down__icon" href="#"><img src="./img/icons/kkal.svg" alt="kkal">
+										<div class="mark__title mark__title-down"><span>1200</span><br>ккал</div>
+									</div>							
+								</div>
+							</div>
+							
+							
+						</li>
+					</ul>
+					
+															
+				</div>
+			</section>
+
 			
 			<section class="section team">				
 				<div class="team__wrap">
 					<h2 class="main__offer main__offer-team">Команда</h2>
 					<ul class="team__accordion">
-						<li class="team__content">								
+						<li class="team__item">								
 							<a class="title" href="#"><h3 class="title title__team">Дэниэл Редклиф</h3></a>
 							<div class="team__person">
 								<div class="team__person-photo"></div>
@@ -96,7 +180,7 @@
 								</div>									
 							</div>								
 						</li>
-						<li class="team__content team__content-active">								
+						<li class="team__item team__item-active">								
 							<a class="title" href="#"><h3 class="title title__team">Ричард Джеймс</h3></a>
 							<div class="team__person">
 								<div class="team__person-photo"></div>
@@ -106,7 +190,7 @@
 								</div>									
 							</div>								
 						</li>
-						<li class="team__content">
+						<li class="team__item">
 							<a class="title" href="#"><h3 class="title title__team">Джейк Финн</h3></a>
 							<div class="team__person">
 								<div class="team__person-photo"></div>
@@ -116,7 +200,7 @@
 								</div>									
 							</div>								
 						</li>
-						<li class="team__content">
+						<li class="team__item">
 							<a class="title" href="#"><h3 class="title title__team">Николай Иванов</h3></a>
 							<div class="team__person">
 								<div class="team__person-photo"></div>
@@ -168,7 +252,7 @@
 			<section class="section reviews">				
 				<ul class="reviews__list">
 				 	<li class="reviews__item">	
-				 		<div class="reviews__photo" style="background-image: url(img/photos/photo1.jpg);"></div> 	
+				 		<div class="reviews__photo" style="background-image: url(img/photos/photo1.jpg)"></div> 	
 				 		<div class="reviews__content">
 				 			<h3 class="title title__reviews">Константин Спилберг</h3>				 				
 				 			<div class="reviews__text"><p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p></div>	
@@ -281,16 +365,25 @@
 									<div class="form__title">Комментарий</div>
 									<textarea class="comment"></textarea>
 								</label>
-								<label class="form__block form__block-radio">
-									<input class="form__radio" type="radio" name="">
-									<div class="form__title form__title-radio">Потребуется сдача</div>	
-									<input class="form__radio" type="radio" name="">
-									<div class="form__title form__title-radio">Оплата по карте</div>					
-								</label>								
-								<label class="form__block form__block-checkbox">									
-									<input class="form__checkbox" type="checkbox" name="">
-									<div class="form__title form__title-checkbox">Не перезванивать</div>				
-								</label>								
+								<div class="form__block form__block-radio">
+									<label class="radio">
+										<input class="radio__input" type="radio" name="radio">
+										<span class="radio__btn"></span>
+										<span class="form__title form__title-radio">Потребуется сдача</span>
+									</label>
+									<label class="radio">
+										<input class="radio__input" type="radio" name="radio">
+										<span class="radio__btn"></span>
+										<span class="form__title form__title-radio">Потребуется сдача</span>
+									</label>
+								</div>	
+								<div class="form__block form__block-checkbox">		
+									<label class="checkbox">							
+										<input class="checkbox__input" type="checkbox" name="">
+										<span class="checkbox__btn"></span>
+										<span class="form__title form__title-checkbox">Не перезванивать</span>	
+									</label>					
+								</div>								
 							</div>	
 							<input class="btn" type="submit" name="" value="Заказать">
 							<input class="btn btn__form-clear" type="reset" name="" value="Очистить">						
@@ -397,6 +490,8 @@
 		</ul>				
 	</div>
 
+	
 
+	
 </body>
 </html>
