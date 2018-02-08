@@ -12,6 +12,9 @@ html, body {
   min-height: 100%;
   width: 100%; }
 
+.body-active {
+  overflow: hidden; }
+
 .wrapper {
   min-height: 100%;
   width: 100%;
@@ -52,32 +55,35 @@ html, body {
 
 
 .dropdown {
-  display: flex;
+  display: none;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
   position: fixed;
   z-index: 1000;
   top: 0;
-  background-color: rgba(47, 50, 52, 0.9);  
-  display: none;
-}
+  background-color: rgba(47, 50, 52, 0.9); }
+
+.dropdown-active {
+  display: block;
+  display: flex; }
+
 .dropdown__menu {
-  text-align: center;
-}
+  text-align: center; }
+
 .dropdown__up {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center; 
-  margin: 1rem 1.5rem 3rem 1.5rem;
-}
+  margin: 1rem 1.5rem 3rem 1.5rem; }
+
 .dropdown__close {
   font-size: 1.5rem;
   color: #b5babd;
   text-decoration: none;
-  margin-right: 1.5rem;
-}
+  margin-right: 1.5rem; }
+  
 .dropdown__link {  
   text-decoration: none;
   text-transform: uppercase;
@@ -381,11 +387,10 @@ html, body {
   padding-bottom: 3.5rem; }
 
 .team__item {
-  position: relative;
-  text-decoration: none;
+  position: relative;  
   color: white; }
 
-.title {
+.team__name {
   text-decoration: none;
   font-family: 'GagalinRegular';
   font-size: 0.875rem;
@@ -402,38 +407,27 @@ html, body {
   left: -1.25rem;
   border-left: 0.3125rem solid transparent;
   border-right: 0.3125rem solid transparent;
-  border-top: 0.5rem solid #f9b43b;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
+  border-top: 0.5rem solid #f9b43b;  
   transition-duration: 0.5s; }
 
-.team__person {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.team__person {  
   display: flex;
   margin-top: 1rem;
   margin-bottom: 1rem;
   height: 0rem;
   overflow: hidden; }
 
-.team__item:hover .team__person {
-  height: 10%;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
+.team__person-active {
+  height: 10%;  
   transition: 0.3s; }
 
-.team__item:hover .title__team {
+.team__name:hover, .team__name-active .title__team {
   color: #f9b43b; }
 
-.team__item:hover .title__team:before {
-  -webkit-transform: rotateX(180deg);
-  transform: rotateX(180deg);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
+.team__name:hover, .team__name-active .title__team:before {  
+  transform: rotateX(180deg);  
   transition: 0.3s; }
 
-.team__item-active .team__person {
-  height: 30%; }
 
 .team__person-photo {
   background-image: url(../img/photos/team-2.jpg);
@@ -454,6 +448,9 @@ html, body {
   font-family: 'UbuntuLight';
   padding-top: 0.625rem; }
 
+
+
+
 .menu {
   background-image: url(../img/background/bg-5.jpg);
   background-position: center;
@@ -462,9 +459,7 @@ html, body {
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  display: flex;  
   justify-content: space-between;
   color: white;
   font-family: 'UbuntuLight';
@@ -475,14 +470,10 @@ html, body {
   margin-left: 5.9375rem;
   margin-top: 6.25rem; }
 
-.menu__accordion {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.menu__accordion {  
   display: flex; }
 
-.menu__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.menu__item {  
   display: flex;
   height: 100%;
   background-color: rgba(62, 62, 62, 0.9); }
@@ -512,9 +503,7 @@ html, body {
   height: 5rem;
   width: 25rem;
   z-index: 25;
-  position: absolute;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
+  position: absolute;  
   transform: rotate(-90deg);
   left: -9.5rem;
   bottom: 13.75rem; }
@@ -523,22 +512,21 @@ html, body {
   width: 0rem;
   overflow: hidden; }
 
-.menu__item:hover {
-  -webkit-transition: 2s;
-  -o-transition: 2s;
-  transition: 2s; }
+.menu__text-active {
+  display: flex;
+  width: 34.375rem;
+  padding-top: 5rem;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;  
+  transition: 1.5s; }
 
 .menu__item:hover .menu__title {
   color: #f9b43b; }
 
-.menu__item:hover .menu__text {
-  width: 34.375rem;
-  padding-top: 5rem;
-  padding-left: 3.125rem;
-  padding-right: 3.125rem;
-  -webkit-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s; }
+
+
+
+
 
 .reviews {
   width: 100vw;
@@ -547,16 +535,11 @@ html, body {
 
 .reviews__list {
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
+  height: 100%;  
+  display: flex; 
   flex-wrap: wrap; }
 
-.reviews__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.reviews__item {  
   display: flex;
   position: relative;
   width: 25%;
@@ -879,21 +862,27 @@ html, body {
 
 
 .hamburger-menu__link {
-  vertical-align: middle;
-  position: relative;
+  vertical-align: middle;  
   height: 1.5rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   margin-left: 7.5rem;
   margin-top: -1.3rem;
-  display: none; }
+  display: none;
+   }
 
+.hamburger-menu__bars {
+  position: relative;
+  z-index: 1500;
+}
+ 
 .hamburger-menu__bars, .hamburger-menu__bars:before, .hamburger-menu__bars:after {
-  background: #fff;
+  background-color: #fff;
   width: 2rem;
   height: 0.25rem;
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem;
+  transition: background-color 0.3s; }
 
 .hamburger-menu__bars:before, .hamburger-menu__bars:after {
   content: "";
@@ -901,12 +890,31 @@ html, body {
   position: absolute; }
 
 .hamburger-menu__bars:before {
-  top: 0; }
+  left: 0;
+  top: 8px;
+  transition: 0.2s;   }
 
 .hamburger-menu__bars:after {
-  bottom: 0; }
+  left: 0;
+  bottom: 8px;
+  transition: 0.2s;   }
 
-       
+.hamburger-menu__link-active .hamburger-menu__bars {
+  background-color: transparent;
+  transition: 0.2s;  
+}
+
+.hamburger-menu__link-active .hamburger-menu__bars:before {
+  top: 0;
+  transform: rotate(-45deg); 
+  transition: 0.2s;   
+}
+
+.hamburger-menu__link-active .hamburger-menu__bars:after {
+  bottom: 0;
+  transform: rotate(45deg);
+  transition: 0.2s;  
+}  
       
       
       
