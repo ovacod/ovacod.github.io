@@ -21,38 +21,64 @@ for (var i = 0; i < dropdownItem.length; i++) {
 })}
 
 
-
-
 // Вертикальный аккордеон - Команда //
-
-var teamName = document.querySelector(".team__name");
-var teamPerson = document.querySelector(".team__person");
 var teamItem = document.querySelectorAll(".team__item");
 
-// Без этого блока первый элемент не открывается //
-teamName.addEventListener('click', function (e) {
-    e.preventDefault();    
-    teamName.classList.toggle('team__name-active');
-    teamPerson.classList.toggle('team__person-active');     
-});
+for (let i = 0; i < teamItem.length; i++) {
+    teamItem[i].addEventListener ('click', function (el) {
+        el.currentTarget.classList.toggle('team__item-active');
 
-for (var i = 0; i < teamItem.length; i++) {    
-    teamName[i].addEventListener('click', function () {  
-    teamName.classList.toggle('team__name-active');
-    teamPerson.classList.toggle('team__person-active');   
-})}
-
+        for (let i = 0; i < teamItem.length; i++) {
+            if (teamItem[i] !== el.currentTarget && teamItem[i].className === "team__item team__item-active" ) {
+                itemV[i].classList.remove('team__item-active');
+            }
+        }
+    })
+};
 
 
 // Горизонтальный аккордеон - Меню //
 
-var menuName = document.querySelector(".menu__name");
-var menuText = document.querySelector(".menu__text");
 var menuItem = document.querySelectorAll(".menu__item");
 
-for (var i = 0; i < menuItem.length; i++) {
-    e.preventDefault();
-    menuItem[i].addEventListener('click', function () {  
-    menuText.classList.toggle('menu__text-active');       
-    menuName.classList.toggle('menu__name-active');        
-})}
+for (let i = 0; i < menuItem.length; i++) {
+    menuItem[i].addEventListener ('click', function (el) {
+        el.currentTarget.classList.toggle('menu__item-active');
+
+        for (let i = 0; i < menuItem.length; i++) {
+            if (menuItem[i] !== el.currentTarget && menuItem[i].className === "menu__item menu__item-active" ) {
+                menuV[i].classList.remove('menu__item-active');
+            }
+        }
+    })
+};
+
+
+
+
+
+
+// Слайдер //
+
+const left = document.querySelector("#left");
+const right = document.querySelector("#right");
+const list = document.querySelectorAll("#list");
+
+const minRight = 0;
+const maxRight = 2820;
+const step = 940;
+let currentRight = 0;
+
+right.addEventListener("click", function() {
+  if (currentRight < maxRight) {
+    currentRight += step;
+    list.style.right = currentRight + "px";
+  }
+});
+
+left.addEventListener("click", function() {
+  if (currentRight > minRight) {
+    currentRight -= step;
+    list.style.right = currentRight + "px";
+  }
+});

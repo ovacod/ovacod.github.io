@@ -124,73 +124,115 @@
 
 
 			<section class="section slider">
-				<div class="container">	
-					<a class="arrow__left" href="#"><img src="./img/image/arrow-scroll.svg" alt="arrow"></a>
-					<a class="arrow__right" href="#"><img src="./img/image/arrow-scroll.svg" alt="arrow"></a>
-					<ul class="slider__list">
-						<li class="slider__item">
-							<div class="slider__left">
-								<img class="slider__left-photo" src="./img/image/burger_black.png" alt="burger_black">
-							</div>
-							<div class="slider__right">
-								<h2 class="main__offer main__offer-slider">Dark BEEF Burger</h2>
-								<div class="slider__text">
-									Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+				<div class="container">						
+					
+					<div class="slider__mark">
+						<div class="slider__mark-up">
+							<a class="mark-up__icon" href="#1">
+								<img src="./img/icons/burger.svg" alt="burger">
+								<div class="mark__title mark__title-up">Состав</div>
+							</a>
+							<div class="composition">
+								<ul class="composition__list">
+									<li class="composition__item">
+										<img class="composition__icon" src="./img/icons/composition/beef.svg" alt="1">
+										<div class="composition__product">Говядина</div>
+										<div class="composition__weight">300г</div>
+									</li>
+									<li class="composition__item">
+										<img src="./img/icons/composition/buns.svg" alt="1">
+										<div class="composition__product">Булочки</div>
+										<div class="composition__weight">100г</div>
+									</li>
+									<li class="composition__item">
+										<img src="./img/icons/composition/salad.svg" alt="1">
+										<div class="composition__product">Зелень</div>
+										<div class="composition__weight">70г</div>
+									</li>
+									<li class="composition__item">
+										<img src="./img/icons/composition/sauce.svg" alt="1">
+										<div class="composition__product">Соус</div>
+										<div class="composition__weight">150г</div>
+									</li>
+									<li class="composition__item">
+										<img src="./img/icons/composition/cucumber.svg" alt="1">
+										<div class="composition__product">Овощи</div>
+										<div class="composition__weight">200г</div>
+									</li>
+									<li class="composition__item">
+										<img src="./img/icons/composition/cheese.svg" alt="1">
+										<div class="composition__product">Сыр</div>
+										<div class="composition__weight">80г</div>
+									</li>
+								</ul>
+							</div>																					
+						</div>
+														
+						<div class="slider__mark-down">
+							<div class="mark-down__icon" href="#"><img src="./img/icons/kkal.svg" alt="kkal">
+								<div class="mark__title mark__title-down"><span>1200</span><br>ккал</div>
+							</div>							
+						</div>
+					</div>
+
+					<a class="arrow__left" id="left" href="#1"><img src="./img/image/arrow-scroll.svg" alt="arrow"></a>
+
+					<div class="slider__wrap">
+						<ul class="slider__list" id="list">
+							<li class="slider__item slider__item-1">
+								<div class="slider__left">
+									<img class="slider__left-photo" src="./img/image/burger_black.png" alt="burger_black">
 								</div>
-								<div class="slider__price">
-									<h2 class="main__offer slider__offer">500<span> рублей</span></h2>
-									<a class="btn btn__slider" href="#">Заказать</a>
-								</div>						
-							</div>	
-							<div class="slider__mark">
-								<div class="slider__mark-up">
-									<a class="mark-up__icon" href="#">
-										<img src="./img/icons/burger.svg" alt="burger">
-										<div class="mark__title mark__title-up">Состав</div>
-									</a>																			
+								<div class="slider__right">
+									<h2 class="main__offer main__offer-slider">Dark BEEF Burger</h2>
+									<div class="slider__text">
+										Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+										нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
+										добавлением экзотического соуса чураско.
+									</div>
+									<div class="slider__price">
+										<h2 class="main__offer slider__offer">500<span> рублей</span></h2>
+										<a class="btn btn__slider" href="#">Заказать</a>
+									</div>						
+								</div>														
+							</li>
+							<li class="slider__item slider__item-2">
+								<div class="slider__left">
+									<img class="slider__left-photo" src="./img/image/burgers-slider/Spicy_Shrimp_Burger.png" alt="burger">
 								</div>
-								<div class="composition">
-									<ul class="composition__list">
-										<li class="composition__item">
-											<img class="composition__icon" src="./img/icons/composition/beef.svg" alt="1">
-											<div class="composition__product">Говядина</div>
-											<div class="composition__weight">300г</div>
-										</li>
-										<li class="composition__item">
-											<img src="./img/icons/composition/buns.svg" alt="1">
-											<div class="composition__product">Булочки</div>
-											<div class="composition__weight">100г</div>
-										</li>
-										<li class="composition__item">
-											<img src="./img/icons/composition/salad.svg" alt="1">
-											<div class="composition__product">Зелень</div>
-											<div class="composition__weight">70г</div>
-										</li>
-										<li class="composition__item">
-											<img src="./img/icons/composition/sauce.svg" alt="1">
-											<div class="composition__product">Соус</div>
-											<div class="composition__weight">150г</div>
-										</li>
-										<li class="composition__item">
-											<img src="./img/icons/composition/cucumber.svg" alt="1">
-											<div class="composition__product">Овощи</div>
-											<div class="composition__weight">200г</div>
-										</li>
-										<li class="composition__item">
-											<img src="./img/icons/composition/cheese.svg" alt="1">
-											<div class="composition__product">Сыр</div>
-											<div class="composition__weight">80г</div>
-										</li>
-									</ul>
-								</div>				
-								<div class="slider__mark-down">
-									<div class="mark-down__icon" href="#"><img src="./img/icons/kkal.svg" alt="kkal">
-										<div class="mark__title mark__title-down"><span>1200</span><br>ккал</div>
-									</div>							
+								<div class="slider__right">
+									<h2 class="main__offer main__offer-slider">Dark BEEF Burger</h2>
+									<div class="slider__text">
+										Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+										нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
+										добавлением экзотического соуса чураско.
+									</div>
+									<div class="slider__price">
+										<h2 class="main__offer slider__offer">300<span> рублей</span></h2>
+										<a class="btn btn__slider" href="#">Заказать</a>
+									</div>						
+								</div>														
+							</li>	
+							<li class="slider__item slider__item-3">
+								<div class="slider__left">
+									<img class="slider__left-photo" src="./img/image/burgers-slider/Chiken burger.png" alt="burger">
 								</div>
-							</div>						
-						</li>
-					</ul>															
+								<div class="slider__right">
+									<h2 class="main__offer main__offer-slider">Dark BEEF Burger</h2>
+									<div class="slider__text">
+										Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+										нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
+										добавлением экзотического соуса чураско.
+									</div>
+									<div class="slider__price">
+										<h2 class="main__offer slider__offer">400<span> рублей</span></h2>
+										<a class="btn btn__slider" href="#">Заказать</a>
+									</div>						
+								</div>														
+							</li>					
+						</ul>		
+					</div>	
+					<a class="arrow__right" id="right" href="#2"><img src="./img/image/arrow-scroll.svg" alt="arrow"></a>																	
 				</div>
 			</section>
 
@@ -252,8 +294,13 @@
 							<h3 class="menu__title">Для мясоедов</h3>
 						</a>						
 						<div class="menu__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
+							 конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. 
+							 Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив.
+							 Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+							 Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
+							 конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман.
+							 Наш современник стал особенно чутко относиться к слову.</p>
 						</div>							
 					</li>
 					<li class="menu__item">
@@ -261,8 +308,13 @@
 							<h3 class="menu__title">Вегетарианское</h3>
 						</a>	
 						<div class="menu__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
+							конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. 
+							Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив.
+							Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+							Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
+							конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман.
+							Наш современник стал особенно чутко относиться к слову.</p>
 						</div>							
 					</li>
 					<li class="menu__item">
@@ -270,8 +322,13 @@
 							<h3 class="menu__title">Диетическое</h3>
 						</a>	
 						<div class="menu__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
+							конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. 
+							Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив.
+							Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+							Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
+							конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман.
+							Наш современник стал особенно чутко относиться к слову.</p>
 						</div>							
 					</li>				
 				</ul>									
