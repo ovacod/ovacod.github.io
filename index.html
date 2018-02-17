@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Бургерная</title>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/jquery.fullpage.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
@@ -25,26 +27,26 @@
 				<nav class="dropdown__menu">
 					<ul class="dropdown__list">
 						<li class="dropdown__item">
-							<a class="dropdown__link" href="#">О нас</a>
+							<a class="dropdown__link" href="#section_advantages">О нас</a>
 							<div class="dropdown__punto"></div>
 						</li>
 						<li class="dropdown__item">
-							<a class="dropdown__link" href="#">Бургеры</a>
+							<a class="dropdown__link" href="#section_slider">Бургеры</a>
 							<div class="dropdown__punto"></div>
 						</li>
 						<li class="dropdown__item">
-							<a class="dropdown__link" href="#">Команда</a>
+							<a class="dropdown__link" href="#section_team">Команда</a>
 							<div class="dropdown__punto"></div>
 						</li>
 						<li class="dropdown__item">
-							<a class="dropdown__link" href="#">Меню</a>
+							<a class="dropdown__link" href="#section_menu">Меню</a>
 							<div class="dropdown__punto"></div>
 						</li>						
 						<li class="dropdown__item">
-							<a class="dropdown__link" href="#">Отзывы</a>
+							<a class="dropdown__link" href="#section_reviews">Отзывы</a>
 							<div class="dropdown__punto"></div>
 						</li>
-						<li class="dropdown__item"><a class="dropdown__link" href="#">Контакты</a></li>
+						<li class="dropdown__item"><a class="dropdown__link" href="#section_maps">Контакты</a></li>
 					</ul>					
 				</nav>														
 			</div>
@@ -52,8 +54,8 @@
 
 
 
-		<div class="maincontent">
-			<section class="section one-screen">
+		<div class="maincontent" id="fullpage">
+			<section class="section one-screen" data-anchor="section_one-screen">
 				<div class="container container__header">
 					<header class="header">
 						<div class="header__logo">
@@ -61,16 +63,16 @@
 						</div>
 						<nav class="nav">
 							<ul class="nav__list">
-								<li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
-								<li class="nav__item"><a class="nav__link" href="#">Бургеры</a></li>
-								<li class="nav__item"><a class="nav__link" href="#">Команда</a></li>
-								<li class="nav__item"><a class="nav__link" href="#">Меню</a></li>						
-								<li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
-								<li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+								<li class="nav__item"><a class="nav__link" href="#section_advantages">О нас</a></li>
+								<li class="nav__item"><a class="nav__link" href="#section_slider">Бургеры</a></li>
+								<li class="nav__item"><a class="nav__link" href="#section_team">Команда</a></li>
+								<li class="nav__item"><a class="nav__link" href="#section_menu">Меню</a></li>						
+								<li class="nav__item"><a class="nav__link" href="#section_reviews">Отзывы</a></li>
+								<li class="nav__item"><a class="nav__link" href="#section_maps">Контакты</a></li>
 							</ul>					
 						</nav>
 						<div class="header__links">
-							<a class="btn btn__header" href="#">Заказать</a>
+							<a class="btn btn__header" href="#section_order">Заказать</a>
 							<a class="hamburger-menu__link" href="#">
 								<div class="hamburger-menu__bars"></div>
 							</a>
@@ -83,13 +85,13 @@
 					</div>
 
 					<div class="scroll">
-						<a class="arrow-scroll" href="#" alt="arrow"><img src="./img/image/arrow-scroll.svg"></a>
+						<a class="arrow-scroll" href="#section_advantages" alt="arrow"><img src="./img/image/arrow-scroll.svg"></a>
 					</div>
 				</div>
 			</section>
 								
 				
-			<section class="section advantages">
+			<section class="section advantages" data-anchor="section_advantages">
 				<div class="container container__advantages">					
 					<h2 class="main__offer main__offer-advantages">Мы лучшие</h2>
 					<ul class="advantages__list">
@@ -123,63 +125,62 @@
 			</section>
 
 
-			<section class="section slider">
-				<div class="container">						
-					
-					<div class="slider__mark">
-						<div class="slider__mark-up">
-							<a class="mark-up__icon" href="#1">
-								<img src="./img/icons/burger.svg" alt="burger">
-								<div class="mark__title mark__title-up">Состав</div>
-							</a>
-							<div class="composition">
-								<ul class="composition__list">
-									<li class="composition__item">
-										<img class="composition__icon" src="./img/icons/composition/beef.svg" alt="1">
-										<div class="composition__product">Говядина</div>
-										<div class="composition__weight">300г</div>
-									</li>
-									<li class="composition__item">
-										<img src="./img/icons/composition/buns.svg" alt="1">
-										<div class="composition__product">Булочки</div>
-										<div class="composition__weight">100г</div>
-									</li>
-									<li class="composition__item">
-										<img src="./img/icons/composition/salad.svg" alt="1">
-										<div class="composition__product">Зелень</div>
-										<div class="composition__weight">70г</div>
-									</li>
-									<li class="composition__item">
-										<img src="./img/icons/composition/sauce.svg" alt="1">
-										<div class="composition__product">Соус</div>
-										<div class="composition__weight">150г</div>
-									</li>
-									<li class="composition__item">
-										<img src="./img/icons/composition/cucumber.svg" alt="1">
-										<div class="composition__product">Овощи</div>
-										<div class="composition__weight">200г</div>
-									</li>
-									<li class="composition__item">
-										<img src="./img/icons/composition/cheese.svg" alt="1">
-										<div class="composition__product">Сыр</div>
-										<div class="composition__weight">80г</div>
-									</li>
-								</ul>
-							</div>																					
-						</div>
-														
-						<div class="slider__mark-down">
-							<div class="mark-down__icon" href="#"><img src="./img/icons/kkal.svg" alt="kkal">
-								<div class="mark__title mark__title-down"><span>1200</span><br>ккал</div>
-							</div>							
-						</div>
-					</div>
+			<section class="section slider" data-anchor="section_slider">
+				<div class="container">				
 
-					<a class="arrow__left" id="left" href="#1"><img src="./img/image/arrow-scroll.svg" alt="arrow"></a>
+					<a class="arrow__left" id="left" href="#"><img src="./img/image/arrow-scroll.svg" alt="arrow"></a>
 
 					<div class="slider__wrap">
 						<ul class="slider__list" id="list">
 							<li class="slider__item slider__item-1">
+								<div class="slider__mark">
+									<div class="slider__mark-up">
+										<a class="mark-up__icon" href="#1">
+											<img src="./img/icons/burger.svg" alt="burger">
+											<div class="mark__title mark__title-up">Состав</div>
+										</a>
+										<div class="composition">
+											<ul class="composition__list">
+												<li class="composition__item">
+													<img class="composition__icon" src="./img/icons/composition/beef.svg" alt="1">
+													<div class="composition__product">Говядина</div>
+													<div class="composition__weight">300г</div>
+												</li>
+												<li class="composition__item">
+													<img src="./img/icons/composition/buns.svg" alt="1">
+													<div class="composition__product">Булочки</div>
+													<div class="composition__weight">100г</div>
+												</li>
+												<li class="composition__item">
+													<img src="./img/icons/composition/salad.svg" alt="1">
+													<div class="composition__product">Зелень</div>
+													<div class="composition__weight">70г</div>
+												</li>
+												<li class="composition__item">
+													<img src="./img/icons/composition/sauce.svg" alt="1">
+													<div class="composition__product">Соус</div>
+													<div class="composition__weight">150г</div>
+												</li>
+												<li class="composition__item">
+													<img src="./img/icons/composition/cucumber.svg" alt="1">
+													<div class="composition__product">Овощи</div>
+													<div class="composition__weight">200г</div>
+												</li>
+												<li class="composition__item">
+													<img src="./img/icons/composition/cheese.svg" alt="1">
+													<div class="composition__product">Сыр</div>
+													<div class="composition__weight">80г</div>
+												</li>
+											</ul>
+										</div>																					
+									</div>
+																	
+									<div class="slider__mark-down">
+										<div class="mark-down__icon" href="#"><img src="./img/icons/kkal.svg" alt="kkal">
+											<div class="mark__title mark__title-down"><span>1200</span><br>ккал</div>
+										</div>							
+									</div>
+								</div>
 								<div class="slider__left">
 									<img class="slider__left-photo" src="./img/image/burger_black.png" alt="burger_black">
 								</div>
@@ -197,8 +198,56 @@
 								</div>														
 							</li>
 							<li class="slider__item slider__item-2">
+								<div class="slider__mark">
+									<div class="slider__mark-up">
+										<a class="mark-up__icon" href="#1">
+											<img src="./img/icons/burger.svg" alt="burger">
+											<div class="mark__title mark__title-up">Состав</div>
+										</a>
+										<div class="composition">
+											<ul class="composition__list">
+												<li class="composition__item">
+													<img class="composition__icon" src="./img/icons/composition/beef.svg" alt="1">
+													<div class="composition__product">Говядина</div>
+													<div class="composition__weight">300г</div>
+												</li>
+												<li class="composition__item">
+													<img src="./img/icons/composition/buns.svg" alt="1">
+													<div class="composition__product">Булочки</div>
+													<div class="composition__weight">100г</div>
+												</li>
+												<li class="composition__item">
+													<img src="./img/icons/composition/salad.svg" alt="1">
+													<div class="composition__product">Зелень</div>
+													<div class="composition__weight">70г</div>
+												</li>
+												<li class="composition__item">
+													<img src="./img/icons/composition/sauce.svg" alt="1">
+													<div class="composition__product">Соус</div>
+													<div class="composition__weight">150г</div>
+												</li>
+												<li class="composition__item">
+													<img src="./img/icons/composition/cucumber.svg" alt="1">
+													<div class="composition__product">Овощи</div>
+													<div class="composition__weight">200г</div>
+												</li>
+												<li class="composition__item">
+													<img src="./img/icons/composition/cheese.svg" alt="1">
+													<div class="composition__product">Сыр</div>
+													<div class="composition__weight">80г</div>
+												</li>
+											</ul>
+										</div>																					
+									</div>
+																	
+									<div class="slider__mark-down">
+										<div class="mark-down__icon" href="#"><img src="./img/icons/kkal.svg" alt="kkal">
+											<div class="mark__title mark__title-down"><span>1200</span><br>ккал</div>
+										</div>							
+									</div>
+								</div>
 								<div class="slider__left">
-									<img class="slider__left-photo" src="./img/image/burgers-slider/Spicy_Shrimp_Burger.png" alt="burger">
+									<img class="slider__left-photo" src="./img/image/burger_black.png" alt="burger_black">
 								</div>
 								<div class="slider__right">
 									<h2 class="main__offer main__offer-slider">Dark BEEF Burger</h2>
@@ -208,14 +257,62 @@
 										добавлением экзотического соуса чураско.
 									</div>
 									<div class="slider__price">
-										<h2 class="main__offer slider__offer">300<span> рублей</span></h2>
+										<h2 class="main__offer slider__offer">500<span> рублей</span></h2>
 										<a class="btn btn__slider" href="#">Заказать</a>
 									</div>						
 								</div>														
-							</li>	
+							</li>
 							<li class="slider__item slider__item-3">
+								<div class="slider__mark">
+									<div class="slider__mark-up">
+										<a class="mark-up__icon" href="#1">
+											<img src="./img/icons/burger.svg" alt="burger">
+											<div class="mark__title mark__title-up">Состав</div>
+										</a>
+										<div class="composition">
+											<ul class="composition__list">
+												<li class="composition__item">
+													<img class="composition__icon" src="./img/icons/composition/beef.svg" alt="1">
+													<div class="composition__product">Говядина</div>
+													<div class="composition__weight">300г</div>
+												</li>
+												<li class="composition__item">
+													<img src="./img/icons/composition/buns.svg" alt="1">
+													<div class="composition__product">Булочки</div>
+													<div class="composition__weight">100г</div>
+												</li>
+												<li class="composition__item">
+													<img src="./img/icons/composition/salad.svg" alt="1">
+													<div class="composition__product">Зелень</div>
+													<div class="composition__weight">70г</div>
+												</li>
+												<li class="composition__item">
+													<img src="./img/icons/composition/sauce.svg" alt="1">
+													<div class="composition__product">Соус</div>
+													<div class="composition__weight">150г</div>
+												</li>
+												<li class="composition__item">
+													<img src="./img/icons/composition/cucumber.svg" alt="1">
+													<div class="composition__product">Овощи</div>
+													<div class="composition__weight">200г</div>
+												</li>
+												<li class="composition__item">
+													<img src="./img/icons/composition/cheese.svg" alt="1">
+													<div class="composition__product">Сыр</div>
+													<div class="composition__weight">80г</div>
+												</li>
+											</ul>
+										</div>																					
+									</div>
+																	
+									<div class="slider__mark-down">
+										<div class="mark-down__icon" href="#"><img src="./img/icons/kkal.svg" alt="kkal">
+											<div class="mark__title mark__title-down"><span>1200</span><br>ккал</div>
+										</div>							
+									</div>
+								</div>
 								<div class="slider__left">
-									<img class="slider__left-photo" src="./img/image/burgers-slider/Chiken burger.png" alt="burger">
+									<img class="slider__left-photo" src="./img/image/burger_black.png" alt="burger_black">
 								</div>
 								<div class="slider__right">
 									<h2 class="main__offer main__offer-slider">Dark BEEF Burger</h2>
@@ -225,19 +322,21 @@
 										добавлением экзотического соуса чураско.
 									</div>
 									<div class="slider__price">
-										<h2 class="main__offer slider__offer">400<span> рублей</span></h2>
+										<h2 class="main__offer slider__offer">500<span> рублей</span></h2>
 										<a class="btn btn__slider" href="#">Заказать</a>
 									</div>						
 								</div>														
-							</li>					
+							</li>
+							
+										
 						</ul>		
 					</div>	
-					<a class="arrow__right" id="right" href="#2"><img src="./img/image/arrow-scroll.svg" alt="arrow"></a>																	
+					<a class="arrow__right" id="right" href="#"><img src="./img/image/arrow-scroll.svg" alt="arrow"></a>																	
 				</div>
 			</section>
 
 			
-			<section class="section team">				
+			<section class="section team" data-anchor="section_team">				
 				<div class="team__wrap">
 					<h2 class="main__offer main__offer-team">Команда</h2>
 					<ul class="team__accordion">
@@ -286,7 +385,7 @@
 			</section>
 
 
-			<section class="section menu">				
+			<section class="section menu" data-anchor="section_menu">				
 				<h2 class="main__offer main__offer-menu">Меню</h2>
 				<ul class="menu__accordion">						
 					<li class="menu__item">
@@ -335,7 +434,7 @@
 			</section>
 
 
-			<section class="section reviews">				
+			<section class="section reviews" data-anchor="section_reviews">				
 				<ul class="reviews__list">
 				 	<li class="reviews__item">	
 				 		<div class="reviews__photo" style="background-image: url(img/photos/photo1.jpg)"></div> 	
@@ -405,7 +504,7 @@
 			</section>
 
 
-			<section class="section order">
+			<section class="section order" data-anchor="section_order">
 				<div class="container">
 					<h2 class="main__offer main__offer-form">Закажите доставку</h2>
 					<form class="form">
@@ -479,7 +578,7 @@
 			</section>
 
 
-			<section class="section map">
+			<section class="section map" data-anchor="section_maps">
 				<div class="container">
 					<ul class="map__list">
 						<li class="map__item"><img class="map__marker-1" src="img/icons/map-marker.svg"></li>
@@ -564,20 +663,57 @@
 
 
 	<div class="navigation">
-		<ul class="navigation__list">
-			<li class="navigation__item"><a class="navigation__link navigation__link_active" href="#"></a></li>
-			<li class="navigation__item"><a class="navigation__link" href="#"></a></li>
-			<li class="navigation__item"><a class="navigation__link" href="#"></a></li>
-			<li class="navigation__item"><a class="navigation__link" href="#"></a></li>
-			<li class="navigation__item"><a class="navigation__link" href="#"></a></li>
-			<li class="navigation__item"><a class="navigation__link" href="#"></a></li>
-			<li class="navigation__item"><a class="navigation__link" href="#"></a></li>
-			<li class="navigation__item"><a class="navigation__link" href="#"></a></li>
+		<ul class="navigation__list" id="nav_list">
+			<li class="navigation__item" data-menuanchor="section_one-screen">
+				<a class="navigation__link navigation__link_active" href="#section_one-screen"></a>
+			</li>
+			<li class="navigation__item" data-menuanchor="section_advantages">
+				<a class="navigation__link" href="#section_advantages"></a>
+			</li>
+			<li class="navigation__item" data-menuanchor="section_slider">
+				<a class="navigation__link" href="#section_slider"></a>
+			</li>
+			<li class="navigation__item" data-menuanchor="section_team">
+				<a class="navigation__link" href="#section_team"></a>
+			</li>
+			<li class="navigation__item" data-menuanchor="section_menu">
+				<a class="navigation__link" href="#section_menu"></a>
+			</li>
+			<li class="navigation__item" data-menuanchor="section_reviews">
+				<a class="navigation__link" href="#section_reviews"></a>
+			</li>
+			<li class="navigation__item" data-menuanchor="section_order">
+				<a class="navigation__link" href="#section_order"></a>
+			</li>
+			<li class="navigation__item" data-menuanchor="section_maps">
+				<a class="navigation__link" href="#section_maps"></a>
+			</li>
 		</ul>				
 	</div>
 
-	
-<script src="js/scripts.js"></script>
-	
+	<div class="up">
+		<a class="up__link" href="#section_one-screen">
+			<img class="up__block" src="./img/image/arrow-scroll.svg" alt="arrow">
+		</a>
+	</div>
+
+	<div class="reviews__popup">
+		<div class="reviews__popup-window">
+			<div class="reviews__popup-text">
+				<h3 class="title title__popup">Константин Спилберг</h3>	
+				<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, 
+				что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли 
+				все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что 
+				булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+			</div>
+			<a href="#" class="reviews__popup-close"></a>
+		</div>
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+	<script src="js/jquery.fullpage.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/scripts.js"></script>	
 </body>
 </html>
