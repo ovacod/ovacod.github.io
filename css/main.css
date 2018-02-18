@@ -23,6 +23,7 @@ html, body {
 .container {
   max-width: 58.75rem;
   width: 95%; 
+  height: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +61,7 @@ html, body {
   flex-wrap: wrap;
   align-items: flex-start;
   position: fixed;
-  z-index: 1000;
+  z-index: 10;
   top: 0;
   background-color: rgba(47, 50, 52, 0.9); }
 
@@ -179,7 +180,8 @@ html, body {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: -5rem; }
 
 .main__offer {
   font-family: 'GagalinRegular';
@@ -202,7 +204,7 @@ html, body {
   margin-top: 1.25rem; }
 
 .scroll {
-  margin-top: 1rem; }
+  margin-bottom: 3rem; }
 
 .advantages {
   background: url("../img/background/bg-2.jpg") center center no-repeat;
@@ -211,7 +213,7 @@ html, body {
 
 .main__offer-advantages {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 3.125rem;
   color: #2f3234; }
 
@@ -259,9 +261,10 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
 .slider__wrap {
   width: 100%;
-  height: 550px;
+  height: 100vh;
 }
 .slider__list {
   width: 100%;
@@ -284,7 +287,7 @@ html, body {
 
 .slider__mark {  
   position: absolute;
-  height: 100%;  
+  height: 80%;  
   left: 0;
   z-index: 50; }
 
@@ -514,16 +517,16 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;  
-  justify-content: space-between;
+  justify-content: space-between;  
   color: white;
   font-family: 'UbuntuLight';
   font-size: 0.875rem;
   line-height: 1.6; }
 
 .main__offer-menu {
-  position: absolute;
-  margin-left: 6rem;
-  margin-top: 6rem; }
+  position: absolute;  
+  left: 6rem;
+  top: 6rem;  }
 
 .menu__accordion {  
   display: flex;
@@ -533,13 +536,15 @@ html, body {
 .menu__item {  
   display: flex;
   height: 100vh;
-  background-color: rgba(62, 62, 62, 0.9); }
+  background-color: rgba(62, 62, 62, 0.9);
+  z-index: 500; }
 
 .menu__name {
   width: 5rem;
   position: relative;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  z-index: 100; }
 
 .menu__name-meat {
   background-image: url(../img/background/acc_1.jpg); }
@@ -567,7 +572,8 @@ html, body {
 
 .menu__text {
   width: 0rem;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 500; }
 
 .menu__item-active .menu__text {
   display: flex;
@@ -781,8 +787,6 @@ html, body {
 
 
 
-
-
 .footer {
   width: 100%;
   min-height: 3.75rem;
@@ -796,7 +800,8 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding-top: 0.625rem; }
+  padding-top: 0.625rem;
+  padding-bottom: 2rem; }
 
 .footer__contscts {
   width: 50%;
@@ -899,18 +904,18 @@ html, body {
 .up {
   width: 3rem;
   height: 3rem;  
+  position: relative;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background: transparent;
   position: fixed;  
   bottom: 0.3rem;
   right: 5.5rem;
   z-index: 3000; }
-.up__link {
-  position: relative; }
 .up__block {  
   transform: rotate(180deg);
-  top: 0.9rem;
-  left: 0.6rem;
+  top: 0.8rem;
+  left: 0.53rem;
   position: absolute; }
 
 
@@ -924,11 +929,11 @@ html, body {
   margin-left: 7.5rem;
   margin-top: -1.3rem;
   display: none;
-   }
+  z-index: 5000; }
 
 .hamburger-menu__bars {
   position: relative;
-  z-index: 1500;
+  z-index: 5000;
 }
  
 .hamburger-menu__bars, .hamburger-menu__bars:before, .hamburger-menu__bars:after {
@@ -936,38 +941,44 @@ html, body {
   width: 2rem;
   height: 0.25rem;
   border-radius: 0.25rem;
-  transition: background-color 0.3s; }
+  transition: background-color 0.3s;
+  z-index: 5000; }
 
 .hamburger-menu__bars:before, .hamburger-menu__bars:after {
   content: "";
   display: block;
-  position: absolute; }
+  position: absolute;
+  z-index: 5000; }
 
 .hamburger-menu__bars:before {
   left: 0;
   top: 8px;
-  transition: 0.2s;   }
+  transition: 0.2s;
+  z-index: 5000;   }
 
 .hamburger-menu__bars:after {
   left: 0;
   bottom: 8px;
-  transition: 0.2s;   }
+  transition: 0.2s; 
+  z-index: 5000;  }
 
 .hamburger-menu__link-active .hamburger-menu__bars {
   background-color: transparent;
-  transition: 0.2s;  
-}
+  transition: 0.2s;
+  z-index: 5000; }
 
 .hamburger-menu__link-active .hamburger-menu__bars:before {
   top: 0;
   transform: rotate(-45deg); 
-  transition: 0.2s;   
+  transition: 0.2s; 
+  z-index: 5000;  
 }
 
 .hamburger-menu__link-active .hamburger-menu__bars:after {
   bottom: 0;
   transform: rotate(45deg);
   transition: 0.2s;  
+  z-index: 5000;
 }  
       
 .reviews__popup {
@@ -1109,7 +1120,10 @@ html, body {
 @media screen and (max-width: 480px) {
   .arrow__right {    
     left: 92%; } }   
-
+@media screen and (max-width: 768px) {
+  .container__slider {
+    margin-top: 4rem;
+  margin-bottom: -4rem; } }
 @media screen and (max-width: 768px) {
   .slider__item {    
     flex-direction: column;    

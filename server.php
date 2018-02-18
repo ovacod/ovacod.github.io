@@ -21,9 +21,9 @@
     <body>
         <h2>Заказ</h2>
         <ul>
-            <li>Имя:' . $name . '</li>
+            <li>Имя: ' . $name . '</li>
             <li>Телефон: ' . $phone . '</li>            
-            <li>Улица:' . $street . '</li>
+            <li>Улица: ' . $street . '</li>
             <li>Дом: ' . $house . '</li>
             <li>Корпус: ' . $housing . '</li>
             <li>Квартира: ' . $apartment . '</li>
