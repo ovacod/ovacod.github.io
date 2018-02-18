@@ -22,6 +22,9 @@ for (var i = 0; i < dropdownItem.length; i++) {
 
 
 
+
+
+
 // OPS //
 $('#fullpage').fullpage({
     menu: '#nav_list' 
@@ -37,9 +40,14 @@ for (var i = 0; i < navigationLink.length; i++) {
 
 
 
+
+
+
+
 // Слайдер //
 
 $('.slider__list').slick();
+
 
 
 
@@ -67,6 +75,8 @@ for (let i = 0; i < teamName.length; i++) {
 
 
 
+
+
 // Горизонтальный аккордеон - Меню //
 
 var menuName = document.querySelectorAll(".menu__name");
@@ -89,6 +99,9 @@ for (let i = 0; i < menuName.length; i++) {
 
 
 
+
+
+
 // Отзывы //
 
 function openPopup(e) {
@@ -102,28 +115,140 @@ $('.reviews__popup-close').on('click', openPopup);
 
 
 
-/* Слайдер 
 
-const left = document.querySelector("#left");
-const right = document.querySelector("#right");
-const list = document.querySelectorAll("#list");
 
-const minRight = 0;
-const maxRight = 2820;
-const step = 940;
-let currentRight = 0;
 
-right.addEventListener("click", function() {
-  if (currentRight < maxRight) {
-    currentRight += step;
-    list.style.right = currentRight + "px";
-  }
+// Форма //
+$('#order-form').on('submit', submitForm);
+
+function submitForm (ev) {
+    ev.preventDefault();
+    
+    var form = $(ev.target),
+        data = form.serialize(),
+        url = form.attr('action'),
+        type = form.attr('method');
+
+    ajaxForm(form).done(function(msg) {
+        var mes = msg.mes,
+            status = msg.status;
+        
+        if (status === 'OK') {
+            form.append('<p class="success">' + mes + '</p>');
+        } else{
+            form.append('<p class="error">' + mes + '</p>');
+        }
+    }).fail(function(jqXHR, textStatus) {
+        alert("Request failed: " + textStatus);
+    });
+
+};
+
+
+
+
+
+
+// Карта - 4 метки //
+
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [59.896228, 30.424272900000005],
+            zoom: 9
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemark1 = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Собственный значок метки',
+            balloonContent: 'Мы находимся здесь',
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/icons/map-marker.svg',
+            // Размеры метки.
+            iconImageSize: [50, 60],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-5, -38]
+        }),
+
+        myPlacemark2 = new ymaps.Placemark([60.06744320000001, 30.334433499999932], {
+            hintContent: 'Собственный значок метки с контентом',
+            balloonContent: 'И здесь мы тоже есть',
+            iconContent: '12'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#imageWithContent',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/icons/map-marker.svg',
+            // Размеры метки.
+            iconImageSize: [48, 48],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-24, -24],
+            // Смещение слоя с содержимым относительно слоя с картинкой.
+            iconContentOffset: [15, 15],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });   
+
+        myPlacemark3 = new ymaps.Placemark([59.89788999999998, 29.77571599999999], {
+            hintContent: 'Собственный значок метки с контентом',
+            balloonContent: 'И здесь',
+            iconContent: '12'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#imageWithContent',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/icons/map-marker.svg',
+            // Размеры метки.
+            iconImageSize: [48, 48],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-24, -24],
+            // Смещение слоя с содержимым относительно слоя с картинкой.
+            iconContentOffset: [15, 15],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        });  
+        
+        myPlacemark4 = new ymaps.Placemark([59.84963070000001, 30.0357573], {
+            hintContent: 'Собственный значок метки с контентом',
+            balloonContent: 'И здесь',
+            iconContent: '12'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#imageWithContent',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/icons/map-marker.svg',
+            // Размеры метки.
+            iconImageSize: [48, 48],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-24, -24],
+            // Смещение слоя с содержимым относительно слоя с картинкой.
+            iconContentOffset: [15, 15],
+            // Макет содержимого.
+            iconContentLayout: MyIconContentLayout
+        }); 
+
+    myMap.geoObjects
+        .add(myPlacemark1)
+        .add(myPlacemark2) 
+        .add(myPlacemark3) 
+        .add(myPlacemark4);
+    
+        myMap.behaviors.disable('scrollZoom');     
+
 });
-
-left.addEventListener("click", function() {
-  if (currentRight > minRight) {
-    currentRight -= step;
-    list.style.right = currentRight + "px";
-  }
-});
-*/
