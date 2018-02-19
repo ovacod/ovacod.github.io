@@ -79,12 +79,6 @@ html, body {
   align-items: center; 
   margin: 1rem 1.5rem 3rem 1.5rem; }
 
-.dropdown__close {
-  font-size: 1.5rem;
-  color: #b5babd;
-  text-decoration: none;
-  margin-right: 1.5rem; }
-  
 .dropdown__link {  
   text-decoration: none;
   text-transform: uppercase;
@@ -1028,13 +1022,76 @@ html, body {
   right: 1.5rem; }  
 
  
-  
-.success{
-  color: green;
-  }
-.error{
-  color: red;
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-popup {  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(47,50,52,0.9);
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
+.form-popup-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form-popup__wrapper {
+  width: 30%;
+  background-color: #fff;
+  padding: 2rem 2rem;
+  border-radius: 0.25rem;
+  position: relative;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .form-popup__wrapper {
+    width: 70%; } }
+
+.form-popup__name {
+  font-family: 'UbuntuLight';
+  font-weight: 100;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+.close-btn {
+  font-family: 'UbuntuLight';
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  background-color: #e45028;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+
+
+
 
 
 
