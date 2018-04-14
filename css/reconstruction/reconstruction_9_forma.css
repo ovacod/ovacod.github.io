@@ -1,0 +1,85 @@
+.section__reconstruction-form {
+    background: linear-gradient(to left, #f2effd, #fff, #f2effd); }
+
+.caption2__reconstruction-form {
+    color: #002;
+    background: linear-gradient(270deg, #050527 33%, #1e1e28 80%, #aa2c36); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 0.5rem; }
+
+.wrap__reconstruction-form {
+    border: 5px solid transparent;   
+    border-image: linear-gradient(to top, rgba(52,52,61,0.5) 30%, rgba(97,97,104,0.5) 60%, rgba(142,142,147,0.5) 100%);
+    border-image-slice: 1;
+    padding: 0.5rem;
+    margin-top: 1rem; }
+
+.reconstruction-form {    
+    background-color: #f3f3f3;
+    box-shadow: 0px 5px 5px 0px rgb(221, 220, 220);
+    padding: 1.5rem;    
+    display: flex;
+    justify-content: space-between; }
+
+.reconstruction-form__title {
+    font-size: 0.8rem;
+    font-weight: 700; }
+
+.reconstruction-form__checkbox-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem; }
+
+.reconstruction-form__name {
+    font-size: 0.7rem; }
+
+.reconstruction-form__checkbox-item1 {
+    margin-top: 0.4rem; }
+
+.reconstruction-form__checkbox-item2, .reconstruction-form__checkbox-item3 {
+    margin-top: 0.9rem; }
+
+
+   
+.reconstruction-form__right {
+    width: 60%; }
+
+.reconstruction-form__right-row1, .reconstruction-form__right-row3 {
+    display: flex;
+    justify-content: space-between; }
+
+.reconstruction-form__right-row3 {
+    margin-top: 1.3rem; }
+
+.reconstruction-form__contacts {
+    width: 45%; }
+
+.reconstruction-form__input {
+    font-size: 0.7rem;  
+    width: 12rem;      
+    padding: 0.35rem;
+    border: 1px solid rgba(170,44,54,0.3);
+    margin-bottom: 0.6rem; }
+
+.reconstruction-form__droplist {
+    font-size: 0.7rem;  
+    width: 5.5rem;      
+    padding: 0.28rem;
+    border: 1px solid rgba(170,44,54,0.3);
+    margin-bottom: 1rem; }
+
+.reconstruction-form__input-m2 {
+    width: 3.5rem; }
+
+.reconstruction-form__comment-textarea {
+    resize: none;
+    width: 100%;
+    height: 5.8rem;    
+    padding: 0.5rem 0.5rem;
+    font-size: 0.7rem;
+    border: 1px solid rgba(170,44,54,0.3);
+    margin-bottom: 0.8rem; }
+
+.OPD__reconstruction-form {
+    text-align: center; }

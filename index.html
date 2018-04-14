@@ -1,857 +1,1045 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Бургерошная</title>
-	<link rel="icon" href ="favicon.ico" type= "image/x-icon">	
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/jquery.fullpage.css">
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/main.css">
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>МультиТрест | О компании</title>
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800,900&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:500i,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">     
+    <link rel="stylesheet" href="css/main.css">   
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    
 </head>
 <body>
+    <div class="wrapper">
+
+<!-- Верхнее меню - НЕ МЕНЯЕТСЯ до стр. 162 --> 
+        <div class="panel__up">            
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item main-nav__item-about">
+                        <a class="main-nav__link" href="index.html">О компании</a>
+                        <div class="dropdown dropdown-about">  
+                            <a class="dropdown-link" href="index.html#section_avatar">Портрет нашего заказчика</a>                                                               
+                            <a class="dropdown-link" href="index.html#section_who">Кто мы и что делаем
+                                <a class="dropdown-link dropdown-link__mini-link" href="index.html#section_who">Услуги</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="index.html#section_who">Гарантии</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="index.html#section_who">Репутация</a>                                    
+                            </a>
+                            <a class="dropdown-link" href="index.html#section_slider-reviews">Отзывы</a>                         
+                            <a class="dropdown-link" href="index.html#section_director">Миссия компании</a>
+                            <a class="dropdown-link" href="index.html#section_licenses">Лицензии</a>  
+                            <a class="dropdown-link" href="index.html#section_team">Команда</a>                         
+                            <a class="dropdown-link" href="index.html#section_partners">Заказчики и партнёры</a>
+                        </div>
+                    </li>
+                    
+                    <li class="main-nav__item"><a class="main-nav__link" href="project.html">Проектирование</a>
+                        <div class="dropdown dropdown-project">               
+                            <a class="dropdown-link" href="project.html#section_project-form">Экспресс-расчёт сметы</a>
+                            <a class="dropdown-link" href="project.html#section_project-advantages">Наши преимущества</a>                 
+                            <a class="dropdown-link" href="project.html#section_project-S">Проектирование строительства
+                                <a class="dropdown-link dropdown-link__mini-link" href="project.html#section_project-S">Проектирование несущих конструкций</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="project.html#section_project-S">Проектирование инженерных систем</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="project.html#section_project-S">Проектирование сетей электроснабжения</a>                                                                    
+                            </a>
+                            <a class="dropdown-link" href="project.html#">Типовые проекты зданий</a>
+                            <a class="dropdown-link" href="project.html#section_project-F">Проектирование фундаментов</a>
+                            <a class="dropdown-link" href="project.html#section_project-R">Проектирование реконструкции
+                                <a class="dropdown-link dropdown-link__mini-link" href="project.html#section_project-R">Техническое обследование зданий</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="project.html#section_project-R">Проектирование и согласование реконструкции</a>                                    
+                            </a>
+                            <a class="dropdown-link" href="project.html#section_project-designer">Бесплатная консультация</a>
+                            <a class="dropdown-link" href="project.html#section_project-stages">Стадии разработки проекта | состав | цены
+                                <a class="dropdown-link dropdown-link__mini-link" href="project.html#section_project-stages">Предпроектный этап</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="project.html#section_project-stages">Этап проектирования</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="project.html#section_project-stages">Этап согласований</a>
+                            </a> 
+                            <a class="dropdown-link" href="project.html#section_project-license">Лицензия</a>
+                            <a class="dropdown-link" href="project.html#section_project-documents">Необходимый пакет документов</a>                     
+                        </div>
+                    </li>
+
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Строительство</a>
+                        <div class="dropdown dropdown-building">                                                               
+                            <a class="dropdown-link" href="#">Промышленные здания
+                                <a class="dropdown-link dropdown-link__mini-link" href="#">Склад | Ангар</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#">Цех | Производство</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#">Котельная</a>                                    
+                            </a>
+                            <a class="dropdown-link" href="#">Коммерческие здания
+                                <a class="dropdown-link dropdown-link__mini-link" href="#">АБК</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#">Магазин</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#">Офис</a>                                    
+                            </a>       
+                            <a class="dropdown-link" href="#">Выгоды работы с нами</a>                         
+                            <a class="dropdown-link" href="#">Порядок работ</a>
+                        </div>
+                    </li>
+
+                    <li class="main-nav__item"><a class="main-nav__link" href="reconstruction.html">Реконструкция</a>
+                        <div class="dropdown dropdown-reconstruction">                                                               
+                            <a class="dropdown-link" href="reconstruction.html#section_reconstruction-1">Типы реконструируемых объектов</a>
+                            <a class="dropdown-link" href="reconstruction.html#section_external-reconstruction">Внешняя реконструкция
+                                <a class="dropdown-link dropdown-link__mini-link" href="reconstruction.html#section_external-reconstruction">Пристроенные помещения</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="reconstruction.html#section_external-reconstruction">Надстроенные помещения</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="reconstruction.html#section_external-reconstruction">Устройство внутренних помещений</a>                                                                    
+                            </a>
+                            <a class="dropdown-link" href="reconstruction.html#section_internal-reconstruction">Внутренняя реконструкция
+                                <a class="dropdown-link dropdown-link__mini-link" href="reconstruction.html#section_internal-reconstruction">Перепланировка</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="reconstruction.html#section_internal-reconstruction">Капитальный ремонт</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="reconstruction.html#section_internal-reconstruction">Отделочные работы</a>
+                            </a>  
+                            <a class="dropdown-link" href="reconstruction.html#section_reconstruction-stages">Этапы реконструкции
+                                <a class="dropdown-link dropdown-link__mini-link" href="reconstruction.html#section_reconstruction-stages">Техническое обследование зданий</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="reconstruction.html#section_reconstruction-stages">Проектирование реконструкции</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="reconstruction.html#section_reconstruction-stages">Согласование реконструкции</a>
+                            </a>     
+                            <a class="dropdown-link" href="reconstruction.html#section_reconstruction-engineer">Бесплатная консультация с техническим директором</a>    
+                            <a class="dropdown-link" href="reconstruction.html#section_reconstruction-partial">Частичная реконструкция отдельных систем
+                                <a class="dropdown-link dropdown-link__mini-link" href="reconstruction.html#section_reconstruction-partial">Реконструкция фундаментов</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="reconstruction.html#section_reconstruction-partial">Реконструкция несущих конструкций</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="reconstruction.html#section_reconstruction-partial">Реконструкция инженерных сетей</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="reconstruction.html#section_reconstruction-partial">Реконструкция фасада и кровли</a>
+                            </a>                                             
+                            <a class="dropdown-link" href="reconstruction.html#section_reconstruction-DO">Реконструкция действующих объектов</a>
+                            <a class="dropdown-link" href="reconstruction.html#section_reconstruction-documents">Пакет необходимых документов</a>
+                            <a class="dropdown-link" href="reconstruction.html#section_reconstruction-form">Расчёт сметы на реконструкцию</a>
+                        </div>                    
+                    </li>
+
+                    <li class="main-nav__item"><a class="main-nav__link" href="works.html">Работы</a>
+                        <div class="dropdown dropdown-works">                                                               
+                            <a class="dropdown-link" href="works.html#section_SMR">Все виды строительно-монтажных работ</a>
+                            <a class="dropdown-link" href="works.html#section_Zwork">Земляные работы | Котлован</a>                                                             
+                            <a class="dropdown-link" href="works.html#section_Bwork">Бетонные и монолитные работы</a>
+                            <a class="dropdown-link" href="works.html#section_Fwork">Фундаментные работы
+                                <a class="dropdown-link dropdown-link__mini-link" href="works.html#section_Fwork">Устройство оснований</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="works.html#section_Fwork">Устройство фундаментов</a>
+                            </a>
+                            <a class="dropdown-link" href="works.html#section_MK">Монтаж металлоконструкций</a>
+                            <a class="dropdown-link" href="works.html#section_SP">Монтаж сэндвич панелей</a>    
+                            <a class="dropdown-link" href="works.html#section_Kwork">Кровельные работы</a>                            
+                            <a class="dropdown-link" href="works.html#section_IS">Монтаж инженерных сетей
+                                <a class="dropdown-link dropdown-link__mini-link" href="works.html#section_IS">Водоснабжение и водоотведение</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="works.html#section_IS">Канализация</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="works.html#section_IS">Отопление</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="works.html#section_IS">Вентиляция и кондиционирование</a>                                    
+                            </a>                                
+                            <a class="dropdown-link" href="works.html#section_EMR">Электромонтажные работы</a>
+                            <a class="dropdown-link" href="works.html#section_asphalting">Асфальтирование и благоустройство</a>
+                        </div> 
+                    </li>
+
+                    <li class="main-nav__item"><a class="main-nav__link" href="materials.html">Материалы</a>
+                        <div class="dropdown dropdown-materials">     
+                            <a class="dropdown-link" href="materials.html#section_materials-1">Почему материалы выгодно заказывать у нас</a> 
+                            <a class="dropdown-link" href="materials.html#section_materials-MK">Своё производcтво металлоконструкций
+                                <a class="dropdown-link dropdown-link__mini-link" href="materials.html#section_materials-MK">Металлокаркасы зданий</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="materials.html#section_materials-MK">Стеллажные системы</a>
+                            </a>                                                          
+                            <a class="dropdown-link" href="materials.html#section_materials-SP-PL">Ограждающие конструкции
+                                <a class="dropdown-link dropdown-link__mini-link" href="materials.html#section_materials-SP-PL">Сэндвич панели</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="materials.html#section_materials-SP-PL">Профлист</a>                                                                                                        
+                            </a>                                                                                             
+                            <a class="dropdown-link" href="materials.html#section_materials-beton">Бетон</a>
+                            <a class="dropdown-link" href="materials.html#section_materials-NM">Нерудные материалы
+                                <a class="dropdown-link dropdown-link__mini-link" href="materials.html#section_materials-NM">Щебень</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="materials.html#section_materials-NM">Песок</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="materials.html#section_materials-NM">Отсев</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="materials.html#section_materials-NM">ЩПС</a>
+                            </a>
+                            <a class="dropdown-link" href="materials.html#section_materials-asfalt">Асфальт | Асфальтовая крошка</a>                                
+                        </div> 
+                    </li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Объекты</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a></li>                    
+                </ul>
+            </nav>
+        </div> 
+<!-- Верхнее меню закончилось-->           
+    
 
 
-	<div class="wrapper">
-
-		<div class="section dropdown">
-			<div class="container container__dropdown">
-				<div class="dropdown__up">
-					<div class="dropdown__logo">
-						<a class="dropdown__logo-img" href="#">
-							<img src="./img/image/logo.svg" alt="logo">
-						</a>
-					</div>					
-				</div>				
-				<nav class="dropdown__menu">
-					<ul class="dropdown__list">
-						<li class="dropdown__item">
-							<a class="dropdown__link" href="#section_advantages">О нас</a>
-							<div class="dropdown__punto"></div>
-						</li>
-						<li class="dropdown__item">
-							<a class="dropdown__link" href="#section_slider">Бургеры</a>
-							<div class="dropdown__punto"></div>
-						</li>
-						<li class="dropdown__item">
-							<a class="dropdown__link" href="#section_team">Команда</a>
-							<div class="dropdown__punto"></div>
-						</li>
-						<li class="dropdown__item">
-							<a class="dropdown__link" href="#section_menu">Меню</a>
-							<div class="dropdown__punto"></div>
-						</li>						
-						<li class="dropdown__item">
-							<a class="dropdown__link" href="#section_reviews">Отзывы</a>
-							<div class="dropdown__punto"></div>
-						</li>
-						<li class="dropdown__item"><a class="dropdown__link" href="#section_maps">Контакты</a></li>
-					</ul>					
-				</nav>														
-			</div>
-		</div>
+<!-- Левая прижатая панель - НЕ МЕНЯЕТСЯ до стр. 253 -->  
+        <div class="panel__left">
+            <div class="panel__left-wrap">                
+                <div class="panel__left-description">
+                    <a class="logo" href="index.html"><img src="./img/logo/logo_m.png" alt="logo"></a>
+                    <div class="desc">
+                        Проектирование и строительство
+                        промышленных и коммерческих
+                        быстровозводимых зданий от 500м<sup>2</sup><br>
+                        из чёрнометаллического каркаса<br>
+                        в Санкт-Петребурге и Ленобласти
+                    </div>                    
+                </div>
 
 
-
-		<div class="maincontent" id="fullpage">
-			<section class="section one-screen" data-anchor="section_one-screen">
-				<div class="container container__header">
-					<header class="header">
-						<div class="header__logo">
-							<a class="header__logo-img" href="#"><img src="./img/image/logo.svg" alt="logo"></a>
-						</div>
-						<nav class="nav">
-							<ul class="nav__list">
-								<li class="nav__item"><a class="nav__link" href="#section_advantages">О нас</a></li>
-								<li class="nav__item"><a class="nav__link" href="#section_slider">Бургеры</a></li>
-								<li class="nav__item"><a class="nav__link" href="#section_team">Команда</a></li>
-								<li class="nav__item"><a class="nav__link" href="#section_menu">Меню</a></li>						
-								<li class="nav__item"><a class="nav__link" href="#section_reviews">Отзывы</a></li>
-								<li class="nav__item"><a class="nav__link" href="#section_maps">Контакты</a></li>
-							</ul>					
-						</nav>
-						<div class="header__links">
-							<a class="btn btn__header" href="#section_order">Заказать</a>
-							<a class="hamburger-menu__link" href="#">
-								<div class="hamburger-menu__bars"></div>
-							</a>
-						</div>													
-					</header>
-
-					<div class="main">
-						<div class="main__burger"><img class="main__burger-photo" src="./img/image/main_burger.png" alt="burger"></div>
-						<h1 class="main__offer main__offer-burger">Мы делаем<br><span>натуральные бургеры</span></h1>
-					</div>
-
-					<div class="scroll">
-						<a class="arrow-scroll" href="#section_advantages" alt="arrow"><img src="./img/image/arrow-scroll.svg"></a>
-					</div>
-				</div>
-			</section>
-								
-				
-			<section class="section advantages" data-anchor="section_advantages">
-				<div class="container container__advantages">					
-					<h2 class="main__offer main__offer-advantages">Мы лучшие</h2>
-					<ul class="advantages__list">
-						<li class="advantages__item advantages__item-meat">
-							<img class="advantages__icon" src="./img/icons/meat.svg" alt="meat">
-							<div class="advantages__content">
-								<h4 class="advantages__title">100% свежее мясо</h4>
-								<p class="advantages__text">Драма представляет собой деструктивный цикл.
-									Анапест представляет собой анапест. Ямб неравномерен.</p>
-							</div>							
-						</li>
-						<li class="advantages__item advantages__item-hand">
-							<img class="advantages__icon" src="./img/icons/hand.svg" alt="hand">
-							<div class="advantages__content advantages__content-hand">
-								<h4 class="advantages__title">Ручная сборка</h4>
-								<p class="advantages__text">Драма представляет собой деструктивный цикл.
-									Анапест представляет собой анапест. Первое полустишие притягивает 
-									сюжетный реформаторский пафос.</p>
-							</div>							
-						</li>
-						<li class="advantages__item advantages__item-natural">
-							<img class="advantages__icon" src="./img/icons/natural.svg" alt="natural">
-							<div class="advantages__content">
-								<h4 class="advantages__title">Натуральные ингредиенты</h4>
-								<p class="advantages__text">Драма представляет собой деструктивный цикл. 
-									Анапест представляет собой анапест.</p>
-							</div>							
-						</li>
-					</ul>										
-				</div>				
-			</section>
+                <div class="panel__left-objects">
+                    <ul class="objects__list">
+                        <li class="objects__item">
+                            <a class="objects__item-block" href="#">
+                                <img src="./img/icons/storage.png" alt="hangar">
+                                <div class="objects__name">Склады</div>
+                            </a>
+                        </li>
+                        <li class="objects__item">
+                            <a class="objects__item-block" href="#">
+                                <img src="./img/icons/abk1.png" alt="abk">
+                                <div class="objects__name">АБК</div>
+                            </a>
+                        </li>
+                        <li class="objects__item">
+                            <a class="objects__item-block" href="#">
+                                <img src="./img/icons/hangar1.png" alt="abk">
+                                <div class="objects__name">Ангары</div>
+                            </a>
+                        </li>                        
+                        <li class="objects__item">
+                            <a class="objects__item-block" href="#">
+                                <img src="./img/icons/shop1.png" alt="shop">
+                                <div class="objects__name">Магазины</div>
+                            </a>
+                        </li>
+                        <li class="objects__item">
+                            <a class="objects__item-block" href="#">
+                                <img src="./img/icons/industry1.png" alt="industry">
+                                <div class="objects__name">Цеха</div>
+                            </a>
+                        </li>
+                        <li class="objects__item">
+                            <a class="objects__item-block" href="#">
+                                <img src="./img/icons/office1.png" alt="office">
+                                <div class="objects__name">Офисы</div>
+                            </a>
+                        </li>
+                    </ul>                    
+                </div>
 
 
-			<section class="section slider" data-anchor="section_slider">
-				<div class="container container__slider">					
-
-					<div class="slider__wrap">
-						<ul class="slider__list" id="list">
-							<li class="slider__item slider__item-1">
-								<div class="slider__mark">
-									<div class="slider__mark-up">
-										<a class="mark-up__icon" href="#1">
-											<img src="./img/icons/burger.svg" alt="burger">
-											<div class="mark__title mark__title-up">Состав</div>
-										</a>
-										<div class="composition">
-											<ul class="composition__list">
-												<li class="composition__item">
-													<img class="composition__icon" src="./img/icons/composition/beef.svg" alt="1">
-													<div class="composition__product">Говядина</div>
-													<div class="composition__weight">300г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/buns.svg" alt="1">
-													<div class="composition__product">Булочки</div>
-													<div class="composition__weight">100г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/salad.svg" alt="1">
-													<div class="composition__product">Зелень</div>
-													<div class="composition__weight">70г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/sauce.svg" alt="1">
-													<div class="composition__product">Соус</div>
-													<div class="composition__weight">150г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/cucumber.svg" alt="1">
-													<div class="composition__product">Овощи</div>
-													<div class="composition__weight">200г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/cheese.svg" alt="1">
-													<div class="composition__product">Сыр</div>
-													<div class="composition__weight">80г</div>
-												</li>
-											</ul>
-										</div>																					
-									</div>
-																	
-									<div class="slider__mark-down">
-										<div class="mark-down__icon" href="#"><img src="./img/icons/kkal.svg" alt="kkal">
-											<div class="mark__title mark__title-down"><span>1200</span><br>ккал</div>
-										</div>							
-									</div>
-								</div>
-								<div class="slider__left">
-									<img class="slider__left-photo" src="./img/image/burger_black.png" alt="burger_black">
-								</div>
-								<div class="slider__right">
-									<h2 class="main__offer main__offer-slider">Dark BEEF Burger</h2>
-									<div class="slider__text">
-										Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-										нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-										добавлением экзотического соуса чураско.
-									</div>
-									<div class="slider__price">
-										<h2 class="main__offer slider__offer">500<span> рублей</span></h2>
-										<a class="btn btn__slider" href="#section_order">Заказать</a>
-									</div>						
-								</div>														
-							</li>
-
-							<li class="slider__item slider__item-2">
-								<div class="slider__mark">
-									<div class="slider__mark-up">
-										<a class="mark-up__icon" href="#1">
-											<img src="./img/icons/burger.svg" alt="burger">
-											<div class="mark__title mark__title-up">Состав</div>
-										</a>
-										<div class="composition">
-											<ul class="composition__list">
-												<li class="composition__item">
-													<img class="composition__icon" src="./img/icons/composition/beef.svg" alt="1">
-													<div class="composition__product">Говядина</div>
-													<div class="composition__weight">300г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/buns.svg" alt="1">
-													<div class="composition__product">Булочки</div>
-													<div class="composition__weight">100г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/salad.svg" alt="1">
-													<div class="composition__product">Зелень</div>
-													<div class="composition__weight">70г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/sauce.svg" alt="1">
-													<div class="composition__product">Соус</div>
-													<div class="composition__weight">150г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/cucumber.svg" alt="1">
-													<div class="composition__product">Овощи</div>
-													<div class="composition__weight">200г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/cheese.svg" alt="1">
-													<div class="composition__product">Сыр</div>
-													<div class="composition__weight">80г</div>
-												</li>
-											</ul>
-										</div>																					
-									</div>
-																	
-									<div class="slider__mark-down">
-										<div class="mark-down__icon" href="#"><img src="./img/icons/kkal.svg" alt="kkal">
-											<div class="mark__title mark__title-down"><span>1200</span><br>ккал</div>
-										</div>							
-									</div>
-								</div>
-								<div class="slider__left">
-									<img class="slider__left-photo" src="./img/image/burgers-slider/Spicy_Shrimp_Burger.png" alt="burger_black">
-								</div>
-								<div class="slider__right">
-									<h2 class="main__offer main__offer-slider">Spicy Shrimp Burger</h2>
-									<div class="slider__text">
-										Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-										нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-										добавлением экзотического соуса чураско.
-									</div>
-									<div class="slider__price">
-										<h2 class="main__offer slider__offer">400<span> рублей</span></h2>
-										<a class="btn btn__slider" href="#section_order">Заказать</a>
-									</div>						
-								</div>														
-							</li>
-
-							<li class="slider__item slider__item-3">
-								<div class="slider__mark">
-									<div class="slider__mark-up">
-										<a class="mark-up__icon" href="#1">
-											<img src="./img/icons/burger.svg" alt="burger">
-											<div class="mark__title mark__title-up">Состав</div>
-										</a>
-										<div class="composition">
-											<ul class="composition__list">
-												<li class="composition__item">
-													<img class="composition__icon" src="./img/icons/composition/beef.svg" alt="1">
-													<div class="composition__product">Говядина</div>
-													<div class="composition__weight">300г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/buns.svg" alt="1">
-													<div class="composition__product">Булочки</div>
-													<div class="composition__weight">100г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/salad.svg" alt="1">
-													<div class="composition__product">Зелень</div>
-													<div class="composition__weight">70г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/sauce.svg" alt="1">
-													<div class="composition__product">Соус</div>
-													<div class="composition__weight">150г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/cucumber.svg" alt="1">
-													<div class="composition__product">Овощи</div>
-													<div class="composition__weight">200г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/cheese.svg" alt="1">
-													<div class="composition__product">Сыр</div>
-													<div class="composition__weight">80г</div>
-												</li>
-											</ul>
-										</div>																					
-									</div>
-																	
-									<div class="slider__mark-down">
-										<div class="mark-down__icon" href="#"><img src="./img/icons/kkal.svg" alt="kkal">
-											<div class="mark__title mark__title-down"><span>1200</span><br>ккал</div>
-										</div>							
-									</div>
-								</div>
-								<div class="slider__left">
-									<img class="slider__left-photo" src="./img/image/burgers-slider/Chiken burger.png" alt="burger_black" style="width: 100%; height: 100%">
-								</div>
-								<div class="slider__right">
-									<h2 class="main__offer main__offer-slider">Chiken Burger</h2>
-									<div class="slider__text">
-										Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-										нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-										добавлением экзотического соуса чураско.
-									</div>
-									<div class="slider__price">
-										<h2 class="main__offer slider__offer">300<span> рублей</span></h2>
-										<a class="btn btn__slider" href="#section_order">Заказать</a>
-									</div>						
-								</div>														
-							</li>
-
-							<li class="slider__item slider__item-4">
-								<div class="slider__mark">
-									<div class="slider__mark-up">
-										<a class="mark-up__icon" href="#1">
-											<img src="./img/icons/burger.svg" alt="burger">
-											<div class="mark__title mark__title-up">Состав</div>
-										</a>
-										<div class="composition">
-											<ul class="composition__list">
-												<li class="composition__item">
-													<img class="composition__icon" src="./img/icons/composition/beef.svg" alt="1">
-													<div class="composition__product">Говядина</div>
-													<div class="composition__weight">300г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/buns.svg" alt="1">
-													<div class="composition__product">Булочки</div>
-													<div class="composition__weight">100г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/salad.svg" alt="1">
-													<div class="composition__product">Зелень</div>
-													<div class="composition__weight">70г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/sauce.svg" alt="1">
-													<div class="composition__product">Соус</div>
-													<div class="composition__weight">150г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/cucumber.svg" alt="1">
-													<div class="composition__product">Овощи</div>
-													<div class="composition__weight">200г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/cheese.svg" alt="1">
-													<div class="composition__product">Сыр</div>
-													<div class="composition__weight">80г</div>
-												</li>
-											</ul>
-										</div>																					
-									</div>
-																	
-									<div class="slider__mark-down">
-										<div class="mark-down__icon" href="#"><img src="./img/icons/kkal.svg" alt="kkal">
-											<div class="mark__title mark__title-down"><span>1200</span><br>ккал</div>
-										</div>							
-									</div>
-								</div>
-								<div class="slider__left">
-									<img class="slider__left-photo" src="./img/image/burgers-slider/burger_sandwich_PNG4124.png" alt="burger_black">
-								</div>
-								<div class="slider__right">
-									<h2 class="main__offer main__offer-slider">Sandwich Burger</h2>
-									<div class="slider__text">
-										Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-										нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-										добавлением экзотического соуса чураско.
-									</div>
-									<div class="slider__price">
-										<h2 class="main__offer slider__offer">600<span> рублей</span></h2>
-										<a class="btn btn__slider" href="#section_order">Заказать</a>
-									</div>						
-								</div>														
-							</li>
-
-							<li class="slider__item slider__item-5">
-								<div class="slider__mark">
-									<div class="slider__mark-up">
-										<a class="mark-up__icon" href="#1">
-											<img src="./img/icons/burger.svg" alt="burger">
-											<div class="mark__title mark__title-up">Состав</div>
-										</a>
-										<div class="composition">
-											<ul class="composition__list">
-												<li class="composition__item">
-													<img class="composition__icon" src="./img/icons/composition/beef.svg" alt="1">
-													<div class="composition__product">Говядина</div>
-													<div class="composition__weight">300г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/buns.svg" alt="1">
-													<div class="composition__product">Булочки</div>
-													<div class="composition__weight">100г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/salad.svg" alt="1">
-													<div class="composition__product">Зелень</div>
-													<div class="composition__weight">70г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/sauce.svg" alt="1">
-													<div class="composition__product">Соус</div>
-													<div class="composition__weight">150г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/cucumber.svg" alt="1">
-													<div class="composition__product">Овощи</div>
-													<div class="composition__weight">200г</div>
-												</li>
-												<li class="composition__item">
-													<img src="./img/icons/composition/cheese.svg" alt="1">
-													<div class="composition__product">Сыр</div>
-													<div class="composition__weight">80г</div>
-												</li>
-											</ul>
-										</div>																					
-									</div>
-																	
-									<div class="slider__mark-down">
-										<div class="mark-down__icon" href="#"><img src="./img/icons/kkal.svg" alt="kkal">
-											<div class="mark__title mark__title-down"><span>1200</span><br>ккал</div>
-										</div>							
-									</div>
-								</div>
-								<div class="slider__left">
-									<img class="slider__left-photo" src="./img/image/burgers-slider/NYC-Diner-Bacon-Cheeseburger.png" alt="burger" style="width: 100%; height: 100%">
-								</div>
-								<div class="slider__right">
-									<h2 class="main__offer main__offer-slider">Diner Bacon Burger</h2>
-									<div class="slider__text">
-										Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-										нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-										добавлением экзотического соуса чураско.
-									</div>
-									<div class="slider__price">
-										<h2 class="main__offer slider__offer">700<span> рублей</span></h2>
-										<a class="btn btn__slider" href="#section_order">Заказать</a>
-									</div>						
-								</div>														
-							</li>
-
-						</ul>		
-					</div>																						
-				</div>
-			</section>
-
-			
-			<section class="section team" data-anchor="section_team">				
-				<div class="team__wrap">
-					<h2 class="main__offer main__offer-team">Команда</h2>
-					<ul class="team__accordion">
-						<li class="team__item">								
-							<a class="team__name" href="#1"><h3 class="title title__team">Дэниэл Редклиф</h3></a>
-							<div class="team__person">
-								<div class="team__person-photo"></div>
-								<div class="team__person-position">
-									<h4 class="team__person-caption">Оператор</h4>
-									<p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
-								</div>									
-							</div>								
-						</li>
-						<li class="team__item">								
-							<a class="team__name" href="#2"><h3 class="title title__team">Ричард Джеймс</h3></a>
-							<div class="team__person">
-								<div class="team__person-photo"></div>
-								<div class="team__person-position">
-									<h4 class="team__person-caption">Оператор</h4>
-									<p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
-								</div>									
-							</div>								
-						</li>
-						<li class="team__item">
-							<a class="team__name" href="#3"><h3 class="title title__team">Джейк Финн</h3></a>
-							<div class="team__person">
-								<div class="team__person-photo"></div>
-								<div class="team__person-position">
-									<h4 class="team__person-caption">Оператор</h4>
-									<p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
-								</div>									
-							</div>								
-						</li>
-						<li class="team__item">
-							<a class="team__name" href="#4"><h3 class="title title__team">Николай Иванов</h3></a>
-							<div class="team__person">
-								<div class="team__person-photo"></div>
-								<div class="team__person-position">
-									<h4 class="team__person-caption">Оператор</h4>
-									<p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
-								</div>									
-							</div>								
-						</li>
-					</ul>
-				</div>					
-			</section>
+                <div class="panel__left-contacts">
+                    <div class="left-contacts__phones-mail">
+                        <a class="left-contacts__phones" href="#">(812) 716-39-39<br>(812) 716-34-34</a>
+                        <a class="left-contacts__mail" href="#">info@mtrest.ru</a>
+                    </div>
+                    <div class="left-contacts__adress">
+                        Ленобласть, пос. Ропша,<br>
+                        Стрельнинское шоссе, 1Б<br>
+                        ПН-ПТ: 9:30-18:00
+                    </div>
+                    <ul class="left-contacts__social-list">
+                        <li class="social-item">
+                            <a class="social-round social-round__vk" href="#">
+                                <img class="social-icon social-icon__vk" src="./img/icons/vk_m.png">
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-round social-round__telegram" href="#">
+                                <img class="social-icon social-icon__telegram" src="./img/icons/telegram_m.png">
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-round social-round__whatsapp" href="#">
+                                <img class="social-icon social-icon__whatsapp" src="./img/icons/whatsapp_m.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!-- Левая прижатая панель закончилась -->  
 
 
-			<section class="section menu" data-anchor="section_menu">				
-				<h2 class="main__offer main__offer-menu">Меню</h2>
-				<ul class="menu__accordion">						
-					<li class="menu__item">
-						<a class="menu__name menu__name-meat" href="#1">
-							<h3 class="menu__title">Для мясоедов</h3>
-						</a>						
-						<div class="menu__text">
-							<p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
-							 конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. 
-							 Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив.
-							 Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
-							 Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
-							 конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман.
-							 Наш современник стал особенно чутко относиться к слову.</p>
-						</div>							
-					</li>
-					<li class="menu__item">
-						<a class="menu__name menu__name-vegan" href="#2">
-							<h3 class="menu__title">Вегетарианское</h3>
-						</a>	
-						<div class="menu__text">
-							<p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
-							конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. 
-							Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив.
-							Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
-							Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
-							конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман.
-							Наш современник стал особенно чутко относиться к слову.</p>
-						</div>							
-					</li>
-					<li class="menu__item">
-						<a class="menu__name menu__name-diet" href="#3">
-							<h3 class="menu__title">Диетическое</h3>
-						</a>	
-						<div class="menu__text">
-							<p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
-							конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. 
-							Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив.
-							Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
-							Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
-							конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман.
-							Наш современник стал особенно чутко относиться к слову.</p>
-						</div>							
-					</li>				
-				</ul>									
-			</section>
+
+<!-- Правая прижатая панель (до стр. 466) - НА КАЖДОЙ СТРАНИЦЕ МЕНЯЕТСЯ СЕРЕДИНА -> right__center здесь стр. 394-423 -->  
+        <div class="panel__right">
+            <div class="panel__right-wrap">
+                
+                <div class="right-up">
+                    <ul class="buttons__list">
+                        <li class="buttons__item buttons__item-callback">
+                            <a class="main__buttons" href="#">
+                                <div class="buttons__title">Закажите обратный звонок</div>
+                            </a>
+                            <div class="buttons__content buttons__content-callback">
+                                <div class="buttons__text buttons__text-callback">
+                                    Оставьте свои контактные данные, и наш специалист
+                                    перезвонит вам в ближайшее время, чтобы ответить
+                                    на все интересующие вас вопросы                                                                                                                    
+                                </div>
+                                <form class="form form__callback" action="server.php" method="POST" id="order-form1">                                    
+                                    <label class="form__block">
+                                        <div class="form__title">Ваше имя*</div>
+                                        <input class="form__input" name="user-name1" type="text" required>
+                                    </label>
+                                    <label class="form__block">
+                                        <div class="form__title">Ваш телефон*</div>
+                                        <input class="form__input" name="user-phone1" type="text" placeholder="+7123456789" required>
+                                    </label>                                        
+                                    <input class="btn" type="submit" name="submit" value="Заказать звонок">   
+                                    <div class="OPD">Нажимая на кнопку, вы подтверждаете своё
+                                        <a class="OPD__link" href="#">согласие на обработку персональных данных</a>
+                                    </div>                                 
+                                </form>
+                            </div>                            
+                        </li>
 
 
-			<section class="section reviews" data-anchor="section_reviews">				
-				<ul class="reviews__list">
-				 	<li class="reviews__item">	
-				 		<div class="reviews__photo" style="background-image: url(img/photos/photo1.jpg)"></div> 	
-				 		<div class="reviews__content">
-				 			<h3 class="title title__reviews">Константин Спилберг</h3>				 				
-				 			<div class="reviews__text"><p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p></div>	
-				 			<a class="btn btn__link-reviews" href="#">Подробнее</a>				 			
-				 		</div>					 					 		
-				 	</li>
-				 	<li class="reviews__item">	
-				 		<div class="reviews__photo" style="background-image: url(img/photos/photo2.jpg);"></div> 	
-				 		<div class="reviews__content">
-				 			<h3 class="title title__reviews">Константин Спилберг</h3>				 				
-				 			<div class="reviews__text"><p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p></div>	
-				 			<a class="btn btn__link-reviews" href="#">Подробнее</a>				 			
-				 		</div>					 					 		
-				 	</li>
-				 	<li class="reviews__item">	
-				 		<div class="reviews__photo" style="background-image: url(img/photos/photo3.jpg);"></div> 	
-				 		<div class="reviews__content">
-				 			<h3 class="title title__reviews">Константин Спилберг</h3>				 				
-				 			<div class="reviews__text"><p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p></div>	
-				 			<a class="btn btn__link-reviews" href="#">Подробнее</a>				 			
-				 		</div>					 					 		
-				 	</li>
-				 	<li class="reviews__item">	
-				 		<div class="reviews__photo" style="background-image: url(img/photos/photo4.jpg);"></div> 	
-				 		<div class="reviews__content">
-				 			<h3 class="title title__reviews">Константин Спилберг</h3>				 				
-				 			<div class="reviews__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>	
-				 			<a class="btn btn__link-reviews" href="#">Подробнее</a>				 			
-				 		</div>					 					 		
-				 	</li>
-				 	<li class="reviews__item">	
-				 		<div class="reviews__photo" style="background-image: url(img/photos/photo5.jpg);"></div> 	
-				 		<div class="reviews__content">
-				 			<h3 class="title title__reviews">Константин Спилберг</h3>				 				
-				 			<div class="reviews__text"><p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p></div>	
-				 			<a class="btn btn__link-reviews" href="#">Подробнее</a>				 			
-				 		</div>					 					 		
-				 	</li>
-				 	<li class="reviews__item">	
-				 		<div class="reviews__photo" style="background-image: url(img/photos/photo6.jpg);"></div> 	
-				 		<div class="reviews__content">
-				 			<h3 class="title title__reviews">Константин Спилберг</h3>				 				
-				 			<div class="reviews__text"><p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p></div>	
-				 			<a class="btn btn__link-reviews" href="#">Подробнее</a>				 			
-				 		</div>					 					 		
-				 	</li>
-				 	<li class="reviews__item">	
-				 		<div class="reviews__photo" style="background-image: url(img/photos/photo7.jpg);"></div> 	
-				 		<div class="reviews__content">
-				 			<h3 class="title title__reviews">Константин Спилберг</h3>				 				
-				 			<div class="reviews__text"><p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p></div>	
-				 			<a class="btn btn__link-reviews" href="#">Подробнее</a>				 			
-				 		</div>					 					 		
-				 	</li>
-				 	<li class="reviews__item">	
-				 		<div class="reviews__photo" style="background-image: url(img/photos/photo8.jpg);"></div> 	
-				 		<div class="reviews__content">
-				 			<h3 class="title title__reviews">Константин Спилберг</h3>				 				
-				 			<div class="reviews__text"><p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p></div>	
-				 			<a class="btn btn__link-reviews" href="#">Подробнее</a>				 			
-				 		</div>					 					 		
-				 	</li>			 	
-				 </ul> 								
-			</section>
+                        <li class="buttons__item buttons__item-calculation">
+                            <a class="main__buttons" href="#">
+                                <div class="buttons__title">Расчёт предварительной сметы</div>
+                            </a>
+                            <div class="buttons__content buttons__content-calculation">                                
+                                <form class="form form__calculation" action="server.php" method="POST" id="order-form2">
+                                    <label class="form__block">
+                                        <div class="form__title">Тип объекта</div>
+                                        <input class="form__input" name="user-object" type="text" placeholder="Например, 'Склад'" required>
+                                    </label>
+                                    <div class="form__row form__row-characteristics">
+                                        <label class="form__block form__block-row">
+                                            <div class="form__title form__title-row">Длина</div>
+                                            <input class="form__input form__input-row" name="user-length" type="text" placeholder="м" required>
+                                        </label>  
+                                        <label class="form__block form__block-row">
+                                            <div class="form__title form__title-row">Ширина</div>
+                                            <input class="form__input form__input-row" name="user-width" type="text" placeholder="м" required>
+                                        </label> 
+                                        <label class="form__block form__block-row">
+                                            <div class="form__title form__title-row">Высота</div>
+                                            <input class="form__input form__input-row" name="user-height" type="text" placeholder="м" required>
+                                        </label> 
+                                    </div>  
+                                    <div class="form__row form__row-checkbox">
+                                        <label class="checkbox">							
+                                            <input class="checkbox__input" type="checkbox" id="project" name="project" value="Проектирование">
+                                            <span class="checkbox__btn"></span>
+                                            <span class="form__title form__title-checkbox">Проектирование</span>	
+                                        </label>
+                                        <label class="checkbox">							
+                                            <input class="checkbox__input" type="checkbox" id="building" name="building" value="Монтаж под ключ">
+                                            <span class="checkbox__btn"></span>
+                                            <span class="form__title form__title-checkbox">Монтаж здания под ключ</span>	
+                                        </label>
+                                        <label class="checkbox">							
+                                            <input class="checkbox__input" type="checkbox" id="basis" name="basis" value="Фундамент">
+                                            <span class="checkbox__btn"></span>
+                                            <span class="form__title form__title-checkbox">Отдельные виды работ</span>	
+                                        </label>
+                                    </div>
+                                    <label class="form__block">
+                                        <div class="form__title"></div>
+                                        <input class="form__input" name="user-adress" type="text" placeholder="Адрес строительства" required>
+                                    </label>                                
+                                    <label class="form__block">
+                                        <div class="form__title"></div>
+                                        <input class="form__input " name="user-name2" type="text" placeholder="Ваше имя*" required>
+                                    </label>
+                                    <label class="form__block">
+                                        <div class="form__title"></div>
+                                        <input class="form__input" name="user-phone2" type="text" placeholder="Ваш телефон*" required>
+                                    </label>  
+                                    <label class="form__block">
+                                        <div class="form__title"></div>
+                                        <input class="form__input" name="user-mail2" type="text" placeholder="Ваш email*" required>
+                                    </label>                                        
+                                    <input class="btn" type="submit" name="submit" value="Рассчитать смету">  
+                                    <div class="OPD">Нажимая на кнопку, вы подтверждаете своё
+                                        <a class="OPD__link" href="#">согласие на обработку персональных данных</a>
+                                    </div>
+                                </form>
+                            </div>                            
+                        </li>
+
+
+                        <li class="buttons__item buttons__item-question">
+                            <a class="main__buttons" href="#">
+                                <div class="buttons__title">Задайте вопрос инженеру</div>
+                            </a>
+                            <div class="buttons__content buttons__content-question">                                
+                                <form class="form form__question" action="server.php" method="POST" id="order-form3">
+                                    <label class="form__block">
+                                        <div class="form__title">Ваш вопрос:</div>
+                                        <textarea class="question" name="user-question" type="text" 
+                                        placeholder="Напишите здесь ваш(и) вопрос(ы). Наш инженер свяжется с вами и даст подробную консультацию бесплатно!"></textarea>
+                                    </label>                                     
+                                    <label class="form__block">
+                                        <div class="form__title">Ваше имя*</div>
+                                        <input class="form__input" name="user-name3" type="text" required>
+                                    </label>
+                                    <label class="form__block">
+                                        <div class="form__title">Ваш телефон*</div>
+                                        <input class="form__input" name="user-phone3" type="text" placeholder="+7123456789" required>
+                                    </label>   
+                                    <label class="form__block">
+                                        <div class="form__title">Ваш email*</div>
+                                        <input class="form__input" name="user-mail3" type="text" required>
+                                    </label>                                     
+                                    <input class="btn" type="submit" name="submit" value="Задать вопрос">
+                                    <div class="OPD">Нажимая на кнопку, вы подтверждаете своё
+                                        <a class="OPD__link" href="#">согласие на обработку персональных данных</a>
+                                    </div>
+                                </form>
+                            </div>                            
+                        </li>
+                    </ul>
+                </div>
+
+
+
+<!-- БОКОВОЕ МЕНЮ -  МЕНЯЕТСЯ НА КАЖДОЙ СТРАНИЦЕ -->
+                <div class="right-center">
+                    <ul class="menu-page__list menu-page__list-about" id="menu-page_list">
+                        <li class="menu-page__item">
+                            <a class="menu-page__link" href="#section_avatar">Кто наш заказчик</a>
+                        </li>
+                        <li class="menu-page__item">
+                            <a class="menu-page__link" href="#section_who">Кто мы и что делаем
+                                <ul>
+                                    <li class="menu-page__mini">Услуги</li>
+                                    <li class="menu-page__mini">Гарантии</li>
+                                    <li class="menu-page__mini">Репутация</li>
+                                </ul>
+                            </a>
+                        </li>                        
+                        <li class="menu-page__item">
+                            <a class="menu-page__link" href="#section_slider-reviews">Отзывы</a></li>                        
+                        <li class="menu-page__item">
+                            <a class="menu-page__link" href="#section_director">Миссия компании</a>
+                        </li>
+                        <li class="menu-page__item">
+                            <a class="menu-page__link" href="#section_licenses">Лицензии</a>
+                        </li>
+                        <li class="menu-page__item">
+                            <a class="menu-page__link" href="#section_team">Команда</a>
+                        </li>
+                        <li class="menu-page__item">
+                            <a class="menu-page__link" href="#section_partners">Заказчики и партнёры</a>
+                        </li>                        
+                    </ul>
+                </div>
+<!-- БОКОВОЕ МЕНЮ закончилось -->
+
+
+
+
+                <div class="right-down">
+                    <ul class="triggers__list">
+                        <li class="triggers__item triggers__item-audit">
+                            <a class="main__triggers" href="#">
+                                <div class="triggers__title">Аудит проекта бесплатно</div>
+                            </a>
+                            <div class="triggers__text triggers__text-audit">
+                                Речевой акт редуцирует диалектический характер. Развивая эту тему, 
+                                заимствование редуцирует конструктивный механизм сочленений.
+                                Лирический субъект начинает диссонансный анжамбеман. 
+                            </div>                            
+                        </li>
+
+                        <li class="triggers__item triggers__item-15">
+                            <a class="main__triggers" href="#">
+                                <div class="triggers__title">Снижение затрат до 15%</div>
+                            </a>
+                            <div class="triggers__text triggers__text-15">
+                                Речевой акт редуцирует диалектический характер. Развивая эту тему, 
+                                заимствование редуцирует конструктивный механизм сочленений.
+                                Лирический субъект начинает диссонансный анжамбеман. 
+                            </div>                            
+                        </li>
+
+                        <li class="triggers__item triggers__item-5years">
+                            <a class="main__triggers" href="#">
+                                <div class="triggers__title">Гарантия - от 5 лет</div>
+                            </a>
+                            <div class="triggers__text triggers__text-5years">
+                                Речевой акт редуцирует диалектический характер. Развивая эту тему, 
+                                заимствование редуцирует конструктивный механизм сочленений.
+                                Лирический субъект начинает диссонансный анжамбеман. 
+                            </div>                        
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!-- Правая прижатая панель закончилась -->
+
+        
 
 
 
 
 
-			<section class="section order" data-anchor="section_order">
-				<div class="container">
-					<h2 class="main__offer main__offer-form">Закажите доставку</h2>
-					<form class="form" action="server.php" method="POST" id="order-form">
-						<div class="form__left">
-							<div class="form__row">
-								<label class="form__block">
-									<div class="form__title">Имя*</div>
-									<input class="form__input" name="user-name" type="text" required>
-								</label>
-								<label class="form__block">
-									<div class="form__title">Телефон*</div>
-									<input class="form__input" name="user-phone" type="text" placeholder="+7123456789" required>
-								</label>							
-							</div>
-							<div class="form__row">
-								<label class="form__block">
-									<div class="form__title">Улица*</div>
-									<input class="form__input" name="user-street" type="text" required>
-								</label>															
-							</div>
-							<div class="form__row">
-								<label class="form__block">
-									<div class="form__title">Дом*</div>
-									<input class="form__input" name="user-house" type="text" required>
-								</label>
-								<label class="form__block">
-									<div class="form__title">Корпус</div>
-									<input class="form__input" name="user-housing" type="text">
-								</label>										
-								<label class="form__block form__block-apartment">
-									<div class="form__title">Квартира*</div>
-									<input class="form__input" name="user-apartment" type="text" required>
-								</label>
-								<label class="form__block form__block-floor">
-									<div class="form__title">Этаж</div>
-									<input class="form__input" name="user-floor" type="text">
-								</label>							
-							</div>
-						</div>
-						<div class="form__right">
-							<div class="form__row form__row-right">
-								<label class="form__block">
-									<div class="form__title">Комментарий</div>
-									<textarea class="comment" name="user-comment" type="text"></textarea>
-								</label>
-								<div class="form__block form__block-radio">
-									<label class="radio">
-										<input class="radio__input" type="radio" name="pay" id="delivery" value="Потребуется сдача">
-										<span class="radio__btn"></span>
-										<span class="form__title form__title-radio">Потребуется сдача</span>
-									</label>
-									<label class="radio">
-										<input class="radio__input" type="radio" name="pay" id="card" value="Оплата по карте">
-										<span class="radio__btn"></span>
-										<span class="form__title form__title-radio">Оплата по карте</span>
-									</label>
-								</div>	
-								<div class="form__block form__block-checkbox">		
-									<label class="checkbox">							
-										<input class="checkbox__input" type="checkbox" id="notcall" name="notcall" value="1">
-										<span class="checkbox__btn"></span>
-										<span class="form__title form__title-checkbox">Не перезванивать</span>	
-									</label>					
-								</div>								
-							</div>	
-							<input class="btn" type="submit" name="submit" value="Заказать">
-							<input class="btn btn__form-clear" type="reset" name="reset" value="Очистить">						
-						</div>
-					</form>
-				</div>
-			</section>
 
 
-			<section class="section map" data-anchor="section_maps">
-				<div id="map" style="width: 100%; height: 650px"></div>
-					
-				
-				<footer class="footer">
-					<div class="container">	
-						<div class="footer__wrap">
-							<div class="footer__contscts">Cанкт-Петербург, ул.Бабушкина, д.12/1, 15
-								<div class="footer__phone">+7 (812) 377-13-77</div>
-							</div>
-							<div class="footer__social-list">
-								<a class="social__wrap" href="#">							
-								    <svg class="icon" viewBox="0 0 126 72">
-							      	<path d="M124.523,64.503c-0.152-0.328-0.293-0.597-0.426-0.816
-									c-2.172-3.91-6.324-8.711-12.449-14.401l-0.129-0.134l-0.066-0.063l-0.066-0.066h-0.063c-2.781-2.651-4.543-4.434-5.281-5.344
-									c-1.348-1.738-1.652-3.5-0.914-5.281c0.523-1.348,2.477-4.19,5.867-8.538c1.781-2.302,3.195-4.149,4.234-5.539
-									c7.52-9.996,10.777-16.383,9.777-19.164l-0.387-0.649c-0.262-0.39-0.934-0.75-2.02-1.074c-1.086-0.327-2.477-0.383-4.172-0.163
-									L99.656,3.398c-0.301-0.105-0.738-0.099-1.301,0.034c-0.566,0.13-0.852,0.195-0.852,0.195L97.18,3.793l-0.258,0.195
-									c-0.219,0.129-0.457,0.354-0.719,0.683c-0.258,0.325-0.477,0.707-0.648,1.142c-2.047,5.258-4.367,10.145-6.977,14.663
-									c-1.609,2.695-3.086,5.031-4.434,7.009c-1.348,1.976-2.477,3.434-3.387,4.366c-0.914,0.935-1.738,1.685-2.477,2.246
-									c-0.742,0.567-1.305,0.806-1.695,0.72c-0.391-0.091-0.762-0.177-1.109-0.263c-0.609-0.39-1.098-0.922-1.465-1.597
-									c-0.371-0.672-0.621-1.52-0.75-2.543c-0.129-1.021-0.207-1.899-0.23-2.637c-0.02-0.738-0.008-1.785,0.035-3.129
-									c0.043-1.349,0.066-2.263,0.066-2.738c0-1.653,0.031-3.446,0.094-5.379c0.066-1.935,0.121-3.465,0.164-4.594
-									c0.043-1.13,0.066-2.324,0.066-3.587c0-1.258-0.078-2.245-0.23-2.965c-0.148-0.715-0.379-1.41-0.684-2.086
-									c-0.305-0.672-0.75-1.194-1.336-1.562c-0.586-0.371-1.313-0.664-2.18-0.883c-2.305-0.521-5.238-0.802-8.8-0.849
-									c-8.082-0.086-13.274,0.438-15.579,1.567c-0.914,0.476-1.738,1.129-2.476,1.953c-0.781,0.957-0.891,1.479-0.328,1.565
-									c2.609,0.392,4.453,1.325,5.543,2.802l0.39,0.784c0.305,0.563,0.61,1.563,0.911,2.996c0.304,1.435,0.5,3.021,0.585,4.758
-									c0.219,3.173,0.219,5.888,0,8.149c-0.214,2.257-0.421,4.019-0.617,5.277c-0.195,1.262-0.488,2.28-0.879,3.065
-									c-0.39,0.782-0.652,1.258-0.785,1.435c-0.129,0.172-0.238,0.28-0.324,0.323c-0.566,0.22-1.152,0.328-1.762,0.328
-									c-0.605,0-1.344-0.304-2.215-0.914c-0.867-0.608-1.769-1.444-2.703-2.512c-0.933-1.062-1.988-2.55-3.164-4.464
-									c-1.172-1.911-2.386-4.168-3.648-6.778l-1.043-1.89c-0.653-1.215-1.543-2.985-2.672-5.313c-1.129-2.323-2.129-4.569-2.996-6.745
-									c-0.348-0.91-0.871-1.605-1.567-2.087l-0.324-0.194c-0.219-0.172-0.566-0.356-1.043-0.556c-0.48-0.194-0.976-0.336-1.5-0.422
-									L4.172,3.265c-1.824,0-3.063,0.414-3.715,1.238L0.195,4.895C0.066,5.113,0,5.46,0,5.938c0,0.48,0.129,1.065,0.391,1.762
-									C3,13.824,5.832,19.734,8.898,25.425c3.063,5.696,5.723,10.278,7.981,13.754c2.262,3.478,4.562,6.758,6.91,9.84
-									c2.348,3.086,3.902,5.063,4.66,5.935c0.762,0.871,1.36,1.519,1.793,1.953l1.629,1.565c1.043,1.043,2.574,2.293,4.598,3.746
-									c2.02,1.457,4.258,2.891,6.711,4.305c2.457,1.41,5.312,2.563,8.574,3.453c3.258,0.892,6.43,1.25,9.516,1.074h7.496
-									c1.52-0.129,2.672-0.609,3.453-1.433l0.258-0.324c0.176-0.262,0.34-0.665,0.488-1.208c0.152-0.542,0.23-1.14,0.23-1.792
-									c-0.043-1.868,0.098-3.551,0.422-5.051c0.324-1.496,0.695-2.625,1.109-3.388c0.414-0.762,0.879-1.401,1.402-1.922
-									c0.52-0.522,0.891-0.836,1.109-0.944c0.215-0.11,0.387-0.185,0.52-0.231c1.043-0.347,2.27-0.007,3.684,1.012
-									c1.41,1.024,2.734,2.281,3.977,3.781c1.238,1.5,2.727,3.184,4.461,5.051c1.742,1.867,3.262,3.258,4.563,4.172l1.305,0.781
-									c0.871,0.524,2,1,3.391,1.435c1.391,0.437,2.605,0.547,3.648,0.327l16.688-0.262c1.648,0,2.934-0.272,3.844-0.815
-									c0.914-0.544,1.453-1.142,1.629-1.789c0.176-0.653,0.184-1.392,0.035-2.22C124.824,65.406,124.672,64.828,124.523,64.503
-									L124.523,64.503z M124.523,64.503" />
-								    </svg>
-								    <svg class="icon" viewBox="0 0 36.711 36.711">
-								      <path d="M36.711,34.686c0,1.119-0.907,2.025-2.026,2.025H25.33V22.495h4.771l0.715-5.541H25.33v-3.537
-								      c0-1.604,0.445-2.696,2.746-2.696l2.934-0.001V5.764c-0.508-0.067-2.249-0.219-4.275-0.219c-4.23,0-7.127,2.582-7.127,7.323v4.086
-								      h-4.784v5.541h4.784v14.216H2.026C0.907,36.711,0,35.805,0,34.686V2.026C0,0.907,0.907,0,2.026,0h32.659
-								      c1.119,0,2.026,0.907,2.026,2.026V34.686z" />
-								    </svg>
-								    <svg class="icon" viewBox="0 0 36.663 36.664">
-								      <path d="M32.305,0H4.357C1.95,0,0,1.946,0,4.349v27.967c0,2.4,1.95,4.348,4.357,4.348h27.947
-								      c2.407,0,4.358-1.947,4.358-4.348V4.349C36.663,1.946,34.712,0,32.305,0 M26.352,5.729c0-0.632,0.513-1.146,1.146-1.146h3.438
-								      c0.632,0,1.145,0.514,1.145,1.146v3.438c0,0.633-0.513,1.146-1.145,1.146h-3.438c-0.633,0-1.146-0.513-1.146-1.146V5.729z
-								      M18.374,11.341c3.894,0,7.051,3.149,7.051,7.033c0,3.885-3.157,7.034-7.051,7.034s-7.051-3.148-7.051-7.034
-								      C11.323,14.49,14.48,11.341,18.374,11.341 M33.226,32.08c0,0.633-0.513,1.146-1.146,1.146H4.583c-0.633,0-1.146-0.514-1.146-1.146
-								      V14.895H8.02c-0.597,0.858-0.798,2.462-0.798,3.479c0,6.135,5.003,11.127,11.152,11.127s11.153-4.992,11.153-11.127
-								      c0-1.018-0.145-2.596-0.885-3.479h4.583V32.08z"/>
-								    </svg>
-								    <svg class="icon" viewBox="0 0 37.453 31.21">
-								      <path d="M36.421,0.577c-1.486,0.902-3.129,1.558-4.884,1.909C30.14,0.956,28.142,0,25.93,0
-								      c-4.24,0-7.682,3.528-7.682,7.879c0,0.618,0.066,1.217,0.198,1.794C12.061,9.344,6.399,6.211,2.607,1.438
-								      c-0.662,1.168-1.04,2.522-1.04,3.966c0,2.731,1.356,5.144,3.418,6.557c-1.257-0.038-2.444-0.396-3.481-0.981v0.096
-								      c0,3.819,2.648,7.004,6.167,7.725c-0.645,0.186-1.324,0.277-2.025,0.277c-0.495,0-0.979-0.047-1.447-0.139
-								      c0.979,3.129,3.815,5.408,7.179,5.469c-2.63,2.115-5.944,3.375-9.544,3.375c-0.619,0-1.232-0.037-1.833-0.109
-								      c3.4,2.232,7.441,3.537,11.778,3.537c14.136,0,21.863-12.004,21.863-22.417c0-0.343-0.006-0.685-0.021-1.021
-								      c1.502-1.112,2.807-2.498,3.832-4.078c-1.376,0.626-2.857,1.05-4.412,1.24C34.629,3.961,35.847,2.417,36.421,0.577"/>
-								   </svg>
-							  	</a>						
-							</div>
-						</div>					
-					</div>
-				</footer>				
-			</section>				
-		</div>			
-	</div>
 
 
-	<div class="navigation">
-		<ul class="navigation__list" id="nav_list">
-			<li class="navigation__item" data-menuanchor="section_one-screen">
-				<a class="navigation__link" href="#section_one-screen"></a>
-			</li>
-			<li class="navigation__item" data-menuanchor="section_advantages">
-				<a class="navigation__link" href="#section_advantages"></a>
-			</li>
-			<li class="navigation__item" data-menuanchor="section_slider">
-				<a class="navigation__link" href="#section_slider"></a>
-			</li>
-			<li class="navigation__item" data-menuanchor="section_team">
-				<a class="navigation__link" href="#section_team"></a>
-			</li>
-			<li class="navigation__item" data-menuanchor="section_menu">
-				<a class="navigation__link" href="#section_menu"></a>
-			</li>
-			<li class="navigation__item" data-menuanchor="section_reviews">
-				<a class="navigation__link" href="#section_reviews"></a>
-			</li>
-			<li class="navigation__item" data-menuanchor="section_order">
-				<a class="navigation__link" href="#section_order"></a>
-			</li>
-			<li class="navigation__item" data-menuanchor="section_maps">
-				<a class="navigation__link" href="#section_maps"></a>
-			</li>
-		</ul>				
-	</div>
 
-	
-	<a class="up" href="#section_one-screen">
-		<img class="up__block" src="./img/image/arrow-scroll.svg" alt="arrow">
-	</a>
-	
 
-	<div class="reviews__popup">
-		<div class="reviews__popup-window">
-			<div class="reviews__popup-text">
-				<h3 class="title title__popup">Константин Спилберг</h3>	
-				<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, 
-				что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли 
-				все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что 
-				булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-			</div>
-			<a href="#" class="reviews__popup-close"></a>
-		</div>
-	</div>
 
-	
-	<div class="form-popup">
+
+
+
+
+
+
+
+
+
+<!-- ОСНОВНОЕ СОДЕРЖАНИЕ СТРАНИЦЫ "О компании" до стр. 1014 -->
+        <div class="maincontent maincontent__about">
+
+            <section class="section section__avatar" id="section_avatar">
+                <div class="container">
+                    <div class="wrap wrap__avatar">
+                        <div class="resume">
+                            <h2 class="resume__title">Наш<br>заказчик</h2>
+                            <ul class="resume__list">
+                                <li class="resume__item">
+                                    <h4 class="resume__punct">1</h4>
+                                    <div class="resume__text">имеет потребность в проектировании, строительстве,
+                                    реконструкции объекта промышленного или коммерческого назначения
+                                    общей площадью от 500м2 в СПб или ЛО</div>
+                                </li>
+                                <li class="resume__item">
+                                    <h4 class="resume__punct">2</h4>
+                                    <div class="resume__text">имеет потребность в проектировании, строительстве,
+                                    реконструкции объекта промышленного или коммерческого назначения
+                                    общей площадью от 500м2 в СПб или ЛО</div>
+                                </li>
+                                <li class="resume__item">
+                                    <h4 class="resume__punct">3</h4>
+                                    <div class="resume__text">имеет потребность в проектировании, строительстве,
+                                    реконструкции объекта промышленного или коммерческого назначения
+                                    общей площадью от 500м2 в СПб или ЛО</div>
+                                </li>
+                                <li class="resume__item">
+                                    <h4 class="resume__punct">4</h4>
+                                    <div class="resume__text">имеет потребность в проектировании, строительстве,
+                                    реконструкции объекта промышленного или коммерческого назначения
+                                    общей площадью от 500м2 в СПб или ЛО</div>
+                                </li>                               
+                            </ul>
+                        </div>
+                        <div class="avatar__right">
+                            <h1 class="caption1 caption1__about">Профиль нашего потен-<br>циального заказчика</h1>
+                            <div class="avatar__desc">Давайте посмотрим, подходим ли мы друг другу</div>
+                        </div>                       
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+            <section class="section section__who" id="section_who">
+                <div class="container">
+                    <h2 class="caption2 caption2__about">Кто мы и что мы делаем</h2>
+                    <div class="wrap wrap__who">
+                        <div class="who-tabs">
+                            <input class="who-tab who-tab1" id="tab1" type="radio" name="tabs" checked>
+                            <label class="who-label who-label1" for="tab1" title="Вкладка 1">
+                                <h4>Услуги</h4>
+                            </label>
+                            
+                            <input class="who-tab who-tab2" id="tab2" type="radio" name="tabs">
+                            <label class="who-label who-label2" for="tab2" title="Вкладка 2">
+                                <h4>Гарантии</h4></label>
+                            
+                            <input class="who-tab who-tab3" id="tab3" type="radio" name="tabs">
+                            <label class="who-label who-label3" for="tab3" title="Вкладка 3">
+                                <h4>Репутация</h4></label>                            
+                            
+                            <div class="who-tabs__content who-tabs__content1">
+                                <ul class="tab-service__list">
+                                    <li class="tab-service__item">
+                                        <div class="service__icon service__icon1"><img src="./img/icons/proba.png"></div>
+                                        <div class="service__text service__text1">
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                        </div>                                            
+                                    </li>
+                                    <li class="tab-service__item">
+                                        <div class="service__icon service__icon1">
+                                            <img src="./img/icons/proba.png">
+                                        </div>
+                                        <div class="service__text service__text1">
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                        </div>                                            
+                                    </li> 
+                                </ul>                                                          
+                            </div>  
+
+                            <div class="who-tabs__content who-tabs__content2">                               
+                                <ul class="tab-guarantees__list">
+                                    <li class="tab-guarantees__item">
+                                        <div class="guarantees__icon guarantees__icon1"><img src="./img/icons/proba.png"></div>
+                                        <div class="guarantees__text guarantees__text1">
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....                                            
+                                        </div>                                            
+                                    </li>
+                                    <li class="tab-guarantees__item">
+                                        <div class="guarantees__icon guarantees__icon1">
+                                            <img src="./img/icons/proba.png">
+                                        </div>
+                                        <div class="guarantees__text guarantees__text1">
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....  
+                                        </div>                                            
+                                    </li>
+                                    <li class="tab-guarantees__item">
+                                        <div class="guarantees__icon guarantees__icon1">
+                                            <img src="./img/icons/proba.png">
+                                        </div>
+                                        <div class="guarantees__text guarantees__text1">
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....  
+                                        </div>                                            
+                                    </li>
+                                </ul>                         
+                            </div> 
+
+                            <div class="who-tabs__content who-tabs__content3">                                
+                                <ul class="tab-status__list">
+                                    <li class="tab-status__item">
+                                        <div class="status__icon status__icon1"><img src="./img/icons/proba.png"></div>
+                                        <div class="status__text status__text1">
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                        </div>                                            
+                                    </li>
+                                    <li class="tab-status__item">
+                                        <div class="status__icon status__icon1">
+                                            <img src="./img/icons/proba.png">
+                                        </div>
+                                        <div class="status__text status__text1">
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                        </div>                                            
+                                    </li>
+                                    <li class="tab-status__item">
+                                        <div class="status__icon status__icon1">
+                                            <img src="./img/icons/proba.png">
+                                        </div>
+                                        <div class="status__text status__text1">
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                        </div>                                            
+                                    </li>
+                                    <li class="tab-status__item">
+                                        <div class="status__icon status__icon1">
+                                            <img src="./img/icons/proba.png">
+                                        </div>
+                                        <div class="status__text status__text1">
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                        </div>                                            
+                                    </li>
+                                </ul>                                
+                            </div>                                
+                        </div>
+                    </div>
+                </div>                    
+            </section>
+
+
+
+
+
+
+
+
+            <section class="section section__slider-reviews" id="section_slider-reviews">
+                <div class="container">
+                    <h2 class="caption2 caption2__about">Отзывы</h2>
+                    <div class="wrap wrap__reviews">
+                        
+                        <ul class="slider-reviews">
+                            
+                            <input type="radio" name="slider1" id="slider1_1" checked="checked">
+                            <label for="slider1_1"></label>
+                            <li class="slider-reviews__item">
+                                <img class="arrow__left" src="././img/icons//arrow_left.png" alt=''> 
+                                <div class="slider-reviews__left">                                                                       
+                                    <img src="././img/photo//reviews/reviews_SU.png" alt=''>
+                                </div>
+                                <div class="slider-reviews__right">
+                                    <h4 class="reviews__name">ООО "СтройУдача"</h4>
+                                    <div class="reviews__text">
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
+                                        добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
+                                        добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины.</p>
+                                    </div>
+                                    <div class="reviews__position">Скорлупкин В. Г.
+                                    <span>Генеральный директор ООО "СтройУдача"</span>  
+                                    </div>                                    
+                                </div>     
+                                <img class="arrow__right" src="././img/icons//arrow_right.png" alt=''>                          
+                            </li>
+                            <label for="slider1_2"></label>                            
+
+                        
+                            <input type="radio" name="slider1" id="slider1_2">
+                            <label for="slider1_2"></label>
+                            <li class="slider-reviews__item">
+                                <img class="arrow__left" src="././img/icons//arrow_left.png" alt=''>
+                                <div class="slider-reviews__left">
+                                    <img src="././img/photo//reviews/reviews_PD1.png" alt=''>
+                                </div>
+                                <div class="slider-reviews__right">
+                                    <h4 class="reviews__name">ООО "ТД Петродиет"</h4>
+                                    <div class="reviews__text">
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
+                                        добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
+                                        добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины.</p>
+                                    </div>
+                                    <div class="reviews__position">Минаева М. А.
+                                    <span>Генеральный директор ООО "ТД Петродиет"</span>  
+                                    </div>
+                                </div> 
+                                <img class="arrow__right" src="././img/icons//arrow_right.png" alt=''>                             
+                            </li>
+                            <label for="slider1_3"></label>
+
+
+                            <input type="radio" name="slider1" id="slider1_3">
+                            <label for="slider1_3"></label>
+                            <li class="slider-reviews__item">
+                                <img class="arrow__left" src="././img/icons//arrow_left.png" alt=''>
+                                <div class="slider-reviews__left">
+                                    <img src="././img/photo//reviews/reviews_GR.png" alt=''>
+                                </div>
+                                <div class="slider-reviews__right">
+                                    <h4 class="reviews__name">ООО "Гранит-Развитие"</h4>
+                                    <div class="reviews__text">
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
+                                        добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
+                                        добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины.</p>
+                                    </div>
+                                    <div class="reviews__position">Михайлов А. В.
+                                    <span>Генеральный директор ООО "Гранит-Развитие"</span>  
+                                    </div>
+                                </div>   
+                                <img class="arrow__right" src="././img/icons//arrow_right.png" alt=''>                            
+                            </li>
+                            <label for="slider1_4"></label>
+
+
+                            <input type="radio" name="slider1" id="slider1_4">
+                            <label for="slider1_4"></label>
+                            <li class="slider-reviews__item">
+                                <img class="arrow__left" src="././img/icons//arrow_left.png" alt=''>
+                                <div class="slider-reviews__left">
+                                    <img src="././img/photo//reviews/reviews_STS.png" alt=''>
+                                </div>
+                                <div class="slider-reviews__right">
+                                    <h4 class="reviews__name">ООО "СТС"</h4>
+                                    <div class="reviews__text">
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
+                                        добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
+                                        добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины.</p>
+                                    </div>
+                                    <div class="reviews__position">Мороз А. А.
+                                    <span>Генеральный директор ООО "СТС"</span>  
+                                    </div>
+                                </div>  
+                                <img class="arrow__right" src="././img/icons//arrow_right.png" alt=''>                             
+                            </li>
+                            <label for="slider1_5"></label>                           
+
+                                                    
+                            <input type="radio" name="slider1" id="slider1_5">
+                            <label for="slider1_5"></label>
+                            <li class="slider-reviews__item">
+                                <img class="arrow__left" src="././img/icons//arrow_left.png" alt=''>
+                                <div class="slider-reviews__left">
+                                    <img src="././img/photo//reviews/reviews_Temp.png" alt=''>
+                                </div>
+                                <div class="slider-reviews__right">
+                                    <h4 class="reviews__name">ООО "Темп"</h4>
+                                    <div class="reviews__text">
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
+                                        добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
+                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
+                                        добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины.</p>
+                                    </div>
+                                    <div class="reviews__position">Кямяря А. И.
+                                    <span>Генеральный директор ООО "Темп"</span>  
+                                    </div>
+                                </div>  
+                                <img class="arrow__right" src="././img/icons//arrow_right.png" alt=''>                            
+                            </li>
+                            <label for="slider1_1"></label>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+           
+
+
+
+
+            <section class="section section__director" id="section_director">
+                <div class="container">
+                    <div class="wrap wrap__director">
+                        <div class="director__left">
+                            <h2 class="caption2 caption2__director">Миссия компании</h2>
+                        </div>
+                        <div class="director__right">
+                            <h3 class="director__title">"Определяющее в нашем деле - это люди..."</h3>
+                            <div class="director__text">
+                                <p>Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                Здесь размещаете любое содержание.... Здесь размещаете любое содержание</p>
+                                <p>Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                Здесь размещаете любое содержание.... Здесь размещаете любое содержание</p>
+                                <p>Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                Здесь размещаете любое содержание.... Здесь размещаете любое содержание</p>
+                            </div>
+                            <div class="director__position">
+                                Дмитрий Владимирович Новиков<br><span>Генеральный директор<br>ООО "МультиТрест"</span>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+            <section class="section section__licenses" id="section_licenses">
+                <div class="container">
+                    <h2 class="caption2 caption2__about caption2__about-licenses">Лицензии</h2>
+                    <div class="wrap wrap__licenses">
+                        <ul class="licenses__list">
+                            <li class="licenses__item licenses__item1">
+                                <img src="./img/photo/licenses/SRO1.png">
+                                <h5 class="licenses__mark">СРО на строительство</h5>
+                            </li>
+                            <li class="licenses__item licenses__item2">
+                                <img src="./img/photo/licenses/SRO_project.png">
+                                <h5 class="licenses__mark">СРО на проектирование</h5>
+                            </li>
+                            <li class="licenses__item licenses__item2">
+                                <img src="./img/photo/licenses/MCHS.png">
+                                <h5 class="licenses__mark">Лицензия МЧС</h5>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+            <section class="section section__team" id="section_team">	
+                <div class="container">	
+                    <h2 class="caption2 caption2__about caption2__about-team">Команда</h2>
+                    <div class="wrap wrap__team">		
+                        <ul class="team__list">
+                            <li class="team__item">	
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo1.jpg)"></div> 	
+                                <div class="team__content">
+                                    <h3 class="title title__team">Елена Маслова</h3>				 				
+                                    <div class="team__text"><p>Специалист отдела снабжения</p></div>	 			
+                                </div>					 					 		
+                            </li>
+                            <li class="team__item">	
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo2.jpg);"></div> 	
+                                <div class="team__content">
+                                    <h3 class="title title__team">Сергей Прокофьев</h3>				 				
+                                    <div class="team__text"><p>Руководитель отдела развития</p></div>	 			
+                                </div>					 					 		
+                            </li>
+                            <li class="team__item">	
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo3.jpg)"></div> 	
+                                <div class="team__content">
+                                    <h3 class="title title__team">Максим Баишев</h3>				 				
+                                    <div class="team__text"><p>Заместитель дирек-<br>тора по производству</p></div>
+                                </div>					 					 		
+                            </li>
+                            <li class="team__item">	
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo4.jpg);"></div> 	
+                                <div class="team__content">
+                                    <h3 class="title title__team">Ольга Бурчихина</h3>				 				
+                                    <div class="team__text"><p>Ведущий инженер-сметчик</p></div>		 			
+                                </div>					 					 		
+                            </li>
+                            <li class="team__item">	
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo5.jpg)"></div> 	
+                                <div class="team__content">
+                                    <h3 class="title title__team">Ирина Мотырева</h3>				 				
+                                    <div class="team__text"><p>Директор по персоналу</p></div>	                                    				 			
+                                </div>					 					 		
+                            </li>
+                            <li class="team__item">	
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo6.jpg);"></div> 	
+                                <div class="team__content">
+                                    <h3 class="title title__team">Антон Матвеев</h3>				 				
+                                    <div class="team__text"><p>Начальник строительного участка</p></div>			
+                                </div>					 					 		
+                            </li>	
+                            <li class="team__item">	
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo7.jpg)"></div> 	
+                                <div class="team__content">
+                                    <h3 class="title title__team">Иван Смирнов</h3>				 				
+                                    <div class="team__text"><p>Начальник строительного участка</p></div>			
+                                </div>					 					 		
+                            </li>
+                            <li class="team__item">	
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo8.jpg);"></div> 	
+                                <div class="team__content">
+                                    <h3 class="title title__team">Михаил Карнелик</h3>				 				
+                                    <div class="team__text"><p>Начальник строительного участка</p></div>			
+                                </div>					 					 		
+                            </li> 	
+                        </ul> 
+                    </div>                       
+                </div>								
+            </section>
+
+
+
+
+
+
+
+
+            <section class="section section__partners" id="section_partners">
+                <div class="container">
+                    <h2 class="caption2 caption2__about caption2__about-partners">Заказчики и партнёры</h2>
+                    <div class="wrap wrap__partners">
+                        <ul class="partners__list">
+                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/SU.png"></li>
+                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/LE.png"></li>
+                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/BKM.png"></li>
+                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/Triniti.png"></li>
+                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/GR.png"></li>
+                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/GP.png"></li>                            
+                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/BKM1.png"></li>
+                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/BKM1.png"></li>
+                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/BKM1.png"></li>
+                        </ul>                        
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+<!-- Карта - НЕ МЕНЯЕТСЯ -->                                
+            <div class="map" id="map">
+                <div class="final-question">
+                    <div class="final-question__content">
+                        <h3 class="final-question__title">Есть вопросы?</h3>
+                        <div class="final-question__text">
+                        Напишите нам: <a class="final__mail" href="№">info@mtrest.ru</a><br>
+                        Позвоните нам: <a class="final__phone" href="№">(812) 716-39-39</a><br>
+                        Или закажите обратный звонок,<br> мы перезвоним
+                        в течение 10 минут<br> и ответим на все ваши вопросы:
+                        </div>                                
+                        <input class="btn__page btn__page-final" type="submit" name="submit" value="Закажите обратный звонок">
+                        <a class="privacy-policy__link" href="privacy-policy.html">Политика конфиденциальности</a>
+                    </div>                    
+                </div>
+            </div>
+<!-- Карта закончилась --> 
+        </div>
+<!-- ОСНОВНОЕ СОДЕРЖАНИЕ СТРАНИЦЫ "О компании" закончилось -->
+    </div> 
+<!-- wrapper закончился -->
+
+
+
+
+
+
+
+<!-- СТРЕЛКА "Наверх" - НЕ МЕНЯЕТСЯ, НА КАЖДОЙ СТРАНИЦЕ -->
+    <a class="arrow__up" href="#">
+        <img class="arrow__up-icon" src="././img/icons/arrow_up_1.png">
+    </a>
+<!-- -->
+
+
+<!-- Попап для формы --> 
+    <div class="form-popup">
 		<div class="form-popup__wrapper">
-		  <h5  class="form-popup__name"></h5>
+		  <h5 class="form-popup__name"></h5>
 		  <a href="#" class="close-btn">Закрыть</a>
 		</div>
 	</div>
-	
+<!-- -->   
 
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
-	<script src="js/jquery.fullpage.js"></script>	
-	<script src="js/slick.js"></script>
-	<script src="js/scripts.js"></script>	
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    <
+    <script src="js/main.js"></script>
 </body>
 </html>

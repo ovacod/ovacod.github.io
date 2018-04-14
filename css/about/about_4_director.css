@@ -1,0 +1,42 @@
+.section__director {
+    background-image: url(../../img/background/about/lzhedima.jpg);
+    background-size: cover;
+    background-position: top;
+    filter: grayscale(0.8); }
+
+.section__director:hover {
+    filter: none; } 
+
+.wrap__director {
+    display: flex;
+    justify-content: space-between; }
+
+.director__left, .director__right {
+    width: 50%; }
+
+.caption2__director {
+    color: #fff;
+    margin-top: 30rem; }
+
+.director__right {
+    height: 39.8rem;
+    background-image: linear-gradient(to right, rgb(52, 52, 61), rgba(52,52,61,0.5), rgb(255,255,0,0));
+    color: #fff;    
+    padding: 4rem 3rem; }
+
+.director__title {
+    font-size: 1.7rem;
+    color: #f2effd;
+    margin-bottom: 1rem; }
+
+.director__text {
+    font-family: 'Cormorant Infant';
+    font-size: 1.1rem; }
+
+.director__position {
+    font-weight: 700; 
+    margin-top: 2rem;
+    color: #f2effd; }
+
+.director__position span {
+    font-weight: 500; }

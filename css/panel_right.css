@@ -1,0 +1,72 @@
+.panel__right {
+    width: 230px;
+    height: 100vh; 
+    min-height: 40.625rem;   
+    right: 0;
+    left: auto;
+    position: fixed;
+    z-index: 1500;    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(../img/background/panel_right.jpg);
+    background-size: cover;
+    background-position: top; }
+
+.right-center {    
+    margin-top: 2rem;
+    margin-left: 3rem;
+    width: 75%;
+    text-align: left;
+    position: relative; 
+    line-height: 1; }
+
+.menu-page__item {
+    margin-bottom: 0.7rem; }
+
+.menu-page__link {
+    text-decoration: none;
+    font-size: 0.75rem;    
+    color: #1e1e28;
+    position: relative; }
+
+.menu-page__link:before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #aa2c36;
+    border-radius: 50%;       
+    top: 0.3rem;
+    left: -1rem; 
+    position: absolute; }
+    
+.menu-page__item:hover .menu-page__link:before {
+    width: 7px;
+    height: 7px;
+    background-color: #aa2c36;
+    border: none; }
+
+.menu-page__item:hover .menu-page__link {
+    color: #aa2c36;
+    font-weight: 700; }
+
+
+
+
+/* Стили правого меню для разных страниц */
+.menu-page__list-about {
+    padding-top: 3rem; }
+.menu-page__list-materials {
+    margin-top: -0.3rem; }
+.menu-page__list-reconstruction {
+    padding-top: 0.5rem; }
+/* */    
+
+
+.menu-page__mini {
+    list-style: initial;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    margin-left: 1rem;
+    padding-right: 0.5rem; }

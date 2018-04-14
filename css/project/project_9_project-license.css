@@ -1,0 +1,18 @@
+.section__project-license {
+    background: linear-gradient(to left, #ddd4d4, #fff, #ddd4d4); }
+
+.caption2__project-license {
+    color: #002;
+    background: linear-gradient(270deg, #050527 33%, #1e1e28 80%, #aa2c36); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 2rem;
+    margin-bottom: 5rem; }
+    
+.wrap__project-license {
+    display: flex;
+    justify-content: space-between; }
+
+.project-license__left, .project-license__right {
+    width: 48%;
+    font-size: 0.9rem; }

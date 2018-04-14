@@ -1,0 +1,37 @@
+.section__project-advantages {   
+    background-image: url(../../img/background/project/project-bg2.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat; }
+
+.caption2__project {
+    color: #002;
+    background: linear-gradient(270deg, #050527 33%, #1e1e28 80%, #aa2c36); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    margin-top: 2rem; }
+
+.project-advantages__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem; }
+
+.project-advantages__item {
+    width: 50%;
+    margin-top: 2rem;
+    padding-left: 4rem; }
+
+.project-advantages__trigger {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 3.7rem;
+    color: rgba(170,44,54,0.7); }
+
+.project-advantages__trigger span {
+    font-size: 1.7rem; }
+
+.project-advantages__text {
+    font-weight: 800;
+    width: 75%;
+    line-height: 1.2; }

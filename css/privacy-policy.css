@@ -1,0 +1,17 @@
+.section__privacy-policy {
+    background: linear-gradient(to left, #f2effd, #fff, #f2effd);
+    padding-bottom: 1rem; }
+
+.caption1__privacy-policy {
+    color: #002;
+    background: linear-gradient(0deg, #050527 13%, #1e1e28 30%, #aa2c36); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 0.3rem;
+    margin-bottom: 2rem; }
+
+.privacy-policy__item {
+    margin-bottom: 2rem; }
+
+.privacy-policy__title {
+    margin-bottom: 0.5rem; }

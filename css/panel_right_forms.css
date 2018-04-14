@@ -1,0 +1,78 @@
+.right-up {    
+    width: 100%;
+    position: relative;
+    top: 0; }
+
+.buttons__item {
+    height: 2.5rem;
+    width: 100%;
+    background-color: #bb565e; }
+
+.main__buttons {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.85rem;
+    line-height: 2.5rem; }
+
+.buttons__item-calculation {
+    background-color: #c7757c; }
+
+.buttons__item-question {
+    background-color: #d4959a; }
+
+.buttons__item:hover, .buttons__item-active {
+    background-color: #b2414a; }
+
+.buttons__content {
+    display: flex;    
+    flex-direction: column;
+    background-color: #f5e9ea;       
+    position: absolute;
+    z-index: 100;
+    height: 0rem;
+    overflow: hidden; }
+
+.buttons__item-active .buttons__content {
+    height: 25rem;
+    width: 100%;
+    border-bottom: 2px solid #aa2c36;
+    padding: 0.5rem 1.5rem;  
+    text-align: left; }
+
+.buttons__text {
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem; }
+
+.form__row {
+    display: flex; }
+
+.form__row-checkbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem; }
+
+.form__title {
+    font-size: 0.7rem; 
+      font-weight: 700;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem; }
+
+.form__input {
+    background-color: white;
+    border: 0.125rem solid #fff;
+    padding: 0.2rem;    
+    font-size: 0.7rem;
+    border-radius: 0.1rem;
+    width: 100%; }
+
+.form__input-row {
+    width: 70%; }
+
+.question {
+    font-size: 0.8rem;
+    resize: none;
+    height: 7rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: none; }

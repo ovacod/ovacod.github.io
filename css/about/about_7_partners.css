@@ -1,0 +1,15 @@
+.section__partners {
+    background: linear-gradient(to bottom, #f2effd, #fff); }
+
+.partners__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center; }
+
+.partners__item {
+    width: 30%;
+    filter: grayscale(0.9); }
+
+.partners__item:hover {
+    filter: none; }

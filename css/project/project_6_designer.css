@@ -1,0 +1,97 @@
+.section__project-designer {
+    background: linear-gradient(to left, #ddd4d4, #fff); }
+
+.caption2__project-designer {
+    color: #002;
+    background: linear-gradient(270deg, #050527 33%, #1e1e28 80%, #aa2c36); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem; }
+
+.wrap__project-designer {
+    display: flex;
+    justify-content: space-between; }
+
+.project-designer__left, .project-designer__right {
+    width: 48%; }
+
+.project-designer__photo {
+    filter: grayscale(0.8);
+    margin-bottom: 0.5rem; }
+
+.project-designer__photo:hover {
+    filter: none; }
+
+.project-designer__left {
+    text-align: center; }
+
+.project-designer__position {
+    font-size: 0.75rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem; }
+
+.project-designer__left-text {
+    font-family: 'Cormorant Infant';
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem; }
+
+.project-designer__icon-left {
+    text-align: left; }
+
+.project-designer__icon-right {
+    text-align: right; }
+
+.project-designer__right-frame {
+    width: 48%;
+    border: 6px solid rgba(243,243,243);
+    padding: 0.5rem;
+    height: 28rem; }
+
+.project-designer__right {    
+    width: 100%; 
+    height: 100%;
+    padding: 2rem;    
+    background-color: #f3f3f3;
+    box-shadow: 0px 5px 5px 0px rgb(221, 220, 220); }
+
+.project-designer__form-description {
+    line-height: 1.2; }
+
+.designer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem; }
+
+.designer__form-title {
+    font-size: 0.7rem;
+    font-weight: 700; }
+
+.designer__form-block1 {
+    width: 100%; }
+
+.designer__form-input {
+    width: 8.5rem;
+    height: 1.5rem;    
+    padding: 0.1rem 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 1.3rem;
+    border: 1px solid rgba(170,44,54,0.3); }
+
+.designer__form-question {
+    resize: none;
+    width: 100%;
+    height: 5rem;    
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgba(170,44,54,0.3); }
+
+.designer__form-input:hover,
+.designer__form-question:hover {
+    border: 1px solid rgba(170, 44, 54, 0.7); }
+
+.OPD__designer-form {    
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0.5rem; }

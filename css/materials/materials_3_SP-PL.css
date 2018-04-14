@@ -1,0 +1,122 @@
+.caption2__materials-SP-PL {
+    color: #002;
+    background: linear-gradient(270deg, #050527 33%, #1e1e28 80%, #aa2c36); 
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    margin-bottom: 1rem; 
+    margin-top: 1rem;}
+    
+/* Стили секций с содержанием */
+.materials-SP-PL__tabs-content {
+    width: 99.9%;
+    height: 100%;
+	display: none;	
+	background: #fff;
+    border: 1px solid #b2414a;
+    border-top: 0px;
+    font-size: 0.9rem;	
+	line-height: 1.2;
+	color: #002;	
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn; }
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;	}
+	to {
+        opacity: 1;	} }
+        
+@keyframes fadeIn {
+	from {
+		opacity: 0;	}
+	to {
+        opacity: 1;	} }
+        
+
+
+/* Прячем чекбоксы */
+.materials-SP-PL__tab {
+	display: none;
+    position: absolute; }
+/* */  
+
+
+
+/* Стили переключателей вкладок (табов) */
+.materials-SP-PL__label {
+	display: inline-block;
+	width: 49.65%;
+	padding: 1rem;	
+	text-align: center;
+    color: #fff;
+    text-transform: uppercase; }
+
+.materials-SP-PL__label1 {
+    background-color: #616168; }
+
+.materials-SP-PL__label2 {
+    background-color: #8e8e93; }
+
+.materials-SP-PL__label:hover {
+	background-color: #d4959a;
+    cursor: pointer; }
+/* */
+
+
+
+/* Стили для активной вкладки */
+.materials-SP-PL__tab:checked + .materials-SP-PL__label {    
+    background-color: #b2414a; }
+    
+/* Активация секций с помощью псевдокласса :checked */
+.materials-SP-PL__tab1:checked ~ .materials-SP-PL__tabs-content1, 
+.materials-SP-PL__tab2:checked ~ .materials-SP-PL__tabs-content2 {
+    display: block; }
+/* */
+
+
+.materials-SP-PL__tabs-content1 {    
+	background-image: url(../../img/background/materials/sp-pl/SP_3.jpg);
+    background-size: cover;
+    background-position: right; }
+
+.materials-SP-PL__SP-text {
+    width: 70%;
+    margin-left: auto; }
+
+.materials-SP-PL__background-SP {
+    width: 70%;
+    background-image: linear-gradient(to left, rgb(255,255,255), rgba(255,255,255,0.9), rgba(255,255,255,0.9), rgb(255,255,0,0));
+    margin-left: auto;
+    padding-top: 2rem;
+    padding-right: 1rem; 
+    padding-bottom: 1rem; }
+
+.materials-SP-PL__tabs-content2 {    
+    background-image: url(../../img/background/materials/sp-pl/PL.jpg);
+    background-size: cover;
+    background-position: center; }
+
+.materials-SP-PL__SP-title, .materials-SP-PL__PL-title {
+	line-height: 1.2;
+    width: 30%;
+    margin: 1.5rem; }
+
+.materials-SP-PL__background-PL {
+    width: 70%;
+    background-image: linear-gradient(to right, rgb(255,255,255), rgba(255,255,255,0.9), rgba(255,255,255,0.9), rgba(255,255,255,0.9), rgb(255,255,0,0));
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-left: 2rem; 
+    padding-bottom: 1rem; }
+
+.materials-SP-PL__PL-text {
+    width: 70%;
+    margin-right: auto; }
+
+.materials-SP-PL__SP-wrap, .materials-SP-PL__PL-wrap {
+    display: flex; }

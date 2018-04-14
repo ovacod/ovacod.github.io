@@ -1,0 +1,153 @@
+.caption2__reconstruction-stages {
+    color: #002;
+    background: linear-gradient(270deg, #050527 33%, #1e1e28 80%, #aa2c36); 
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    margin-bottom: 1rem; 
+    margin-top: 1rem; }
+    
+/* Стили секций с содержанием */
+.reconstruction-stages__tabs-content {
+    width: 99.9%;
+    height: 100%;
+	display: none;	
+	background: #fff;
+    border: 1px solid #b2414a;
+    border-top: 0px;
+    font-size: 0.9rem;	
+	line-height: 1.2;
+	color: #002;	
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn; }
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;	}
+	to {
+        opacity: 1;	} }
+        
+@keyframes fadeIn {
+	from {
+		opacity: 0;	}
+	to {
+        opacity: 1;	} }
+/* */
+
+
+
+/* Прячем чекбоксы */
+.reconstruction-stages__tab {
+	display: none;
+    position: absolute; }
+/* */
+
+
+
+/* Стили переключателей вкладок (табов) */
+.reconstruction-stages__label {
+	display: inline-block;
+	width: 32.85%;
+	padding: 1rem;	
+	text-align: center;
+    color: #fff;
+    text-transform: uppercase; }
+
+.reconstruction-stages__label1 {
+    background-color: #616168; }
+
+.reconstruction-stages__label2 {
+    background-color: #8e8e93; }
+
+.reconstruction-stages__label3 {
+    background-color: rgb(142,142,147); }
+
+.reconstruction-stages__label:hover {
+	background-color: #d4959a;
+    cursor: pointer; }
+/* */
+
+
+
+/* Стили для активной вкладки */
+.reconstruction-stages__tab:checked + .reconstruction-stages__label {    
+    background-color: #b2414a; }
+    
+/* Активация секций с помощью псевдокласса :checked */
+.reconstruction-stages__tab1:checked ~ .reconstruction-stages__tabs-content1, 
+.reconstruction-stages__tab2:checked ~ .reconstruction-stages__tabs-content2, 
+.reconstruction-stages__tab3:checked ~ .reconstruction-stages__tabs-content3 {
+    display: block; }
+/* */
+
+
+
+.reconstruction__wrap {
+    display: flex; }
+
+.reconstruction-stages__tabs-content1 {    
+	background-image: url(../../img/background/reconstruction/reconstruction_stages-bg1.jpg);
+    background-size: cover;
+    background-position: center; }
+
+.reconstruction-stages__tabs-content2 {    
+	background-image: url(../../img/background/reconstruction/reconstruction_stages-bg2.jpg);
+    background-size: cover;
+    background-position: right; }
+
+.reconstruction-stages__tabs-content3 {    
+	background-image: url(../../img/background/reconstruction/reconstruction_stages-bg3.jpg);
+    background-size: cover;
+    background-position: center; }
+
+.reconstruction-stages__background1 {    
+    width: 70%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-image: linear-gradient(to left, rgb(255,255,255), rgba(255,255,255,0.9), rgba(255,255,255,0.9), rgb(255,255,0,0));
+    margin-left: auto;    
+    padding-right: 1rem; }
+
+.reconstruction-stages__background2 {    
+    width: 70%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;    
+    background-image: linear-gradient(to right, rgb(255,255,255), rgba(255,255,255,0.9), rgba(255,255,255,0.9), rgb(255,255,0,0));
+    padding-left: 2rem; }
+
+.reconstruction-stages__background3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,0.9), rgba(255,255,255,0.9), rgba(255,255,255,0.9)); }   
+
+.reconstruction-stages__title1 {
+    display: flex;
+    align-self: flex-end;    
+    color: #fff; }
+
+.reconstruction-stages__text {
+    width: 70%; }
+
+.reconstruction-stages__text1 {    
+    margin-left: auto; }
+
+.reconstruction-stages__title {
+	line-height: 1.2;
+    width: 30%;
+    margin: 1.5rem; }
+
+.reconstruction-stages__title3 {
+    margin: inherit;
+    margin-bottom: 1rem;
+    width: 100%; } 
+
+.reconstruction-stages__text3-1, .reconstruction-stages__text3-2 {
+    width: 47%; }
+
+

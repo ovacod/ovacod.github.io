@@ -1,0 +1,52 @@
+.section__materials-1 {
+    background-image: url(../../img/background/materials/bg_1.jpg);  
+    background-position: center; }
+
+.caption1__materials-1 {
+    color: #002;
+    background: linear-gradient(0deg, #1e1e28 13%, #1e1e28 36%, #aa2c36); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }   
+    
+.wrap__materials-1 {
+    border: 0.7rem solid rgba(255,255,255,0.8);
+    margin-top: 2rem; }
+
+.materials-1__frame {
+    background-color: rgba(255,255,255,0.8);
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: 0.7rem; }
+
+.materials-1__desk {
+    color: #002;
+    font-size: 0.95rem;
+    line-height: 1.1; }
+
+.materials-1__list {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.materials-1__item {
+    width: 32%; }
+
+.materials-1__text {
+    font-size: 0.8rem;
+    line-height: 1.1;
+    color: #002;
+    background: linear-gradient(270deg, #002 25%, rgb(52,52,61) 90%, rgb(97,97,104)); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.materials-1__item2 {
+    padding-left: 1.1rem; }
+
+.materials-1__item3 {
+    padding-left: 0.5rem; }
+
+.materials-1__icon {
+    margin-bottom: 0.3rem; }

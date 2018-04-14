@@ -1,0 +1,48 @@
+.right-down {         
+    width: 100%;
+    position: absolute;
+    bottom: 0.75rem; }
+
+.triggers__text {
+    height: 0rem;
+    overflow: hidden; }
+
+.triggers__item {
+    height: 2.5rem;
+    width: 100%;
+    background-color: #34343d; }
+
+.main__triggers {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.85rem;
+    line-height: 2.5rem; }
+
+.triggers__item-active .triggers__text {
+    height: 10rem;
+    position: absolute;
+    background-color: #e7e7e8;
+    height: 20rem;
+    border-top: 2px solid #1e1e28;
+    padding: 1.5rem;    
+    z-index: 100;
+    font-size: 0.75rem;
+    text-align: left; }
+
+.triggers__text-audit {
+    bottom: 7.5rem; }
+
+.triggers__text-15 {
+    bottom: 5rem; }
+
+.triggers__text-5years {
+    bottom: 2.5rem; }
+    
+.triggers__item-15 {
+    background-color: #616168; }
+
+.triggers__item-audit {
+    background-color: #8e8e93; }
+
+.triggers__item:hover {
+    background-color: #1e1e28; } 

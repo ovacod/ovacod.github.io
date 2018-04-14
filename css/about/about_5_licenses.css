@@ -1,0 +1,12 @@
+.section__licenses {        
+    background: linear-gradient(to top, #f2effd, #fff); }
+
+.caption2__about-licenses {
+    margin-top: 2rem; }
+
+.licenses__list {
+    display: flex;
+    justify-content: space-between; }
+    
+.licenses__mark {
+    text-align: center; }

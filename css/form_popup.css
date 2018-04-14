@@ -1,0 +1,23 @@
+.form-popup {  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(47,50,52,0.9);
+  display: none;    
+  justify-content: center;    
+  align-items: center;
+  z-index: 10000;    
+  box-sizing: border-box; }
+
+.form-popup-active {    
+  display: flex; }
+
+.form-popup__wrapper {
+  width: 30%;
+  background-color: #fff;
+  padding: 2rem 2rem;
+  border-radius: 0.25rem;
+  position: relative;
+  text-align: center; }

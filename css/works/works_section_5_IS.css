@@ -1,0 +1,108 @@
+.section__IS {
+    background: linear-gradient(to top, #ddd4d4, #fff); }
+
+.IS__wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem; }
+    
+.left-side {
+    width: 48%;
+    height: 100%; }
+
+.right-side {
+    width: 48%;
+    height: 83vh; }
+
+.right-side__IS {    
+    background-image: url(../../img/background/works/IS/IS.jpg);
+    background-size: cover;
+    background-position: bottom;     
+    box-shadow: 0px 5px 5px 0px rgb(221, 220, 220); }
+
+.IS__TZ {
+    margin-bottom: 1rem; }
+
+.IS__accordion {     
+    color: white;
+    padding-top: 3rem;
+    padding-left: 3rem; }
+
+.IS__link {
+    text-decoration: none;  
+    font-size: 0.7rem;  
+    color: #fff; }
+
+.title__IS {
+    position: relative; }
+
+.title__IS:before {
+    content: '';
+    position: absolute;
+    top: 0.2rem;
+    left: -1.25rem;
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    border-top: 0.5rem solid #d4959a;  
+    transition-duration: 0.5s; }
+
+.IS__link:hover .title__IS:before {  
+    transform: rotateX(180deg);  
+    transition: 0.3s; } 
+
+.IS__item-active .title__IS:before {
+    transform: rotateX(180deg);  
+    transition: 0.3s; }
+
+.IS__link:hover, .IS__item-active .title__IS {
+    color: #d4959a; }
+    
+.IS__item-active .IS__mini-content {
+    height: 100%; }
+    
+.IS__mini-content {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 0rem;
+    overflow: hidden; }
+
+.IS__photo {
+    background-image: url(../../img/photo/Zwork.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 6rem;
+    height: 12.5rem;
+    border-radius: 1%;
+    margin-right: 1rem;
+    flex: 0 0 auto;
+    opacity: 0; }
+
+.IS__photo1 {
+    background-image: url(../../img/background/works/IS/IS_1.jpg); }
+.IS__photo2 {
+    background-image: url(../../img/background/works/IS/IS_2.jpg);
+    background-position: left; }
+.IS__photo3 {
+    background-image: url(../../img/background/works/IS/IS_3.jpg);
+    background-position: right; }
+.IS__photo4 {
+    background-image: url(../../img/background/works/IS/IS_4.jpg); }
+
+.IS__text {
+    font-size: 0.8rem;
+    line-height: 1.1;
+    opacity: 0; }
+
+.IS__item-active .IS__text  {
+    opacity: 1;
+    transition-duration: 0.3s; }
+
+.IS__item-active .IS__photo {
+    opacity: 1;
+    transition-duration: 0.3s; }
+
+.caption2__IS {
+    padding-top: inherit; }

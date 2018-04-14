@@ -1,0 +1,30 @@
+.EMR__wrap {
+    display: flex;
+    flex-wrap: wrap; }
+
+.EMR__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+    height: 20vh; }
+
+.EMR__photo {
+    width: 33%;
+    box-shadow: 0px 5px 5px 0px rgb(221, 220, 220);
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0.8); }
+
+.EMR__photo:hover {
+    filter: none; }
+
+.EMR__photo1 {
+    background-image: url(../../img/background/works/EMR/EMR_1.jpg); }
+
+.EMR__photo2 {
+    background-image: url(../../img/background/works/EMR/EMR_2.jpg); }
+
+.EMR__text {
+    width: 65%; }
+    

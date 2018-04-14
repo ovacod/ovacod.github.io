@@ -1,0 +1,44 @@
+.section__project-F {
+    background: linear-gradient(to top, #ddd4d4, #fff); }
+
+.caption2__project-F {
+    padding-bottom: 3.5rem; }
+
+.project-F__wrap {
+    display: flex;
+    justify-content: space-between; }
+
+.project-F__left, 
+.project-F__right {
+    width: 48%;
+    height: 100%; }
+
+.project-F__photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    
+.project-F__photo-elem {
+    width: 49%;
+    height: 7.9rem;    
+    margin-bottom: 0.5rem;
+    box-shadow: 0px 5px 5px 0px rgb(221, 220, 220);
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(0.8); }
+
+.project-F__photo-elem:hover {
+    filter: none; }
+
+.project-F__photo-elem1 {
+    background-image: url(../../img/background/project/project_F/project-F1.jpg); }
+.project-F__photo-elem2 {
+    background-image: url(../../img/background/project/project_F/project-F2.jpg); }
+.project-F__photo-elem3 {
+    background-image: url(../../img/background/project/project_F/project-F3.jpg); }
+.project-F__photo-elem4 {
+    background-image: url(../../img/background/project/project_F/project-F4.jpg); }
+.project-F__photo-elem5 {
+    background-image: url(../../img/background/project/project_F/project-F5.jpg); }
+.project-F__photo-elem6 {
+    background-image: url(../../img/background/project/project_F/project-F6.jpg); }

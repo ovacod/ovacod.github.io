@@ -1,0 +1,36 @@
+.section__contacts {
+    background: linear-gradient(to left, #f2effd, #fff, #f2effd); }
+
+.caption1__contacts {
+    color: #002;
+    background: linear-gradient(0deg, #050527 13%, #1e1e28 30%, #aa2c36); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 0.3rem;
+    margin-bottom: 2rem; }
+
+.contacts__worker, .contacts__requisite {
+    margin-bottom: 1rem; }
+
+.contacts__name {
+    margin-bottom: 0.3rem;
+    color: rgb(52,52,61); }
+
+.contacts__item {
+    margin-bottom: 0.8rem; }
+
+.contacts__requisite-content {
+    margin-top: 1rem; }
+
+.wrap__contacts {
+    display: flex;
+    justify-content: space-between; }
+
+.contacts__left, .contacts__right {
+    width: 48%; }
+
+.contacts__requisite-content span {
+    font-weight: 700; }
+
+.contacts__requisite-content h5 {
+    display: inline-block; }

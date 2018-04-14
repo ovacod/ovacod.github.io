@@ -1,0 +1,143 @@
+.project-form__text {
+    margin-bottom: 0.5rem; }
+
+.wrap__project-form {
+    border: 5px solid transparent;   
+    border-image: linear-gradient(to top, rgba(52,52,61,0.5) 30%, rgba(97,97,104,0.5) 60%, rgba(142,142,147,0.5) 100%);
+    border-image-slice: 1;
+    padding: 0.5rem; }
+
+.project-form {    
+    background-color: #f3f3f3;
+    box-shadow: 0px 5px 5px 0px rgb(221, 220, 220);
+    padding: 2rem;
+    padding-bottom: 1.7rem; }
+
+.caption1__project {    
+    margin-bottom: -0.5rem; }
+    
+.project-form__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+    margin-bottom: 1rem; }
+
+.project-form__item-up {
+    width: 24.4%;
+    height: 4.5rem;
+    margin-bottom: 0.3rem; }
+
+.project-form__picture {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;   
+    padding: 0.5rem;      
+    background-position: center;
+    background-size: cover;
+    border: 1px solid rgba(170,44,54,0.3);
+    filter: grayscale(1); }
+
+.project-form__picture1 {
+    background-image: url(../../img/background/project/project_forma/project_forma1.jpg); }
+.project-form__picture2 {
+    background-image: url(../../img/background/project/project_forma/project_forma2.jpg); }
+.project-form__picture3 {
+    background-image: url(../../img/background/project/project_forma/project_forma3.jpg); }
+.project-form__picture4 {
+    background-image: url(../../img/background/project/project_forma/project_forma4.jpg);
+    background-position: bottom; }
+.project-form__picture5 {
+    background-image: url(../../img/background/project/project_forma/project_forma5.jpg); }
+.project-form__picture6 {
+    background-image: url(../../img/background/project/project_forma/project_forma6.jpg); }
+.project-form__picture7 {
+    background-image: url(../../img/background/project/project_forma/project_forma7.jpg);
+    background-position: bottom; }
+.project-form__picture8 {
+    background-image: url(../../img/background/project/project_forma/project_forma8.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat; }
+
+.project-form__picture:hover  {
+    filter: none;
+    border: 2px solid rgba(170, 44, 54, 0.5); }
+
+.project-form__picture-name {
+    margin-left: 0.4rem; 
+    color: #fff;
+    text-shadow: 1px 1px #505058, 1px -1px #505058, -1px 1px #505058, -1px -1px #505058, 3px 3px 6px rgba(0,0,0,.8); }
+
+.project-form__down-column {
+    display: flex;
+    justify-content: space-between; }
+
+.project-form__item-down1 {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+.project-form__row1, .project-form__row2 {
+    width: 48%;
+    height: 20%; }
+
+.project-form__row3 {
+    width: 100%; }
+
+.project-form__item-down2 {
+    width: 32.6%; }
+
+.project-form__title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem; }
+    
+.project-form__radio {
+    display: flex; }
+
+.project-form__title-radio {
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem; }
+
+.project-form__input-m2 {
+    font-size: 0.7rem;
+    width: 6rem;
+    margin-right: 1rem;
+    padding-left: 0.5rem;
+    border: 1px solid rgba(170,44,54,0.3); }
+
+.project-form__droplist  {
+    font-size: 0.7rem;
+    color: dimgray;
+    padding-left: 0.5rem;
+    border: 1px solid rgba(170,44,54,0.3); }
+
+.project-form__input-contacts {
+    display: inline-block;
+    width: 100%;
+    height: 1.6rem;    
+    padding: 0.1rem 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+    border: 1px solid rgba(170,44,54,0.3); }
+   
+.project-form__droplist, .project-form__input-m2 {
+    height: 1.5rem; }
+
+.project-form__comment-textarea {
+    resize: none;
+    width: 94%;
+    height: 100%;    
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    border: 1px solid rgba(170,44,54,0.3); }
+
+.project-form__input-contacts:hover, 
+.project-form__comment-textarea:hover,
+.project-form__droplist:hover,
+.project-form__input-m2:hover {
+    border: 1px solid rgba(170, 44, 54, 0.7); }
+
+.OPD__project-form {
+    text-align: center; }
+

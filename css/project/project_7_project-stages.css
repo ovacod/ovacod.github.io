@@ -1,0 +1,181 @@
+.caption2__project-stages {
+    color: #002;
+    background: linear-gradient(270deg, #050527 33%, #1e1e28 80%, #aa2c36); 
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 1rem; }
+
+
+/* Стили секций с содержанием */
+.project-stages__tabs-content {
+    width: 99.9%;
+    height: 100%;
+	display: none;
+	padding: 1.5rem 1.5rem;
+	background: #fff;
+    border: 1px solid #b2414a;
+    border-top: 0px;
+    font-size: 0.9rem;	
+	line-height: 1.2;
+	color: #002;	
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn; }
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;	}
+	to {
+        opacity: 1;	} }
+        
+@keyframes fadeIn {
+	from {
+		opacity: 0;	}
+	to {
+        opacity: 1;	} }
+/* */
+
+
+       
+/* Прячем чекбоксы */
+.project-stages__tab {
+	display: none;
+    position: absolute; }
+/* */ 
+
+
+
+/* Стили переключателей вкладок (табов) */
+.project-stages__label {
+	display: inline-block;
+	width: 32.88%;
+	padding: 1rem;	
+	text-align: center;
+    color: #fff;
+    text-transform: uppercase; }
+
+.project-stages__label1 {
+    background-color: #1e1e28; }
+
+.project-stages__label2 {
+    background-color: #616168; }
+
+.project-stages__label3 {
+    background-color: #8e8e93; }
+
+.project-stages__label:hover {
+	background-color: #d4959a;
+    cursor: pointer; }
+/* */
+
+
+
+/* Стили для активной вкладки */
+.project-stages__tab:checked + .project-stages__label {    
+    background-color: #b2414a; }
+    
+/* Активация секций с помощью псевдокласса :checked */
+.project-stages__tab1:checked ~ .project-stages__tabs-content1, 
+.project-stages__tab2:checked ~ .project-stages__tabs-content2, 
+.project-stages__tab3:checked ~ .project-stages__tabs-content3 {
+    display: block; }
+/* */
+
+
+
+/* Вкладка "Предпроектный этап" */
+.project-stages__tabs-content1 {    
+	background-image: url(../../img/background/project/project_stages/project_stages11.jpg);
+    background-size: cover;
+	background-position: top;  
+	background-repeat: no-repeat; }
+
+.project-stages__descriptor {
+	margin-bottom: 0.7rem; }
+
+.project-stages__subtext-list {
+	display: flex;
+	justify-content: space-between; }
+
+.project-stages__subtext-item {
+	width: 47%; }
+
+.project-stages__subtitle {
+	margin-bottom: 0.35rem;
+	line-height: 1.3;
+	color: rgba(51,51,62,0.9); }
+
+.project-stages__price {
+	line-height: 1.2;
+	margin-top: 0.7rem;
+	margin-bottom: 0.7rem; }
+
+.project-stages__contact {
+	color: #aa2c36;
+	font-weight: 700;
+	text-align: right; }
+
+.project-stages__minitext span {
+	font-size: 0.7rem; }
+/* */
+
+
+
+
+/* Вкладка "Этап проектирования" */
+.project-stages__tabs-content2 {    
+	background-image: url(../../img/background/project/project_stages/project_stages22.jpg);
+    background-size: cover;
+	background-position: center; }
+	
+.project-stages__title {
+	line-height: 1.2;
+	margin-bottom: 0.5rem; }
+
+.project-stages__subtitle2 {
+	margin-top: 1rem; }
+
+.project-stages__price-item {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.75rem;
+	padding: 0.3rem 0.8rem; }
+
+.project-stages__price-list {
+	margin-top: 0.6rem; }
+
+.project-stages__price-item1,
+.project-stages__price-item3 {
+	background-color: rgba(170,44,54,0.2); }
+
+.project-stages__price-item2 {
+	background-color: rgba(170,44,54,0.05); }
+
+.project-stages__price-item:hover {
+	font-weight: 700; }
+
+.project-stages__contact-inproject {
+	text-align: inherit; }
+/* */	
+
+
+
+
+/* Вкладка "Этап согласований" */
+.project-stages__tabs-content3 {    
+	background-image: url(../../img/background/project/project_stages/project_stages3.jpg);
+    background-size: cover;
+	background-position: center; }
+	
+.project-stages__contact-agreement {
+	color: inherit;
+	font-weight: inherit;
+	text-align: inherit; }
+
+.project-stages__contact-agreement span {
+	color: #aa2c36;
+	font-weight: 700; }
+/* */
