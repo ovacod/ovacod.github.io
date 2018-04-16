@@ -7,6 +7,12 @@ formTwoCount();
 const rightNavMenu = require('./components/rightNavMenu.js');
 rightNavMenu();
 
+const navScroling = require('./components/navScroling.js');
+navScroling();
+
+const asideNavActivity = require('./components/asideNavActivity.js');
+asideNavActivity();
+
 const rightBottomNavTriggers = require('./components/rightBottomNavTriggers.js');
 rightBottomNavTriggers();
 
