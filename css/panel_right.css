@@ -51,6 +51,15 @@
     color: #aa2c36;
     font-weight: 700; }
 
+.menu-page__link--active {
+    color: #aa2c36;
+    font-weight: 700; }
+
+.menu-page__link--active:before {
+    width: 7px;
+    height: 7px;
+    background-color: #aa2c36;
+    border: none; }
 
 
 
