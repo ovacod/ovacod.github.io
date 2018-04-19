@@ -76,3 +76,24 @@
     width: 100%;
     padding: 0.5rem;
     border: none; }
+
+.form-wrapper--popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(253, 253, 255, .8);
+}
+
+.form-wrapper--popup .form__callback {
+    box-sizing: border-box;
+    width: 222px;
+    height: 212px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(245, 233, 234, 1);
+    padding: 20px;
+}

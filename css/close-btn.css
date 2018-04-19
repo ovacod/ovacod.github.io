@@ -1,0 +1,30 @@
+.close-btn {
+    position: absolute;
+    display: none;
+    top: -10px;
+    right: -10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.4s;
+}
+
+.close-btn--active {
+    display: block;
+}
+
+.close-btn::before {
+    content: 'X';
+    display: block;
+    font-size: 25px;
+    line-height: 38px;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.close-btn:hover  {
+    background-color: grey;
+    transition: 0.4s;
+}

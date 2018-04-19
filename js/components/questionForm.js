@@ -1,7 +1,7 @@
 module.exports = function () {
-    // Форма-2 из правой прижатой панели - Расчёт предварительной сметы //
+    // Форма-3 из правой прижатой панели - Вопрос инженеру //
 
-    $('#order-form2').on('submit', submitForm);
+    $('#order-form3').on('submit', submitForm);
 
     function submitForm(e) {
         e.preventDefault();
@@ -42,14 +42,14 @@ module.exports = function () {
 
             formPopup.classList.remove('form-popup-active');
             closeBtn.classList.remove('close-btn--active');
-            $("#order-form2")[0].reset();
+            $("#order-form3")[0].reset();
         })
 
         formPopup.addEventListener('click', function(event){
             if(event.target == formPopup){
                 formPopup.classList.remove('form-popup-active');
                 closeBtn.classList.remove('close-btn--active');
-                $("#order-form2")[0].reset();
+                $("#order-form3")[0].reset();
             }
         });
     };

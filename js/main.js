@@ -4,6 +4,15 @@ acordeonRightFormUp();
 const formTwoCount = require('./components/formTwoCount.js');
 formTwoCount();
 
+const callbackForm = require('./components/callbackForm.js');
+callbackForm();
+
+const questionForm = require('./components/questionForm.js');
+questionForm();
+
+const callbackFormOpen = require('./components/callbackFormOpen.js');
+callbackFormOpen();
+
 const rightNavMenu = require('./components/rightNavMenu.js');
 rightNavMenu();
 
@@ -37,6 +46,9 @@ rehubPopup();
 const yandexMap = require('./components/yandexMap.js');
 yandexMap();
 
+
+const acceptLink = require('./components/acceptLink.js');
+acceptLink();
 
 
 

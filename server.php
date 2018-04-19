@@ -6,8 +6,14 @@
     $width = $_POST['user-width'];
     $height = $_POST['user-height'];
 
-    $notcall = $_POST['notcall']; // 1 или null
-    $notcall = isset($notcall) ? 'НЕТ' : 'ДА';
+    $project = $_POST['project']; // 1 или null
+    $project = isset($project) ? 'ДА' : 'НЕТ';
+
+    $building = $_POST['building'];
+    $building = isset($building) ? 'ДА' : 'НЕТ';
+
+    $basis = $_POST['basis'];
+    $basis = isset($basis) ? 'ДА' : 'НЕТ';
     
     $adress = $_POST['user-adress'];
     $name2 = $_POST['user-name2'];
@@ -21,17 +27,19 @@
     $mail_message = '
     <html>
     <head>
-        <title>Заявка</title>
+        <title>Заявка на расчет предварительной сметы</title>
     </head>
     <body>
-        <h2>Заказ</h2>
+        <h2>Предварительная смета</h2>
         <ul>
             <li>Объект: ' . $object . '</li>
             <li>Длина: ' . $length . '</li>            
             <li>Ширина: ' . $width . '</li>
             <li>Высота: ' . $height . '</li>
 
-            <li>Нужно ли перезванивать клиенту: ' . $notcall . '</li>
+            <li>Проектирование: ' . $project . '</li>
+            <li>Монтаж здания под ключ: ' . $building . '</li>
+            <li>Отдельные виды работ: ' . $basis . '</li>
 
             <li>Адрес: ' . $adress . '</li>
             <li>Имя: ' . $name2 . '</li>
