@@ -43,13 +43,14 @@ materialPopup();
 const rehubPopup = require('./components/rehubPopup.js');
 rehubPopup();
 
-const yandexMap = require('./components/yandexMap.js');
-yandexMap();
-
-
 const acceptLink = require('./components/acceptLink.js');
 acceptLink();
 
+const yandexMap = require('./components/yandexMap.js');
+yandexMap();
+
+const slider = require('./components/slider.js');
+slider();
 
 
 
