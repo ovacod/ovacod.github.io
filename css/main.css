@@ -22,7 +22,6 @@
 @import url(./works/works_section_8_Kworks.css);
 @import url(./works/works_section_9_EMR.css);
 @import url(./works/works_section_10_asphalting.css);
-@import url(./works/works_section_11_final.css);
 
 /* Страница "О компании" */
 @import url(./about/about_1_avatar.css);
@@ -69,9 +68,17 @@
 /* Страница "Политика конфиденциальности" */
 @import url(privacy-policy.css);
 
+/*Попап формы*/
+@import url(form_popup.css);
+
+/*Соглашение на обработку персональных данных*/
+@import url(accept-form.css);
+
 /* Секция "Карта" на всех страницах (футер) */
 @import url(final_map.css);
 
+/*Кнопка закрытия окна*/
+@import url(close-btn.css);
 
 
 

@@ -1,0 +1,31 @@
+.accept-form {
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba( 71, 74, 81, 0.9);
+    z-index: 9999;
+}
+
+.accept-form__text {
+    width: 80%;
+    height: 95%;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background-color: papayawhip;
+}
+
+
+
+.accept-form__title {
+    margin-bottom: 25px;
+}
+
+.accept-form--active {
+    display: flex;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,177 +9,188 @@
     <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800,900&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:500i,700i&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">       
-    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    
+
 </head>
+
 <body>
     <div class="wrapper">
 
-<!-- Верхнее меню - НЕ МЕНЯЕТСЯ до стр. 162 --> 
-<div class="panel__up">            
-    <nav class="main-nav">
-        <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item-about">
-                <a class="main-nav__link" href="index.html">О компании</a>
-                <div class="dropdown dropdown-about">  
-                    <a class="dropdown-link" href="#section_avatar">Портрет нашего заказчика</a>                                                               
-                    <a class="dropdown-link" href="#section_who">Кто мы и что делаем
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_who">Услуги</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_who">Гарантии</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_who">Репутация</a>                                    
-                    </a>
-                    <a class="dropdown-link" href="#section_slider-reviews">Отзывы</a>                         
-                    <a class="dropdown-link" href="#section_director">Миссия компании</a>
-                    <a class="dropdown-link" href="#section_licenses">Лицензии</a>  
-                    <a class="dropdown-link" href="#section_team">Команда</a>                         
-                    <a class="dropdown-link" href="#section_partners">Заказчики и партнёры</a>
-                </div>
-            </li>
-            
-            <li class="main-nav__item"><a class="main-nav__link" href="project.html">Проектирование</a>
-                <div class="dropdown dropdown-project">               
-                    <a class="dropdown-link" href="#section_project-form">Экспресс-расчёт сметы</a>
-                    <a class="dropdown-link" href="#section_project-advantages">Наши преимущества</a>                 
-                    <a class="dropdown-link" href="#section_project-S">Проектирование строительства
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_project-S">Проектирование несущих конструкций</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_project-S">Проектирование инженерных систем</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_project-S">Проектирование сетей электроснабжения</a>                                                                    
-                    </a>
-                    <a class="dropdown-link" href="#">Типовые проекты зданий</a>
-                    <a class="dropdown-link" href="#section_project-F">Проектирование фундаментов</a>
-                    <a class="dropdown-link" href="#section_project-R">Проектирование реконструкции
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_project-R">Техническое обследование зданий</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_project-R">Проектирование и согласование реконструкции</a>                                    
-                    </a>
-                    <a class="dropdown-link" href="#section_project-designer">Бесплатная консультация</a>
-                    <a class="dropdown-link" href="#section_project-stages">Стадии разработки проекта | состав | цены
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_project-stages">Предпроектный этап</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_project-stages">Этап проектирования</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_project-stages">Этап согласований</a>
-                    </a> 
-                    <a class="dropdown-link" href="#section_project-license">Лицензия</a>
-                    <a class="dropdown-link" href="#section_project-documents">Необходимый пакет документов</a>                     
-                </div>
-            </li>
+        <!-- Верхнее меню - НЕ МЕНЯЕТСЯ до стр. 162 -->
+        <div class="panel__up">
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item main-nav__item-about">
+                        <a class="main-nav__link" href="index.html">О компании</a>
+                        <div class="dropdown dropdown-about">
+                            <a class="dropdown-link" href="#section_avatar">Портрет нашего заказчика</a>
+                            <a class="dropdown-link" href="#section_who">Кто мы и что делаем
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_who">Услуги</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_who">Гарантии</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_who">Репутация</a>
+                            </a>
+                            <a class="dropdown-link" href="#section_slider-reviews">Отзывы</a>
+                            <a class="dropdown-link" href="#section_director">Миссия компании</a>
+                            <a class="dropdown-link" href="#section_licenses">Лицензии</a>
+                            <a class="dropdown-link" href="#section_team">Команда</a>
+                            <a class="dropdown-link" href="#section_partners">Заказчики и партнёры</a>
+                        </div>
+                    </li>
 
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Строительство</a>
-                <div class="dropdown dropdown-building">                                                               
-                    <a class="dropdown-link" href="#">Промышленные здания
-                        <a class="dropdown-link dropdown-link__mini-link" href="#">Склад | Ангар</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#">Цех | Производство</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#">Котельная</a>                                    
-                    </a>
-                    <a class="dropdown-link" href="#">Коммерческие здания
-                        <a class="dropdown-link dropdown-link__mini-link" href="#">АБК</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#">Магазин</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#">Офис</a>                                    
-                    </a>       
-                    <a class="dropdown-link" href="#">Выгоды работы с нами</a>                         
-                    <a class="dropdown-link" href="#">Порядок работ</a>
-                </div>
-            </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="project.html">Проектирование</a>
+                        <div class="dropdown dropdown-project">
+                            <a class="dropdown-link" href="#section_project-form">Экспресс-расчёт сметы</a>
+                            <a class="dropdown-link" href="#section_project-advantages">Наши преимущества</a>
+                            <a class="dropdown-link" href="#section_project-S">Проектирование строительства
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_project-S">Проектирование несущих конструкций</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_project-S">Проектирование инженерных систем</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_project-S">Проектирование сетей электроснабжения</a>
+                            </a>
+                            <a class="dropdown-link" href="#">Типовые проекты зданий</a>
+                            <a class="dropdown-link" href="#section_project-F">Проектирование фундаментов</a>
+                            <a class="dropdown-link" href="#section_project-R">Проектирование реконструкции
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_project-R">Техническое обследование зданий</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_project-R">Проектирование и согласование реконструкции</a>
+                            </a>
+                            <a class="dropdown-link" href="#section_project-designer">Бесплатная консультация</a>
+                            <a class="dropdown-link" href="#section_project-stages">Стадии разработки проекта | состав | цены
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_project-stages">Предпроектный этап</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_project-stages">Этап проектирования</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_project-stages">Этап согласований</a>
+                            </a>
+                            <a class="dropdown-link" href="#section_project-license">Лицензия</a>
+                            <a class="dropdown-link" href="#section_project-documents">Необходимый пакет документов</a>
+                        </div>
+                    </li>
 
-            <li class="main-nav__item"><a class="main-nav__link" href="reconstruction.html">Реконструкция</a>
-                <div class="dropdown dropdown-reconstruction">                                                               
-                    <a class="dropdown-link" href="#section_reconstruction-1">Типы реконструируемых объектов</a>
-                    <a class="dropdown-link" href="#section_external-reconstruction">Внешняя реконструкция
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_external-reconstruction">Пристроенные помещения</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_external-reconstruction">Надстроенные помещения</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_external-reconstruction">Устройство внутренних помещений</a>                                                                    
-                    </a>
-                    <a class="dropdown-link" href="#section_internal-reconstruction">Внутренняя реконструкция
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_internal-reconstruction">Перепланировка</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_internal-reconstruction">Капитальный ремонт</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_internal-reconstruction">Отделочные работы</a>
-                    </a>  
-                    <a class="dropdown-link" href="#section_reconstruction-stages">Этапы реконструкции
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-stages">Техническое обследование зданий</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-stages">Проектирование реконструкции</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-stages">Согласование реконструкции</a>
-                    </a>     
-                    <a class="dropdown-link" href="#section_reconstruction-engineer">Бесплатная консультация с техническим директором</a>    
-                    <a class="dropdown-link" href="#section_reconstruction-partial">Частичная реконструкция отдельных систем
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-partial">Реконструкция фундаментов</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-partial">Реконструкция несущих конструкций</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-partial">Реконструкция инженерных сетей</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-partial">Реконструкция фасада и кровли</a>
-                    </a>                                             
-                    <a class="dropdown-link" href="#section_reconstruction-DO">Реконструкция действующих объектов</a>
-                    <a class="dropdown-link" href="#section_reconstruction-documents">Пакет необходимых документов</a>
-                    <a class="dropdown-link" href="#section_reconstruction-form">Расчёт сметы на реконструкцию</a>
-                </div>                    
-            </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Строительство</a>
+                        <div class="dropdown dropdown-building">
+                            <a class="dropdown-link" href="#">Промышленные здания
+                                <a class="dropdown-link dropdown-link__mini-link" href="#">Склад | Ангар</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#">Цех | Производство</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#">Котельная</a>
+                            </a>
+                            <a class="dropdown-link" href="#">Коммерческие здания
+                                <a class="dropdown-link dropdown-link__mini-link" href="#">АБК</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#">Магазин</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#">Офис</a>
+                            </a>
+                            <a class="dropdown-link" href="#">Выгоды работы с нами</a>
+                            <a class="dropdown-link" href="#">Порядок работ</a>
+                        </div>
+                    </li>
 
-            <li class="main-nav__item"><a class="main-nav__link" href="works.html">Работы</a>
-                <div class="dropdown dropdown-works">                                                               
-                    <a class="dropdown-link" href="#section_SMR">Все виды строительно-монтажных работ</a>
-                    <a class="dropdown-link" href="#section_Zwork">Земляные работы | Котлован</a>                                                             
-                    <a class="dropdown-link" href="#section_Bwork">Бетонные и монолитные работы</a>
-                    <a class="dropdown-link" href="#section_Fwork">Фундаментные работы
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_Fwork">Устройство оснований</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_Fwork">Устройство фундаментов</a>
-                    </a>
-                    <a class="dropdown-link" href="#section_MK">Монтаж металлоконструкций</a>
-                    <a class="dropdown-link" href="#section_SP">Монтаж сэндвич панелей</a>    
-                    <a class="dropdown-link" href="#section_Kwork">Кровельные работы</a>                            
-                    <a class="dropdown-link" href="#section_IS">Монтаж инженерных сетей
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_IS">Водоснабжение и водоотведение</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_IS">Канализация</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_IS">Отопление</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_IS">Вентиляция и кондиционирование</a>                                    
-                    </a>                                
-                    <a class="dropdown-link" href="#section_EMR">Электромонтажные работы</a>
-                    <a class="dropdown-link" href="#section_asphalting">Асфальтирование и благоустройство</a>
-                </div> 
-            </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="reconstruction.html">Реконструкция</a>
+                        <div class="dropdown dropdown-reconstruction">
+                            <a class="dropdown-link" href="#section_reconstruction-1">Типы реконструируемых объектов</a>
+                            <a class="dropdown-link" href="#section_external-reconstruction">Внешняя реконструкция
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_external-reconstruction">Пристроенные помещения</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_external-reconstruction">Надстроенные помещения</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_external-reconstruction">Устройство внутренних помещений</a>
+                            </a>
+                            <a class="dropdown-link" href="#section_internal-reconstruction">Внутренняя реконструкция
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_internal-reconstruction">Перепланировка</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_internal-reconstruction">Капитальный ремонт</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_internal-reconstruction">Отделочные работы</a>
+                            </a>
+                            <a class="dropdown-link" href="#section_reconstruction-stages">Этапы реконструкции
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-stages">Техническое обследование зданий</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-stages">Проектирование реконструкции</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-stages">Согласование реконструкции</a>
+                            </a>
+                            <a class="dropdown-link" href="#section_reconstruction-engineer">Бесплатная консультация с техническим директором</a>
+                            <a class="dropdown-link" href="#section_reconstruction-partial">Частичная реконструкция отдельных систем
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-partial">Реконструкция фундаментов</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-partial">Реконструкция несущих конструкций</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-partial">Реконструкция инженерных сетей</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-partial">Реконструкция фасада и кровли</a>
+                            </a>
+                            <a class="dropdown-link" href="#section_reconstruction-DO">Реконструкция действующих объектов</a>
+                            <a class="dropdown-link" href="#section_reconstruction-documents">Пакет необходимых документов</a>
+                            <a class="dropdown-link" href="#section_reconstruction-form">Расчёт сметы на реконструкцию</a>
+                        </div>
+                    </li>
 
-            <li class="main-nav__item"><a class="main-nav__link" href="materials.html">Материалы</a>
-                <div class="dropdown dropdown-materials">     
-                    <a class="dropdown-link" href="#section_materials-1">Почему материалы выгодно заказывать у нас</a> 
-                    <a class="dropdown-link" href="#section_materials-MK">Своё производcтво металлоконструкций
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-MK">Металлокаркасы зданий</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-MK">Стеллажные системы</a>
-                    </a>                                                          
-                    <a class="dropdown-link" href="#section_materials-SP-PL">Ограждающие конструкции
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-SP-PL">Сэндвич панели</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-SP-PL">Профлист</a>                                                                                                        
-                    </a>                                                                                             
-                    <a class="dropdown-link" href="#section_materials-beton">Бетон</a>
-                    <a class="dropdown-link" href="#section_materials-NM">Нерудные материалы
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-NM">Щебень</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-NM">Песок</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-NM">Отсев</a>
-                        <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-NM">ЩПС</a>
-                    </a>
-                    <a class="dropdown-link" href="#section_materials-asfalt">Асфальт | Асфальтовая крошка</a>                                
-                </div> 
-            </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Объекты</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a></li>                    
-        </ul>
-    </nav>
-</div> 
-<!-- Верхнее меню закончилось-->  
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="works.html">Работы</a>
+                        <div class="dropdown dropdown-works">
+                            <a class="dropdown-link" href="#section_SMR">Все виды строительно-монтажных работ</a>
+                            <a class="dropdown-link" href="#section_Zwork">Земляные работы | Котлован</a>
+                            <a class="dropdown-link" href="#section_Bwork">Бетонные и монолитные работы</a>
+                            <a class="dropdown-link" href="#section_Fwork">Фундаментные работы
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_Fwork">Устройство оснований</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_Fwork">Устройство фундаментов</a>
+                            </a>
+                            <a class="dropdown-link" href="#section_MK">Монтаж металлоконструкций</a>
+                            <a class="dropdown-link" href="#section_SP">Монтаж сэндвич панелей</a>
+                            <a class="dropdown-link" href="#section_Kwork">Кровельные работы</a>
+                            <a class="dropdown-link" href="#section_IS">Монтаж инженерных сетей
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_IS">Водоснабжение и водоотведение</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_IS">Канализация</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_IS">Отопление</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_IS">Вентиляция и кондиционирование</a>
+                            </a>
+                            <a class="dropdown-link" href="#section_EMR">Электромонтажные работы</a>
+                            <a class="dropdown-link" href="#section_asphalting">Асфальтирование и благоустройство</a>
+                        </div>
+                    </li>
+
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="materials.html">Материалы</a>
+                        <div class="dropdown dropdown-materials">
+                            <a class="dropdown-link" href="#section_materials-1">Почему материалы выгодно заказывать у нас</a>
+                            <a class="dropdown-link" href="#section_materials-MK">Своё производcтво металлоконструкций
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-MK">Металлокаркасы зданий</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-MK">Стеллажные системы</a>
+                            </a>
+                            <a class="dropdown-link" href="#section_materials-SP-PL">Ограждающие конструкции
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-SP-PL">Сэндвич панели</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-SP-PL">Профлист</a>
+                            </a>
+                            <a class="dropdown-link" href="#section_materials-beton">Бетон</a>
+                            <a class="dropdown-link" href="#section_materials-NM">Нерудные материалы
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-NM">Щебень</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-NM">Песок</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-NM">Отсев</a>
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-NM">ЩПС</a>
+                            </a>
+                            <a class="dropdown-link" href="#section_materials-asfalt">Асфальт | Асфальтовая крошка</a>
+                        </div>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Объекты</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Верхнее меню закончилось-->
 
 
 
 
 
 
-<!-- Левая прижатая панель - НЕ МЕНЯЕТСЯ до стр. 256 -->
+        <!-- Левая прижатая панель - НЕ МЕНЯЕТСЯ до стр. 256 -->
         <div class="panel__left">
-            <div class="panel__left-wrap">                
+            <div class="panel__left-wrap">
                 <div class="panel__left-description">
-                    <a class="logo" href="index.html"><img src="./img/logo/logo_m.png" alt="logo"></a>
+                    <a class="logo" href="index.html">
+                        <img src="./img/logo/logo_m.png" alt="logo">
+                    </a>
                     <div class="desc">
-                        Проектирование и строительство
-                        промышленных и коммерческих
-                        быстровозводимых зданий от 500м<sup>2</sup><br>
-                        из чёрнометаллического каркаса<br>
-                        в Санкт-Петребурге и Ленобласти
-                    </div>                    
+                        Проектирование и строительство промышленных и коммерческих быстровозводимых зданий от 500м
+                        <sup>2</sup>
+                        <br> из чёрнометаллического каркаса
+                        <br> в Санкт-Петребурге и Ленобласти
+                    </div>
                 </div>
 
 
@@ -201,7 +213,7 @@
                                 <img src="./img/icons/hangar1.png" alt="abk">
                                 <div class="objects__name">Ангары</div>
                             </a>
-                        </li>                        
+                        </li>
                         <li class="objects__item">
                             <a class="objects__item-block" href="#">
                                 <img src="./img/icons/shop1.png" alt="shop">
@@ -220,19 +232,20 @@
                                 <div class="objects__name">Офисы</div>
                             </a>
                         </li>
-                    </ul>                    
+                    </ul>
                 </div>
 
 
                 <div class="panel__left-contacts">
                     <div class="left-contacts__phones-mail">
-                        <a class="left-contacts__phones" href="#">(812) 716-39-39<br>(812) 716-34-34</a>
+                        <a class="left-contacts__phones" href="#">(812) 716-39-39
+                            <br>(812) 716-34-34</a>
                         <a class="left-contacts__mail" href="#">info@mtrest.ru</a>
                     </div>
                     <div class="left-contacts__adress">
-                        Ленобласть, пос. Ропша,<br>
-                        Стрельнинское шоссе, 1Б<br>
-                        ПН-ПТ: 9:30-18:00
+                        Ленобласть, пос. Ропша,
+                        <br> Стрельнинское шоссе, 1Б
+                        <br> ПН-ПТ: 9:30-18:00
                     </div>
                     <ul class="left-contacts__social-list">
                         <li class="social-item">
@@ -254,16 +267,16 @@
                 </div>
             </div>
         </div>
-<!-- Левая прижатая панель закончилась -->
+        <!-- Левая прижатая панель закончилась -->
 
 
 
 
 
-<!-- Правая прижатая панель (до стр. 475) - НА КАЖДОЙ СТРАНИЦЕ МЕНЯЕТСЯ СЕРЕДИНА -> right__center стр. 400-431 -->
+        <!-- Правая прижатая панель (до стр. 475) - НА КАЖДОЙ СТРАНИЦЕ МЕНЯЕТСЯ СЕРЕДИНА -> right__center стр. 400-431 -->
         <div class="panel__right">
             <div class="panel__right-wrap">
-                
+
                 <div class="right-up">
                     <ul class="buttons__list">
                         <li class="buttons__item buttons__item-callback">
@@ -272,25 +285,26 @@
                             </a>
                             <div class="buttons__content buttons__content-callback">
                                 <div class="buttons__text buttons__text-callback">
-                                    Оставьте свои контактные данные, и наш специалист
-                                    перезвонит вам в ближайшее время, чтобы ответить
-                                    на все интересующие вас вопросы                                                                                                                  
+                                    Оставьте свои контактные данные, и наш специалист перезвонит вам в ближайшее время, чтобы ответить на все интересующие вас
+                                    вопросы
                                 </div>
-                                <form class="form form__callback" action="server.php" method="POST" id="order-form1">                                    
-                                    <label class="form__block">
-                                        <div class="form__title">Ваше имя*</div>
-                                        <input class="form__input" name="user-name1" type="text" required>
-                                    </label>
-                                    <label class="form__block">
-                                        <div class="form__title">Ваш телефон*</div>
-                                        <input class="form__input" name="user-phone1" type="text" placeholder="+7123456789" required>
-                                    </label>                                        
-                                    <input class="btn" type="submit" name="submit" value="Заказать звонок">   
-                                    <div class="OPD">Нажимая на кнопку, вы подтверждаете своё
-                                        <a class="OPD__link" href="#">согласие на обработку персональных данных</a>
-                                    </div>                                 
-                                </form>
-                            </div>                            
+                                <div class="form-wrapper">
+                                    <form class="form form__callback" action="aside-callback-form.php" method="POST" id="order-form1">
+                                        <label class="form__block">
+                                            <div class="form__title">Ваше имя*</div>
+                                            <input class="form__input" name="user-name1" type="text" required>
+                                        </label>
+                                        <label class="form__block">
+                                            <div class="form__title">Ваш телефон*</div>
+                                            <input class="form__input" name="user-phone1" type="text" placeholder="+7123456789" required>
+                                        </label>
+                                        <input class="btn" type="submit" name="submit" value="Заказать звонок">
+                                        <div class="OPD">Нажимая на кнопку, вы подтверждаете своё
+                                            <a class="OPD__link" href="#">согласие на обработку персональных данных</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </li>
 
 
@@ -298,7 +312,7 @@
                             <a class="main__buttons" href="#">
                                 <div class="buttons__title">Расчёт предварительной сметы</div>
                             </a>
-                            <div class="buttons__content buttons__content-calculation">                                
+                            <div class="buttons__content buttons__content-calculation">
                                 <form class="form form__calculation" action="server.php" method="POST" id="order-form2">
                                     <label class="form__block">
                                         <div class="form__title">Тип объекта</div>
@@ -308,37 +322,37 @@
                                         <label class="form__block form__block-row">
                                             <div class="form__title form__title-row">Длина</div>
                                             <input class="form__input form__input-row" name="user-length" type="text" placeholder="м" required>
-                                        </label>  
+                                        </label>
                                         <label class="form__block form__block-row">
                                             <div class="form__title form__title-row">Ширина</div>
                                             <input class="form__input form__input-row" name="user-width" type="text" placeholder="м" required>
-                                        </label> 
+                                        </label>
                                         <label class="form__block form__block-row">
                                             <div class="form__title form__title-row">Высота</div>
                                             <input class="form__input form__input-row" name="user-height" type="text" placeholder="м" required>
-                                        </label> 
-                                    </div>  
+                                        </label>
+                                    </div>
                                     <div class="form__row form__row-checkbox">
-                                        <label class="checkbox">							
+                                        <label class="checkbox">
                                             <input class="checkbox__input" type="checkbox" id="project" name="project" value="Проектирование">
                                             <span class="checkbox__btn"></span>
-                                            <span class="form__title form__title-checkbox">Проектирование</span>	
+                                            <span class="form__title form__title-checkbox">Проектирование</span>
                                         </label>
-                                        <label class="checkbox">							
+                                        <label class="checkbox">
                                             <input class="checkbox__input" type="checkbox" id="building" name="building" value="Монтаж под ключ">
                                             <span class="checkbox__btn"></span>
-                                            <span class="form__title form__title-checkbox">Монтаж здания под ключ</span>	
+                                            <span class="form__title form__title-checkbox">Монтаж здания под ключ</span>
                                         </label>
-                                        <label class="checkbox">							
+                                        <label class="checkbox">
                                             <input class="checkbox__input" type="checkbox" id="basis" name="basis" value="Фундамент">
                                             <span class="checkbox__btn"></span>
-                                            <span class="form__title form__title-checkbox">Отдельные виды работ</span>	
+                                            <span class="form__title form__title-checkbox">Отдельные виды работ</span>
                                         </label>
                                     </div>
                                     <label class="form__block">
                                         <div class="form__title"></div>
                                         <input class="form__input" name="user-adress" type="text" placeholder="Адрес строительства" required>
-                                    </label>                                
+                                    </label>
                                     <label class="form__block">
                                         <div class="form__title"></div>
                                         <input class="form__input " name="user-name2" type="text" placeholder="Ваше имя*" required>
@@ -346,17 +360,17 @@
                                     <label class="form__block">
                                         <div class="form__title"></div>
                                         <input class="form__input" name="user-phone2" type="text" placeholder="Ваш телефон*" required>
-                                    </label>  
+                                    </label>
                                     <label class="form__block">
                                         <div class="form__title"></div>
                                         <input class="form__input" name="user-mail2" type="text" placeholder="Ваш email*" required>
-                                    </label>                                        
-                                    <input class="btn" type="submit" name="submit" value="Рассчитать смету">  
+                                    </label>
+                                    <input class="btn" type="submit" name="submit" value="Рассчитать смету">
                                     <div class="OPD">Нажимая на кнопку, вы подтверждаете своё
                                         <a class="OPD__link" href="#">согласие на обработку персональных данных</a>
                                     </div>
                                 </form>
-                            </div>                            
+                            </div>
                         </li>
 
 
@@ -364,13 +378,12 @@
                             <a class="main__buttons" href="#">
                                 <div class="buttons__title">Задайте вопрос инженеру</div>
                             </a>
-                            <div class="buttons__content buttons__content-question">                                
-                                <form class="form form__question" action="server.php" method="POST" id="order-form3">
+                            <div class="buttons__content buttons__content-question">
+                                <form class="form form__question" action="questionForm.php" method="POST" id="order-form3">
                                     <label class="form__block">
                                         <div class="form__title">Ваш вопрос:</div>
-                                        <textarea class="question" name="user-question" type="text" 
-                                        placeholder="Напишите здесь ваш(и) вопрос(ы). Наш инженер свяжется с вами и даст подробную консультацию бесплатно!"></textarea>
-                                    </label>                                     
+                                        <textarea class="question" name="user-question" type="text" placeholder="Напишите здесь ваш(и) вопрос(ы). Наш инженер свяжется с вами и даст подробную консультацию бесплатно!"></textarea>
+                                    </label>
                                     <label class="form__block">
                                         <div class="form__title">Ваше имя*</div>
                                         <input class="form__input" name="user-name3" type="text" required>
@@ -378,17 +391,17 @@
                                     <label class="form__block">
                                         <div class="form__title">Ваш телефон*</div>
                                         <input class="form__input" name="user-phone3" type="text" placeholder="+7123456789" required>
-                                    </label>   
+                                    </label>
                                     <label class="form__block">
                                         <div class="form__title">Ваш email*</div>
                                         <input class="form__input" name="user-mail3" type="text" required>
-                                    </label>                                     
+                                    </label>
                                     <input class="btn" type="submit" name="submit" value="Задать вопрос">
                                     <div class="OPD">Нажимая на кнопку, вы подтверждаете своё
                                         <a class="OPD__link" href="#">согласие на обработку персональных данных</a>
                                     </div>
                                 </form>
-                            </div>                            
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -396,7 +409,7 @@
 
 
 
-<!-- БОКОВОЕ МЕНЮ для страницы "Реконструкция" на правой прижатой панели - МЕНЯЕТСЯ НА КАЖДОЙ СТРАНИЦЕ -->
+                <!-- БОКОВОЕ МЕНЮ для страницы "Реконструкция" на правой прижатой панели - МЕНЯЕТСЯ НА КАЖДОЙ СТРАНИЦЕ -->
                 <div class="right-center">
                     <ul class="menu-page__list menu-page__list-reconstruction" id="menu-page_list">
                         <li class="menu-page__item">
@@ -413,23 +426,25 @@
                         </li>
                         <li class="menu-page__item">
                             <a class="menu-page__link" href="#section_reconstruction-engineer">
-                            Бесплатная консультация <br>с техническим директором</a>
+                                Бесплатная консультация
+                                <br>с техническим директором</a>
                         </li>
                         <li class="menu-page__item">
                             <a class="menu-page__link" href="#section_reconstruction-partial">Частичная реконструкция</a>
                         </li>
                         <li class="menu-page__item">
-                            <a class="menu-page__link" href="#section_reconstruction-DO">Реконструкция <br>действующих объектов</a>
-                        </li>                        
+                            <a class="menu-page__link" href="#section_reconstruction-DO">Реконструкция
+                                <br>действующих объектов</a>
+                        </li>
                         <li class="menu-page__item">
                             <a class="menu-page__link" href="#section_reconstruction-documents">Пакет необходимых документов</a>
-                        </li>   
+                        </li>
                         <li class="menu-page__item">
                             <a class="menu-page__link" href="#section_reconstruction-form">Расчёт сметы на реконструкцию</a>
-                        </li>                                                                    
+                        </li>
                     </ul>
                 </div>
-<!-- БОКОВОЕ МЕНЮ для страницы "Реконструкция" на правой прижатой панели закончилось-->
+                <!-- БОКОВОЕ МЕНЮ для страницы "Реконструкция" на правой прижатой панели закончилось-->
 
 
 
@@ -441,10 +456,9 @@
                                 <div class="triggers__title">Аудит проекта бесплатно</div>
                             </a>
                             <div class="triggers__text triggers__text-audit">
-                                Речевой акт редуцирует диалектический характер. Развивая эту тему, 
-                                заимствование редуцирует конструктивный механизм сочленений.
-                                Лирический субъект начинает диссонансный анжамбеман. 
-                            </div>                            
+                                Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                Лирический субъект начинает диссонансный анжамбеман.
+                            </div>
                         </li>
 
                         <li class="triggers__item triggers__item-15">
@@ -452,10 +466,9 @@
                                 <div class="triggers__title">Снижение затрат до 15%</div>
                             </a>
                             <div class="triggers__text triggers__text-15">
-                                Речевой акт редуцирует диалектический характер. Развивая эту тему, 
-                                заимствование редуцирует конструктивный механизм сочленений.
-                                Лирический субъект начинает диссонансный анжамбеман. 
-                            </div>                            
+                                Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                Лирический субъект начинает диссонансный анжамбеман.
+                            </div>
                         </li>
 
 
@@ -464,17 +477,15 @@
                                 <div class="triggers__title">Гарантия - от 5 лет</div>
                             </a>
                             <div class="triggers__text triggers__text-5years">
-                                Речевой акт редуцирует диалектический характер. Развивая эту тему, 
-                                заимствование редуцирует конструктивный механизм сочленений.
-                                Лирический субъект начинает диссонансный анжамбеман. 
-                            </div>                        
-                        </li>                        
+                                Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                Лирический субъект начинает диссонансный анжамбеман.
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-<!-- Правая прижатая панель закончилась -->
-        
+        <!-- Правая прижатая панель закончилась -->
 
 
 
@@ -496,42 +507,40 @@
 
 
 
-<!-- ОСНОВНОЕ СОДЕРЖАНИЕ СТРАНИЦЫ "Реконструкция" до стр. 1244-->
-        <div class="maincontent maincontent__reconstruction">            
+
+        <!-- ОСНОВНОЕ СОДЕРЖАНИЕ СТРАНИЦЫ "Реконструкция" до стр. 1244-->
+        <div class="maincontent maincontent__reconstruction">
             <section class="section section__reconstruction-1" id="section_reconstruction-1">
                 <div class="container container__reconstruction-1">
                     <div class="wrap wrap__reconstruction-1">
                         <h1 class="caption1 caption1__reconstruction-1">
-                        Типы объектов, которые мы берём на рекон-<br>струкцию </h1>
+                            Типы объектов, которые мы берём на рекон-
+                            <br>струкцию </h1>
                         <div class="reconstruction-1__objects">
                             <h4 class="reconstruction-1__title">Что мы реконструируем</h4>
                             <ul class="reconstruction-1__list">
                                 <li class="reconstruction-1__item">
                                     <h4 class="reconstruction-1__punct">1</h4>
-                                    <div class="reconstruction-1__text">имеет потребность в проектировании, строительстве,
-                                    реконструкции объекта промышленного или коммерческого назначения
-                                    общей площадью от 500м2 в СПб или ЛО</div>
+                                    <div class="reconstruction-1__text">имеет потребность в проектировании, строительстве, реконструкции объекта промышленного
+                                        или коммерческого назначения общей площадью от 500м2 в СПб или ЛО</div>
                                 </li>
                                 <li class="reconstruction-1__item">
                                     <h4 class="reconstruction-1__punct">2</h4>
-                                    <div class="reconstruction-1__text">имеет потребность в проектировании, строительстве,
-                                    реконструкции объекта промышленного или коммерческого назначения
-                                    общей площадью от 500м2 в СПб или ЛО</div>
-                                </li>    
+                                    <div class="reconstruction-1__text">имеет потребность в проектировании, строительстве, реконструкции объекта промышленного
+                                        или коммерческого назначения общей площадью от 500м2 в СПб или ЛО</div>
+                                </li>
                                 <li class="reconstruction-1__item">
                                     <h4 class="reconstruction-1__punct">3</h4>
-                                    <div class="reconstruction-1__text">имеет потребность в проектировании, строительстве,
-                                    реконструкции объекта промышленного или коммерческого назначения
-                                    общей площадью от 500м2 в СПб или ЛО</div>
-                                </li>     
+                                    <div class="reconstruction-1__text">имеет потребность в проектировании, строительстве, реконструкции объекта промышленного
+                                        или коммерческого назначения общей площадью от 500м2 в СПб или ЛО</div>
+                                </li>
                                 <li class="reconstruction-1__item">
                                     <h4 class="reconstruction-1__punct">4</h4>
-                                    <div class="reconstruction-1__text">имеет потребность в проектировании, строительстве,
-                                    реконструкции объекта промышленного или коммерческого назначения
-                                    общей площадью от 500м2 в СПб или ЛО</div>
-                                </li>                    
+                                    <div class="reconstruction-1__text">имеет потребность в проектировании, строительстве, реконструкции объекта промышленного
+                                        или коммерческого назначения общей площадью от 500м2 в СПб или ЛО</div>
+                                </li>
                             </ul>
-                        </div>                                    
+                        </div>
                     </div>
                 </div>
             </section>
@@ -553,304 +562,41 @@
                             <div class="external-reconstruction__photo external-reconstruction__photo-1"></div>
                             <div class="external-reconstruction__text">
                                 <h5 class="external-reconstruction__subtitle">
-                                Подзаголовок о пристройке внешних помещений</h5>
+                                    Подзаголовок о пристройке внешних помещений</h5>
                                 <div class="paragraphs paragraphs__external-reconstruction">
-                                <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                                нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                                добавлением экзотического соуса чураско. Ваш старый добрый знакомый.</p>
-                                </div>                                
-                            </div>                            
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                                        сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                        экзотического соуса чураско. Ваш старый добрый знакомый.</p>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="external-reconstruction__row">
                             <div class="external-reconstruction__photo external-reconstruction__photo-2"></div>
                             <div class="external-reconstruction__text">
                                 <h5 class="external-reconstruction__subtitle">
-                                Подзаголовок о надстройке внешних помещений
+                                    Подзаголовок о надстройке внешних помещений
                                 </h5>
                                 <div class="paragraphs paragraphs__external-reconstruction">
-                                <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                                нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                                добавлением экзотического соуса чураско. Ваш старый добрый знакомый.</p>
-                                </div>                                
-                            </div>                            
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                                        сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                        экзотического соуса чураско. Ваш старый добрый знакомый.</p>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="external-reconstruction__row">
                             <div class="external-reconstruction__photo external-reconstruction__photo-3"></div>
                             <div class="external-reconstruction__text">
                                 <h5 class="external-reconstruction__subtitle">
-                                Подзаголовок об устройстве внутренних помещений</h5>
+                                    Подзаголовок об устройстве внутренних помещений</h5>
                                 <div class="paragraphs paragraphs__external-reconstruction">
-                                <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                                нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                                добавлением экзотического соуса чураско. Ваш старый добрый знакомый.</p>
-                                </div>                                
-                            </div>                            
-                        </div>                   
-                    </div>
-                </div>
-            </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ОСНОВНОЕ СОДЕРЖАНИЕ СТРАНИЦЫ "Реконструкция" до стр. 574-->
-        <div class="maincontent maincontent__reconstruction">
-            <section class="section section__internal-reconstruction" id="section_internal-reconstruction">
-                <div class="container">
-                    <div class="wrap wrap__internal-reconstruction">   
-                        <div class="internal-reconstruction__left">
-                            <h2 class="caption2 caption2__internal-reconstruction">Внутренняя реконструкция</h2>
-                        </div>                     
-                        <div class="internal-reconstruction__right">
-                            <div class="internal-reconstruction__main-text">
-                                С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                С радостью поможет подобрать идеальный бургер и оформить заказ.                                                                
-                            </div>
-                            <ul class="internal-reconstruction__accordion">                               
-                                <li class="internal-reconstruction__item">								
-                                    <a class="internal-reconstruction__link" href="#1">
-                                        <h3 class="title title__internal-reconstruction">
-                                        Перепланировка <br>помещений</h3>
-                                    </a>
-                                    <div class="internal-reconstruction__mini-content internal-reconstruction__mini-content1">
-                                        <div class="internal-reconstruction__photo internal-reconstruction__photo1"></div>
-                                        <div class="internal-reconstruction__text internal-reconstruction__text1">                                                
-                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        бургер и оформить заказ.</p>
-                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        С радостью поможет подобрать идеальный бургер и оформить заказ.</p>                                            
-                                        </div>									
-                                    </div>								
-                                </li>
-                                <li class="internal-reconstruction__item">								
-                                    <a class="internal-reconstruction__link" href="#1">
-                                        <h3 class="title title__internal-reconstruction">Капитальный <br>ремонт</h3>
-                                    </a>
-                                    <div class="internal-reconstruction__mini-content internal-reconstruction__mini-content2">
-                                        <div class="internal-reconstruction__photo internal-reconstruction__photo2"></div>
-                                        <div class="internal-reconstruction__text internal-reconstruction__text2">                                                
-                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        бургер и оформить заказ.</p>
-                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        С радостью поможет подобрать идеальный бургер и оформить заказ.</p> 
-                                        </div>									
-                                    </div>								
-                                </li> 
-                                <li class="internal-reconstruction__item">								
-                                    <a class="internal-reconstruction__link" href="#1">
-                                        <h3 class="title title__internal-reconstruction">Отделочные <br>работы</h3>
-                                    </a>
-                                    <div class="internal-reconstruction__mini-content internal-reconstruction__mini-content3">
-                                        <div class="internal-reconstruction__photo internal-reconstruction__photo3"></div>
-                                        <div class="internal-reconstruction__text internal-reconstruction__text3">                                                
-                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        бургер и оформить заказ.</p>
-                                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
-                                        </div>									
-                                    </div>								
-                                </li>                                                                
-                            </ul>       
-                        </div>                                               
-                    </div>
-                </div>
-            </section>
-
-
-
-
-
-
-
-
-
-
-
-            <section class="section section__reconstruction-stages" id="section_reconstruction-stages">
-                <div class="container">
-                    <h2 class="caption2 caption2__reconstruction-stages">
-                    Этапы работ <br>при внешней и внутренней реконструкции</h2>
-                    <div class="wrap wrap__reconstruction-stages">
-                        <div class="reconstruction-stages__tabs">
-                            <input class="reconstruction-stages__tab reconstruction-stages__tab1" id="tab1" type="radio" name="tabs" checked>
-                            <label class="reconstruction-stages__label reconstruction-stages__label1" for="tab1" title="Вкладка 1">
-                                <h6>Тех. обследование зданий</h6>
-                            </label>
-                            
-                            <input class="reconstruction-stages__tab reconstruction-stages__tab2" id="tab2" type="radio" name="tabs">
-                            <label class="reconstruction-stages__label reconstruction-stages__label2" for="tab2" title="Вкладка 2">
-                                <h6>Проектирование реконструкции</h6></label>
-                            
-                            <input class="reconstruction-stages__tab reconstruction-stages__tab3" id="tab3" type="radio" name="tabs">
-                            <label class="reconstruction-stages__label reconstruction-stages__label3" for="tab3" title="Вкладка 3">
-                                <h6>Согласование реконструкции</h6></label>                            
-                            
-                            <div class="reconstruction-stages__tabs-content reconstruction-stages__tabs-content1">
-                                <div class="reconstruction__wrap reconstruction__wrap1">                                     
-                                    <h2 class="reconstruction-stages__title reconstruction-stages__title1">
-                                    Подзаголовок о техническом обследовании зданий</h2> 
-                                    <div class="reconstruction-stages__background reconstruction-stages__background1">
-                                        <div class="reconstruction-stages__text reconstruction-stages__text1">
-                                        <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который 
-                                        визуализирует эту идею в двух- или трёхмерную картинку с изображением внешнего 
-                                        вида здания, внутренних планировок и благоустройства территории. На основе 
-                                        эскизного проекта получают разрешение на строительство, составляется вся 
-                                        техническая документация и формируется смета. Поэтому крайне важно, чтобы 
-                                        исходные данные были максимально исчерпывающими и корректными.</p>
-                                        <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который 
-                                        визуализирует эту идею в двух- или трёхмерную картинку с изображением внешнего 
-                                        вида здания, внутренних планировок и благоустройства территории. На основе 
-                                        эскизного проекта получают разрешение на строительство, составляется вся 
-                                        техническая документация и формируется смета. Поэтому крайне важно, чтобы 
-                                        исходные данные были максимально исчерпывающими и корректными.</p>
-                                        </div>  
-                                    </div>                                
-                                </div> 
-                            </div>       
-
-                            <div class="reconstruction-stages__tabs-content reconstruction-stages__tabs-content2">
-                                <div class="reconstruction__wrap reconstruction__wrap2">                                     
-                                    
-                                    <div class="reconstruction-stages__background reconstruction-stages__background2">
-                                        <div class="reconstruction-stages__text reconstruction-stages__text2">
-                                        <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который 
-                                        визуализирует эту идею в двух- или трёхмерную картинку с изображением внешнего 
-                                        вида здания, внутренних планировок и благоустройства территории. На основе 
-                                        эскизного проекта получают разрешение на строительство, составляется вся 
-                                        техническая документация и формируется смета. Поэтому крайне важно, чтобы 
-                                        исходные данные были максимально исчерпывающими и корректными.</p>
-                                        <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который 
-                                        визуализирует эту идею в двух- или трёхмерную картинку с изображением внешнего 
-                                        вида здания, внутренних планировок и благоустройства территории. На основе 
-                                        эскизного проекта получают разрешение на строительство, составляется вся 
-                                        техническая документация и формируется смета. Поэтому крайне важно, чтобы 
-                                        исходные данные были максимально исчерпывающими и корректными.</p>
-                                        </div>  
-                                    </div>  
-                                    <h2 class="reconstruction-stages__title reconstruction-stages__title2">
-                                    Подзаголовок о проектировании реконструкции: внешней и внутренней</h2>                               
-                                </div> 
-                            </div>
-
-                            <div class="reconstruction-stages__tabs-content reconstruction-stages__tabs-content3">
-                                <div class="reconstruction__wrap reconstruction__wrap3">                                        
-                                    <div class="reconstruction-stages__background reconstruction-stages__background3">
-                                        <h2 class="reconstruction-stages__title reconstruction-stages__title3">
-                                        Подзаголовок о согласовании реконстркции</h2>
-                                        <div class="reconstruction-stages__text reconstruction-stages__text3-1">
-                                        <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который 
-                                        визуализирует эту идею в двух- или трёхмерную картинку с изображением внешнего 
-                                        вида здания, внутренних планировок и благоустройства территории. На основе 
-                                        эскизного проекта получают разрешение на строительство, составляется вся 
-                                        техническая документация и формируется смета. Поэтому крайне важно, чтобы 
-                                        исходные данные были максимально исчерпывающими и корректными.</p>
-                                        <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который 
-                                        визуализирует эту идею в двух- или трёхмерную картинку с изображением внешнего 
-                                        вида здания, внутренних планировок и благоустройства территории. На основе 
-                                        эскизного проекта получают разрешение на строительство, составляется вся 
-                                        техническая документация и формируется смета.</p>
-                                        </div>  
-                                        <div class="reconstruction-stages__text reconstruction-stages__text3-2">
-                                        <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который 
-                                        визуализирует эту идею в двух- или трёхмерную картинку с изображением внешнего 
-                                        вида здания, внутренних планировок и благоустройства территории. На основе 
-                                        эскизного проекта получают разрешение на строительство, составляется вся 
-                                        техническая документация и формируется смета. Поэтому крайне важно, чтобы 
-                                        исходные данные были максимально исчерпывающими и корректными.</p>
-                                        <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который 
-                                        визуализирует эту идею в двух- или трёхмерную картинку с изображением внешнего 
-                                        вида здания, внутренних планировок и благоустройства территории. На основе 
-                                        эскизного проекта получают разрешение на строительство, составляется вся 
-                                        техническая документация и формируется смета.</p>
-                                        </div> 
-                                    </div>                                
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                </div>                    
-            </section>
-
-
-
-
-
-
-
-
-
-
-            <section class="section section__reconstruction-engineer" id="section_reconstruction-engineer">
-                <div class="container">
-                    <h2 class="caption2 caption2__reconstruction-engineer">
-                    Бесплатная консультация <br> с техническим директором</h2>
-                    <div class="wrap wrap__reconstruction-engineer">
-
-                        <div class="reconstruction-engineer__left">
-                            <div class="reconstruction-engineer__photo"><img src="./img/background/project/project-designer.png"></div>
-                            <div class="reconstruction-engineer__content">
-                                <h5 class="reconstruction-engineer__name">Сергей Сергеевич Прокофьев</h5>
-                                <div class="reconstruction-engineer__position">Технический директор ООО "МультиТрест"</div>                                
-                                <div class="reconstruction-engineer__citation">
-                                    <div class="reconstruction-engineer__icon-left"><img src="./img/icons/commas1.png"></div>
-                                    <div class="reconstruction-engineer__left-text">Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                    Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                    Здесь размещаете любое содержание Здесь размещаете любое содержание</div>
-                                    <div class="reconstruction-engineer__icon-right"><img src="./img/icons/commas2.png"></div>
-                                </div>                                
-                            </div>
-                        </div>
-
-                        <div class="reconstruction-engineer__right-frame">
-                            <div class="reconstruction-engineer__right">
-                                <div class="reconstruction-engineer__form-description">
-                                Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                                        сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                        экзотического соуса чураско. Ваш старый добрый знакомый.</p>
                                 </div>
-                                <form class="reconstruction-engineer__form" action="server.php" method="POST" id="order-engineer__form">
-                                    <label class="reconstruction-engineer__form-block reconstruction-engineer__form-block1">
-                                        <div class="reconstruction-engineer__form-title">Комментарий:</div>
-                                        <textarea class="reconstruction-engineer__form-question" name="reconstruction-engineer__form-question" type="text" 
-                                        placeholder="Опишите подробно вашу задачу, задайте вопрос(ы)"></textarea>
-                                    </label>                                     
-                                    <label class="reconstruction-engineer__form-block">
-                                        <div class="reconstruction-engineer__form-title">Ваше имя*</div>
-                                        <input class="reconstruction-engineer__form-input" name="reconstruction-engineer__form-name" type="text" required>
-                                    </label>
-                                    <label class="reconstruction-engineer__form-block">
-                                        <div class="reconstruction-engineer__form-title">Ваш телефон*</div>
-                                        <input class="reconstruction-engineer__form-input" name="reconstruction-engineer__form-phone" type="text" placeholder="+7123456789" required>
-                                    </label>                                                                     
-                                    <input class="btn btn__engineer-form" type="submit" name="submit" value="Заказать консультацию">
-                                    <div class="OPD OPD__engineer-form">Нажимая на кнопку, вы подтверждаете своё<br>
-                                        <a class="OPD__link" href="#">согласие на обработку персональных данных</a>
-                                    </div>
-                                </form>
                             </div>
-                            
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -864,72 +610,6 @@
 
 
 
-            <section class="section section__reconstruction-partial" id="section_reconstruction-partial">	                
-                <div class="container">	
-                    <h2 class="caption2 caption2__reconstruction-partial">
-                    Частичная реконструкция <br>отдельных систем и конструкций здания</h2>
-                    <div class="wrap wrap__reconstruction-partial">		
-                        <ul class="reconstruction-partial__list">                            
-                            <li class="reconstruction-partial__item reconstruction-partial__item1">	                                                                	
-                                <div class="reconstruction-partial__content">
-                                    <div class="reconstruction-partial__content-box">
-                                        <h4 class="title title__reconstruction-partial">
-                                        Реконструкция всех типов фундаментов</h4>
-                                        <div class="reconstruction-partial__text">                                                				 				
-                                            <div class="reconstruction-partial__price">от 500 руб./м<sup>2</sup></div> 
-                                            <div class="reconstruction-partial__price-dop">
-                                            Экспериза фундамента <br>– бесплатно!</div>                                                                                           
-                                            <a class="btn btn__link-reconstruction-partial" href="#1">Подробнее</a>
-                                        </div>  
-                                    </div>                                    				 			
-                                </div>					 					 		
-                            </li>
-                            <li class="reconstruction-partial__item reconstruction-partial__item2">	                                                                	
-                                <div class="reconstruction-partial__content">
-                                    <div class="reconstruction-partial__content-box">
-                                        <h4 class="title title__reconstruction-partial">
-                                        Реконструкция несущих конструкций</h4>
-                                        <div class="reconstruction-partial__text">                                                				 				
-                                            <div class="reconstruction-partial__price">от 500 руб./м<sup>2</sup></div> 
-                                            <div class="reconstruction-partial__price-dop">
-                                            Разработка КМ, КМД <br>– бесплатно!</div>                                                                                           
-                                            <a class="btn btn__link-reconstruction-partial" href="#1">Подробнее</a>
-                                        </div>                                       
-                                    </div>                                    				 			
-                                </div>					 					 		
-                            </li> 
-                            <li class="reconstruction-partial__item reconstruction-partial__item3">	                                                                	
-                                <div class="reconstruction-partial__content">
-                                    <div class="reconstruction-partial__content-box">
-                                        <h4 class="title title__reconstruction-partial">
-                                        Реконструкция инженерных <br>сетей</h4>	
-                                        <div class="reconstruction-partial__text">                                                				 				
-                                            <div class="reconstruction-partial__price">от 500 руб./м<sup>2</sup></div> 
-                                            <div class="reconstruction-partial__price-dop">
-                                            Оценка состояния сетей <br>– бесплатно!</div>                                                                                           
-                                            <a class="btn btn__link-reconstruction-partial" href="#1">Подробнее</a>
-                                        </div>                                   
-                                    </div>                                    				 			
-                                </div>					 					 		
-                            </li>
-                            <li class="reconstruction-partial__item reconstruction-partial__item4">	                                                                	
-                                <div class="reconstruction-partial__content">
-                                    <div class="reconstruction-partial__content-box">
-                                        <h4 class="title title__reconstruction-partial">
-                                        Реконструкция фасада и <br>кровли</h4>
-                                        <div class="reconstruction-partial__text">                                                				 				
-                                            <div class="reconstruction-partial__price">от 500 руб./м<sup>2</sup></div> 
-                                            <div class="reconstruction-partial__price-dop">
-                                            Обследование фасада <br>и кровли – бесплатно!</div>                                                                                           
-                                            <a class="btn btn__link-reconstruction-partial" href="#1">Подробнее</a>
-                                        </div>                                      
-                                    </div>                                    				 			
-                                </div>					 					 		
-                            </li>
-                        </ul> 
-                    </div>                       
-                </div>								
-            </section>
 
 
 
@@ -937,409 +617,806 @@
 
 
 
-
-
-
-            <section class="section section__reconstruction-DO" id="section_reconstruction-DO">
-                <div class="container">
-                    <h2 class="caption2 caption2__reconstruction-DO">
-                    Особенности реконструкции действующих объектов</h2>
-                    <div class="wrap reconstruction-DO__wrap">                            
-                        <div class="reconstruction-DO__content">
-                            <h5 class="reconstruction-DO__title">Дескриптор о реконструкции действующих 
-                            объектов. Дескриптор о реконструкции действующих объектов.</h5>                            
-                            <div class="paragraphs paragraphs__reconstruction-DO">
-                            <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                            добавлением экзотического соуса чураско. Ваш старый добрый знакомый, с рубленым 
-                            бифштексом из 100% говядины. 
-                            </p>
-                            <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                            добавлением экзотического соуса чураско. Ваш старый добрый знакомый, с рубленым 
-                            бифштексом из 100% говядины. 
-                            </p>
-                            <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                            добавлением экзотического соуса чураско. Ваш старый добрый знакомый, с рубленым 
-                            бифштексом из 100% говядины.</p>    
-                            <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                            добавлением экзотического соуса чураско.</p>                     
-                            </div>                                
-                        </div>     
-                        <div class="reconstruction-DO__photo"></div>                   
-                    </div>                   
-                </div>
-            </section>
-
-
-
-
-
-
-
-
-
-
-            <section class="section section__reconstruction-documents" id="section_reconstruction-documents">
-                <div class="container">
-                    <h2 class="caption2 caption2__reconstruction-documents">
-                    Пакет необходимых исходных документов для реконструкции</h2>
-                    <div class="wrap reconstruction-documents__wrap"> 
-                        <ul class="reconstruction-documents__list-column">
-                            <li class="reconstruction-documents__column reconstruction-documents__column1">
-                                <ul class="reconstruction-documents__list-stroke reconstruction-documents__list-stroke1">
-                                    <h5 class="reconstruction-documents__stroke reconstruction-documents__stroke-title">№</h5>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke1">1.</li>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke1">2.</li>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke1">3.</li>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke1">4.</li>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke1">5.</li>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke1">6.</li>
-                                </ul>
-                            </li>
-                            <li class="reconstruction-documents__column">
-                                <ul class="reconstruction-documents__list-stroke">
-                                    <h5 class="reconstruction-documents__stroke reconstruction-documents__stroke-title">
-                                    Документы для внешней реконструкции</h5>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke2">
-                                    Наименование документа 1 Наименование документа 1 Наименование документа 1 Наименование документа 1</li>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke3">Наименование документа 1</li>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke2">Наименование документа 2</li>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke3">Наименование документа 3</li>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke2">Наименование документа 4</li>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke3">Наименование документа 5</li>
-                                </ul>
-                            </li>
-                            <li class="reconstruction-documents__column">
-                                <ul class="reconstruction-documents__list-stroke">
-                                    <h5 class="reconstruction-documents__stroke reconstruction-documents__stroke-title">
-                                    Документы для внутренней реконструкции</h5>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke2">Наименование документа 1</li>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke3">Наименование документа 2</li>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke2">Наименование документа 3</li>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke3">Наименование документа 4</li>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke2">Наименование документа 5</li>
-                                    <li class="reconstruction-documents__stroke reconstruction-documents__stroke3">Наименование документа 6</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>     
-            </section>     
-            
-
-
-
-
-
-
-
-
-
-            <section class="section section__reconstruction-form" id="section_reconstruction-form">
-                <div class="container">
-                    <h2 class="caption2 caption2__reconstruction-form">
-                    Расчёт предварительной сметы <br>на реконструкцию объекта</h2>
-                    <div class="reconstruction-form__text">Выберите объект, который вам необходимо реконструировать, 
-                    укажите несколько исходных данных,<br> и вы получите предварительную стоимость на 
-                    работы по реконструкции уже сегодня. 
-                    </div>
-                    <div class="wrap wrap__reconstruction-form">
-                        <form class="reconstruction-form" action="server.php" method="POST" id="order-reconstruction-form">
-                            <div class="reconstruction-form__left">                                    
-                                <label class="reconstruction-form__block">
-                                    <div class="reconstruction-form__title">Тип объекта</div>
-                                    <input class="reconstruction-form__input" name="user-object" type="text" placeholder="Например, 'Склад'" required>
-                                </label>
-                                <ul class="reconstruction-form__checkbox-list">
-                                    <li class="reconstruction-form__checkbox-item reconstruction-form__checkbox-item1">
-                                        <ul class="reconstruction-form__checkbox-block">
-                                            <div class="reconstruction-form__checkbox-title">Внешняя реконструкция</div>	
-                                            <li class="reconstruction-form__checkbox-row">
-                                                <label class="reconstruction-form__checkbox">                                            					
-                                                    <input class="reconstruction-form__checkbox-input" type="checkbox" id="project" name="project" value="Проектирование">
-                                                    <span class="reconstruction-form__checkbox-btn"></span>
-                                                    <span class="reconstruction-form__name reconstruction-form__name-checkbox">
-                                                    Пристроить помещение</span>	
-                                                </label>
-                                            </li>
-                                            <li class="reconstruction-form__checkbox-row">
-                                                <label class="reconstruction-form__checkbox">							
-                                                    <input class="reconstruction-form__checkbox-input" type="checkbox" id="building" name="building" value="Монтаж под ключ">
-                                                    <span class="reconstruction-form__checkbox-btn"></span>
-                                                    <span class="reconstruction-form__name reconstruction-form__name-checkbox">
-                                                    Надстроить помещение</span>	
-                                                </label>
-                                            </li>
-                                            <li class="reconstruction-form__checkbox-row">
-                                                <label class="reconstruction-form__checkbox">							
-                                                    <input class="reconstruction-form__checkbox-input" type="checkbox" id="basis" name="basis" value="Фундамент">
-                                                    <span class="reconstruction-form__checkbox-btn"></span>
-                                                    <span class="reconstruction-form__name reconstruction-form__name-checkbox">
-                                                    Встроить помещение</span>	
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    
-                                    
-                                    <li class="reconstruction-form__checkbox-item reconstruction-form__checkbox-item2">
-                                        <ul class="reconstruction-form__checkbox-block">
-                                            <div class="reconstruction-form__checkbox-title">Внутренняя реконструкция</div>                                                
-                                            <li class="reconstruction-form__checkbox-row">
-                                                <label class="reconstruction-form__checkbox">                                            						
-                                                    <input class="reconstruction-form__checkbox-input" type="checkbox" id="project" name="project" value="Проектирование">
-                                                    <span class="reconstruction-form__checkbox-btn"></span>
-                                                    <span class="reconstruction-form__name reconstruction-form__name-checkbox">
-                                                    Перепланировка</span>	
-                                                </label>
-                                            </li>
-                                            <li class="reconstruction-form__checkbox-row">
-                                                <label class="reconstruction-form__checkbox">							
-                                                    <input class="reconstruction-form__checkbox-input" type="checkbox" id="building" name="building" value="Монтаж под ключ">
-                                                    <span class="reconstruction-form__checkbox-btn"></span>
-                                                    <span class="reconstruction-form__name reconstruction-form__name-checkbox">
-                                                    Капитальный ремонт</span>	
-                                                </label>
-                                            </li>
-                                            <li class="reconstruction-form__checkbox-row">
-                                                <label class="reconstruction-form__checkbox">							
-                                                    <input class="reconstruction-form__checkbox-input" type="checkbox" id="basis" name="basis" value="Фундамент">
-                                                    <span class="reconstruction-form__checkbox-btn"></span>
-                                                    <span class="reconstruction-form__name reconstruction-form__name-checkbox">
-                                                    Отделочные работы</span>	
-                                                </label>
-                                            </li>                                                
-                                        </ul>
-                                    </li>
-                                    
-
-                                    <li class="reconstruction-form__checkbox-item reconstruction-form__checkbox-item3">
-                                        <ul class="reconstruction-form__checkbox-block">
-                                            <div class="reconstruction-form__checkbox-title">Частичная реконструкция</div>
-                                            <li class="reconstruction-form__checkbox-row">
-                                                <label class="reconstruction-form__checkbox">                                           						
-                                                    <input class="reconstruction-form__checkbox-input" type="checkbox" id="project" name="project" value="Проектирование">
-                                                    <span class="reconstruction-form__checkbox-btn"></span>
-                                                    <span class="reconstruction-form__name reconstruction-form__name-checkbox">
-                                                    Реконструкция фундамента</span>	
-                                                </label>
-                                            </li>
-                                            <li class="reconstruction-form__checkbox-row">
-                                                <label class="reconstruction-form__checkbox">							
-                                                    <input class="reconstruction-form__checkbox-input" type="checkbox" id="building" name="building" value="Монтаж под ключ">
-                                                    <span class="reconstruction-form__checkbox-btn"></span>
-                                                    <span class="reconstruction-form__name reconstruction-form__name-checkbox">
-                                                    Реконструкция несущих конструкций
-                                                    </span>	
-                                                </label>
-                                            </li>
-                                            <li class="reconstruction-form__checkbox-row">
-                                                <label class="reconstruction-form__checkbox">							
-                                                    <input class="reconstruction-form__checkbox-input" type="checkbox" id="basis" name="basis" value="Фундамент">
-                                                    <span class="reconstruction-form__checkbox-btn"></span>
-                                                    <span class="reconstruction-form__name reconstruction-form__name-checkbox">
-                                                    Реконструкция инженерных сетей</span>	
-                                                </label>
-                                            </li>
-                                            <li class="reconstruction-form__checkbox-row">
-                                                <label class="reconstruction-form__checkbox">							
-                                                    <input class="reconstruction-form__checkbox-input" type="checkbox" id="basis" name="basis" value="Фундамент">
-                                                    <span class="reconstruction-form__checkbox-btn"></span>
-                                                    <span class="reconstruction-form__name reconstruction-form__name-checkbox">
-                                                    Реконструкция фасада и кровли</span>	
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </li>    
-                                </ul>                                                                       
+            <!-- ОСНОВНОЕ СОДЕРЖАНИЕ СТРАНИЦЫ "Реконструкция" до стр. 574-->
+            <div class="maincontent maincontent__reconstruction">
+                <section class="section section__internal-reconstruction" id="section_internal-reconstruction">
+                    <div class="container">
+                        <div class="wrap wrap__internal-reconstruction">
+                            <div class="internal-reconstruction__left">
+                                <h2 class="caption2 caption2__internal-reconstruction">Внутренняя реконструкция</h2>
                             </div>
-
-
-
-                            <div class="reconstruction-form__right">
-                                <ul class="reconstruction-form__right-list">
-                                    <li class="reconstruction-form__right-row reconstruction-form__right-row1">
-                                        <label class="reconstruction-form__m2">
-                                            <div class="reconstruction-form__title">Площадь</div>
-                                            <input class="reconstruction-form__input reconstruction-form__input-m2" type="text" id="m2" name="m2" placeholder="м2" value=""> 
-                                        </label>
-                                        <label class="reconstruction-form__floor">
-                                            <div class="reconstruction-form__title">Этажность</div>  
-                                            <select class="reconstruction-form__droplist">                                            
-                                                <option class="reconstruction-form__droplist-option">Этажность</option>
-                                                <option class="reconstruction-form__droplist-option">1</option>
-                                                <option class="reconstruction-form__droplist-option">2</option>
-                                                <option class="reconstruction-form__droplist-option">3</option>
-                                                <option class="reconstruction-form__droplist-option">4</option>
-                                                <option class="reconstruction-form__droplist-option">5</option>                                        
-                                            </select>                                                 
-                                        </label>                                            
-                                        <label class="reconstruction-form__adress">
-                                            <div class="reconstruction-form__title">Адрес объекта</div>
-                                            <input class="reconstruction-form__input" name="user-object" type="text">
-                                        </label>   
-                                    </li>
-
-                                    <li class="reconstruction-form__right-row reconstruction-form__right-row2">
-                                        <label class="reconstruction-form__comment">
-                                            <div class="reconstruction-form__title">Описание объекта</div>                                                                                                                                    
-                                            <textarea class="reconstruction-form__comment-textarea" name="comment" type="text" 
-                                            placeholder="Опишите здесь параметры вашего объекта, которые, как вы считаете, необходимо учесть при расчёте."></textarea>                                           
-                                        </label>
-                                    </li>
-
-                                    <li class="reconstruction-form__right-row reconstruction-form__right-row3">
-                                        <label class="reconstruction-form__block">
-                                            <div class="reconstruction-form__title">Ваше имя*</div>
-                                            <input class="reconstruction-form__input" name="user-name3" type="text" required>
-                                            <div class="reconstruction-form__title">Ваш телефон*</div>
-                                            <input class="reconstruction-form__input" name="user-phone3" type="text" placeholder="+7123456789" required>
-                                        </label>
-                                            
-                                        <label class="reconstruction-form__contacts">
-                                            <div class="reconstruction-form__title">Ваш email*</div>
-                                            <input class="reconstruction-form__input" name="user-mail3" type="text" required>
-                                            <input class="btn btn__reconstruction-form" type="submit" name="submit" value="Рассчитать смету">
-                                            <div class="OPD OPD__reconstruction-form">Нажимая на кнопку, вы подтверждаете своё
-                                                <a class="OPD__link" href="#">согласие на обработку персональных данных</a>
+                            <div class="internal-reconstruction__right">
+                                <div class="internal-reconstruction__main-text">
+                                    С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью поможет подобрать идеальный бургер и оформить
+                                    заказ.
+                                </div>
+                                <ul class="internal-reconstruction__accordion">
+                                    <li class="internal-reconstruction__item">
+                                        <a class="internal-reconstruction__link" href="#1">
+                                            <h3 class="title title__internal-reconstruction">
+                                                Перепланировка
+                                                <br>помещений</h3>
+                                        </a>
+                                        <div class="internal-reconstruction__mini-content internal-reconstruction__mini-content1">
+                                            <div class="internal-reconstruction__photo internal-reconstruction__photo1"></div>
+                                            <div class="internal-reconstruction__text internal-reconstruction__text1">
+                                                <p>С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью
+                                                    поможет подобрать идеальный бургер и оформить заказ. С радостью поможет
+                                                    подобрать идеальный бургер и оформить заказ. бургер и оформить заказ.</p>
+                                                <p>С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью
+                                                    поможет подобрать идеальный бургер и оформить заказ.</p>
                                             </div>
-                                        </label>                                      
+                                        </div>
+                                    </li>
+                                    <li class="internal-reconstruction__item">
+                                        <a class="internal-reconstruction__link" href="#1">
+                                            <h3 class="title title__internal-reconstruction">Капитальный
+                                                <br>ремонт</h3>
+                                        </a>
+                                        <div class="internal-reconstruction__mini-content internal-reconstruction__mini-content2">
+                                            <div class="internal-reconstruction__photo internal-reconstruction__photo2"></div>
+                                            <div class="internal-reconstruction__text internal-reconstruction__text2">
+                                                <p>С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью
+                                                    поможет подобрать идеальный бургер и оформить заказ. С радостью поможет
+                                                    подобрать идеальный бургер и оформить заказ. бургер и оформить заказ.</p>
+                                                <p>С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью
+                                                    поможет подобрать идеальный бургер и оформить заказ.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="internal-reconstruction__item">
+                                        <a class="internal-reconstruction__link" href="#1">
+                                            <h3 class="title title__internal-reconstruction">Отделочные
+                                                <br>работы</h3>
+                                        </a>
+                                        <div class="internal-reconstruction__mini-content internal-reconstruction__mini-content3">
+                                            <div class="internal-reconstruction__photo internal-reconstruction__photo3"></div>
+                                            <div class="internal-reconstruction__text internal-reconstruction__text3">
+                                                <p>С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью
+                                                    поможет подобрать идеальный бургер и оформить заказ. С радостью поможет
+                                                    подобрать идеальный бургер и оформить заказ. бургер и оформить заказ.</p>
+                                                <p>С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью
+                                                    поможет подобрать идеальный бургер и оформить заказ.</p>
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
-                        </form>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+                <section class="section section__reconstruction-stages" id="section_reconstruction-stages">
+                    <div class="container">
+                        <h2 class="caption2 caption2__reconstruction-stages">
+                            Этапы работ
+                            <br>при внешней и внутренней реконструкции</h2>
+                        <div class="wrap wrap__reconstruction-stages">
+                            <div class="reconstruction-stages__tabs">
+                                <input class="reconstruction-stages__tab reconstruction-stages__tab1" id="tab1" type="radio" name="tabs" checked>
+                                <label class="reconstruction-stages__label reconstruction-stages__label1" for="tab1" title="Вкладка 1">
+                                    <h6>Тех. обследование зданий</h6>
+                                </label>
+
+                                <input class="reconstruction-stages__tab reconstruction-stages__tab2" id="tab2" type="radio" name="tabs">
+                                <label class="reconstruction-stages__label reconstruction-stages__label2" for="tab2" title="Вкладка 2">
+                                    <h6>Проектирование реконструкции</h6>
+                                </label>
+
+                                <input class="reconstruction-stages__tab reconstruction-stages__tab3" id="tab3" type="radio" name="tabs">
+                                <label class="reconstruction-stages__label reconstruction-stages__label3" for="tab3" title="Вкладка 3">
+                                    <h6>Согласование реконструкции</h6>
+                                </label>
+
+                                <div class="reconstruction-stages__tabs-content reconstruction-stages__tabs-content1">
+                                    <div class="reconstruction__wrap reconstruction__wrap1">
+                                        <h2 class="reconstruction-stages__title reconstruction-stages__title1">
+                                            Подзаголовок о техническом обследовании зданий</h2>
+                                        <div class="reconstruction-stages__background reconstruction-stages__background1">
+                                            <div class="reconstruction-stages__text reconstruction-stages__text1">
+                                                <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который
+                                                    визуализирует эту идею в двух- или трёхмерную картинку с изображением
+                                                    внешнего вида здания, внутренних планировок и благоустройства территории.
+                                                    На основе эскизного проекта получают разрешение на строительство, составляется
+                                                    вся техническая документация и формируется смета. Поэтому крайне важно,
+                                                    чтобы исходные данные были максимально исчерпывающими и корректными.</p>
+                                                <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который
+                                                    визуализирует эту идею в двух- или трёхмерную картинку с изображением
+                                                    внешнего вида здания, внутренних планировок и благоустройства территории.
+                                                    На основе эскизного проекта получают разрешение на строительство, составляется
+                                                    вся техническая документация и формируется смета. Поэтому крайне важно,
+                                                    чтобы исходные данные были максимально исчерпывающими и корректными.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reconstruction-stages__tabs-content reconstruction-stages__tabs-content2">
+                                    <div class="reconstruction__wrap reconstruction__wrap2">
+
+                                        <div class="reconstruction-stages__background reconstruction-stages__background2">
+                                            <div class="reconstruction-stages__text reconstruction-stages__text2">
+                                                <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который
+                                                    визуализирует эту идею в двух- или трёхмерную картинку с изображением
+                                                    внешнего вида здания, внутренних планировок и благоустройства территории.
+                                                    На основе эскизного проекта получают разрешение на строительство, составляется
+                                                    вся техническая документация и формируется смета. Поэтому крайне важно,
+                                                    чтобы исходные данные были максимально исчерпывающими и корректными.</p>
+                                                <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который
+                                                    визуализирует эту идею в двух- или трёхмерную картинку с изображением
+                                                    внешнего вида здания, внутренних планировок и благоустройства территории.
+                                                    На основе эскизного проекта получают разрешение на строительство, составляется
+                                                    вся техническая документация и формируется смета. Поэтому крайне важно,
+                                                    чтобы исходные данные были максимально исчерпывающими и корректными.</p>
+                                            </div>
+                                        </div>
+                                        <h2 class="reconstruction-stages__title reconstruction-stages__title2">
+                                            Подзаголовок о проектировании реконструкции: внешней и внутренней</h2>
+                                    </div>
+                                </div>
+
+                                <div class="reconstruction-stages__tabs-content reconstruction-stages__tabs-content3">
+                                    <div class="reconstruction__wrap reconstruction__wrap3">
+                                        <div class="reconstruction-stages__background reconstruction-stages__background3">
+                                            <h2 class="reconstruction-stages__title reconstruction-stages__title3">
+                                                Подзаголовок о согласовании реконстркции</h2>
+                                            <div class="reconstruction-stages__text reconstruction-stages__text3-1">
+                                                <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который
+                                                    визуализирует эту идею в двух- или трёхмерную картинку с изображением
+                                                    внешнего вида здания, внутренних планировок и благоустройства территории.
+                                                    На основе эскизного проекта получают разрешение на строительство, составляется
+                                                    вся техническая документация и формируется смета. Поэтому крайне важно,
+                                                    чтобы исходные данные были максимально исчерпывающими и корректными.</p>
+                                                <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который
+                                                    визуализирует эту идею в двух- или трёхмерную картинку с изображением
+                                                    внешнего вида здания, внутренних планировок и благоустройства территории.
+                                                    На основе эскизного проекта получают разрешение на строительство, составляется
+                                                    вся техническая документация и формируется смета.</p>
+                                            </div>
+                                            <div class="reconstruction-stages__text reconstruction-stages__text3-2">
+                                                <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который
+                                                    визуализирует эту идею в двух- или трёхмерную картинку с изображением
+                                                    внешнего вида здания, внутренних планировок и благоустройства территории.
+                                                    На основе эскизного проекта получают разрешение на строительство, составляется
+                                                    вся техническая документация и формируется смета. Поэтому крайне важно,
+                                                    чтобы исходные данные были максимально исчерпывающими и корректными.</p>
+                                                <p>Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который
+                                                    визуализирует эту идею в двух- или трёхмерную картинку с изображением
+                                                    внешнего вида здания, внутренних планировок и благоустройства территории.
+                                                    На основе эскизного проекта получают разрешение на строительство, составляется
+                                                    вся техническая документация и формируется смета.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+                <section class="section section__reconstruction-engineer" id="section_reconstruction-engineer">
+                    <div class="container">
+                        <h2 class="caption2 caption2__reconstruction-engineer">
+                            Бесплатная консультация
+                            <br> с техническим директором</h2>
+                        <div class="wrap wrap__reconstruction-engineer">
+
+                            <div class="reconstruction-engineer__left">
+                                <div class="reconstruction-engineer__photo">
+                                    <img src="./img/background/project/project-designer.png">
+                                </div>
+                                <div class="reconstruction-engineer__content">
+                                    <h5 class="reconstruction-engineer__name">Сергей Сергеевич Прокофьев</h5>
+                                    <div class="reconstruction-engineer__position">Технический директор ООО "МультиТрест"</div>
+                                    <div class="reconstruction-engineer__citation">
+                                        <div class="reconstruction-engineer__icon-left">
+                                            <img src="./img/icons/commas1.png">
+                                        </div>
+                                        <div class="reconstruction-engineer__left-text">Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь
+                                            размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                            любое содержание Здесь размещаете любое содержание</div>
+                                        <div class="reconstruction-engineer__icon-right">
+                                            <img src="./img/icons/commas2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="reconstruction-engineer__right-frame">
+                                <div class="reconstruction-engineer__right">
+                                    <div class="reconstruction-engineer__form-description">
+                                        Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                        любое содержание....
+                                    </div>
+                                    <form class="reconstruction-engineer__form" action="server.php" method="POST" id="order-engineer__form">
+                                        <label class="reconstruction-engineer__form-block reconstruction-engineer__form-block1">
+                                            <div class="reconstruction-engineer__form-title">Комментарий:</div>
+                                            <textarea class="reconstruction-engineer__form-question" name="reconstruction-engineer__form-question" type="text" placeholder="Опишите подробно вашу задачу, задайте вопрос(ы)"></textarea>
+                                        </label>
+                                        <label class="reconstruction-engineer__form-block">
+                                            <div class="reconstruction-engineer__form-title">Ваше имя*</div>
+                                            <input class="reconstruction-engineer__form-input" name="reconstruction-engineer__form-name" type="text" required>
+                                        </label>
+                                        <label class="reconstruction-engineer__form-block">
+                                            <div class="reconstruction-engineer__form-title">Ваш телефон*</div>
+                                            <input class="reconstruction-engineer__form-input" name="reconstruction-engineer__form-phone" type="text" placeholder="+7123456789"
+                                                required>
+                                        </label>
+                                        <input class="btn btn__engineer-form" type="submit" name="submit" value="Заказать консультацию">
+                                        <div class="OPD OPD__engineer-form">Нажимая на кнопку, вы подтверждаете своё
+                                            <br>
+                                            <a class="OPD__link" href="#" id="accept-link">согласие на обработку персональных данных</a>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section class="section section__reconstruction-partial" id="section_reconstruction-partial">
+                    <div class="container">
+                        <h2 class="caption2 caption2__reconstruction-partial">
+                            Частичная реконструкция
+                            <br>отдельных систем и конструкций здания</h2>
+                        <div class="wrap wrap__reconstruction-partial">
+                            <ul class="reconstruction-partial__list">
+                                <li class="reconstruction-partial__item reconstruction-partial__item1">
+                                    <div class="reconstruction-partial__content">
+                                        <div class="reconstruction-partial__content-box">
+                                            <h4 class="title title__reconstruction-partial">
+                                                Реконструкция всех типов фундаментов</h4>
+                                            <div class="reconstruction-partial__text">
+                                                <div class="reconstruction-partial__price">от 500 руб./м
+                                                    <sup>2</sup>
+                                                </div>
+                                                <div class="reconstruction-partial__price-dop">
+                                                    Экспериза фундамента
+                                                    <br>– бесплатно!</div>
+                                                <a class="btn btn__link-reconstruction-partial" href="#1">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="reconstruction-partial__item reconstruction-partial__item2">
+                                    <div class="reconstruction-partial__content">
+                                        <div class="reconstruction-partial__content-box">
+                                            <h4 class="title title__reconstruction-partial">
+                                                Реконструкция несущих конструкций</h4>
+                                            <div class="reconstruction-partial__text">
+                                                <div class="reconstruction-partial__price">от 500 руб./м
+                                                    <sup>2</sup>
+                                                </div>
+                                                <div class="reconstruction-partial__price-dop">
+                                                    Разработка КМ, КМД
+                                                    <br>– бесплатно!</div>
+                                                <a class="btn btn__link-reconstruction-partial" href="#1">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="reconstruction-partial__item reconstruction-partial__item3">
+                                    <div class="reconstruction-partial__content">
+                                        <div class="reconstruction-partial__content-box">
+                                            <h4 class="title title__reconstruction-partial">
+                                                Реконструкция инженерных
+                                                <br>сетей</h4>
+                                            <div class="reconstruction-partial__text">
+                                                <div class="reconstruction-partial__price">от 500 руб./м
+                                                    <sup>2</sup>
+                                                </div>
+                                                <div class="reconstruction-partial__price-dop">
+                                                    Оценка состояния сетей
+                                                    <br>– бесплатно!</div>
+                                                <a class="btn btn__link-reconstruction-partial" href="#1">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="reconstruction-partial__item reconstruction-partial__item4">
+                                    <div class="reconstruction-partial__content">
+                                        <div class="reconstruction-partial__content-box">
+                                            <h4 class="title title__reconstruction-partial">
+                                                Реконструкция фасада и
+                                                <br>кровли</h4>
+                                            <div class="reconstruction-partial__text">
+                                                <div class="reconstruction-partial__price">от 500 руб./м
+                                                    <sup>2</sup>
+                                                </div>
+                                                <div class="reconstruction-partial__price-dop">
+                                                    Обследование фасада
+                                                    <br>и кровли – бесплатно!</div>
+                                                <a class="btn btn__link-reconstruction-partial" href="#1">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+                <section class="section section__reconstruction-DO" id="section_reconstruction-DO">
+                    <div class="container">
+                        <h2 class="caption2 caption2__reconstruction-DO">
+                            Особенности реконструкции действующих объектов</h2>
+                        <div class="wrap reconstruction-DO__wrap">
+                            <div class="reconstruction-DO__content">
+                                <h5 class="reconstruction-DO__title">Дескриптор о реконструкции действующих объектов. Дескриптор о реконструкции действующих объектов.</h5>
+                                <div class="paragraphs paragraphs__reconstruction-DO">
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                                        сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                        экзотического соуса чураско. Ваш старый добрый знакомый, с рубленым бифштексом из
+                                        100% говядины.
+                                    </p>
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                                        сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                        экзотического соуса чураско. Ваш старый добрый знакомый, с рубленым бифштексом из
+                                        100% говядины.
+                                    </p>
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                                        сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                        экзотического соуса чураско. Ваш старый добрый знакомый, с рубленым бифштексом из
+                                        100% говядины.</p>
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего
+                                        сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением
+                                        экзотического соуса чураско.</p>
+                                </div>
+                            </div>
+                            <div class="reconstruction-DO__photo"></div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+                <section class="section section__reconstruction-documents" id="section_reconstruction-documents">
+                    <div class="container">
+                        <h2 class="caption2 caption2__reconstruction-documents">
+                            Пакет необходимых исходных документов для реконструкции</h2>
+                        <div class="wrap reconstruction-documents__wrap">
+                            <ul class="reconstruction-documents__list-column">
+                                <li class="reconstruction-documents__column reconstruction-documents__column1">
+                                    <ul class="reconstruction-documents__list-stroke reconstruction-documents__list-stroke1">
+                                        <h5 class="reconstruction-documents__stroke reconstruction-documents__stroke-title">№</h5>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke1">1.</li>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke1">2.</li>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke1">3.</li>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke1">4.</li>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke1">5.</li>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke1">6.</li>
+                                    </ul>
+                                </li>
+                                <li class="reconstruction-documents__column">
+                                    <ul class="reconstruction-documents__list-stroke">
+                                        <h5 class="reconstruction-documents__stroke reconstruction-documents__stroke-title">
+                                            Документы для внешней реконструкции</h5>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke2">
+                                            Наименование документа 1 Наименование документа 1 Наименование документа 1 Наименование документа 1</li>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke3">Наименование документа 1</li>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke2">Наименование документа 2</li>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke3">Наименование документа 3</li>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke2">Наименование документа 4</li>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke3">Наименование документа 5</li>
+                                    </ul>
+                                </li>
+                                <li class="reconstruction-documents__column">
+                                    <ul class="reconstruction-documents__list-stroke">
+                                        <h5 class="reconstruction-documents__stroke reconstruction-documents__stroke-title">
+                                            Документы для внутренней реконструкции</h5>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke2">Наименование документа 1</li>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke3">Наименование документа 2</li>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke2">Наименование документа 3</li>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke3">Наименование документа 4</li>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke2">Наименование документа 5</li>
+                                        <li class="reconstruction-documents__stroke reconstruction-documents__stroke3">Наименование документа 6</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+                <section class="section section__reconstruction-form" id="section_reconstruction-form">
+                    <div class="container">
+                        <h2 class="caption2 caption2__reconstruction-form">
+                            Расчёт предварительной сметы
+                            <br>на реконструкцию объекта</h2>
+                        <div class="reconstruction-form__text">Выберите объект, который вам необходимо реконструировать, укажите несколько исходных данных,
+                            <br> и вы получите предварительную стоимость на работы по реконструкции уже сегодня.
+                        </div>
+                        <div class="wrap wrap__reconstruction-form">
+                            <form class="reconstruction-form" action="server.php" method="POST" id="order-reconstruction-form">
+                                <div class="reconstruction-form__left">
+                                    <label class="reconstruction-form__block">
+                                        <div class="reconstruction-form__title">Тип объекта</div>
+                                        <input class="reconstruction-form__input" name="user-object" type="text" placeholder="Например, 'Склад'" required>
+                                    </label>
+                                    <ul class="reconstruction-form__checkbox-list">
+                                        <li class="reconstruction-form__checkbox-item reconstruction-form__checkbox-item1">
+                                            <ul class="reconstruction-form__checkbox-block">
+                                                <div class="reconstruction-form__checkbox-title">Внешняя реконструкция</div>
+                                                <li class="reconstruction-form__checkbox-row">
+                                                    <label class="reconstruction-form__checkbox">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="project" name="project" value="Проектирование">
+                                                        <span class="reconstruction-form__checkbox-btn"></span>
+                                                        <span class="reconstruction-form__name reconstruction-form__name-checkbox">
+                                                            Пристроить помещение</span>
+                                                    </label>
+                                                </li>
+                                                <li class="reconstruction-form__checkbox-row">
+                                                    <label class="reconstruction-form__checkbox">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="building" name="building" value="Монтаж под ключ">
+                                                        <span class="reconstruction-form__checkbox-btn"></span>
+                                                        <span class="reconstruction-form__name reconstruction-form__name-checkbox">
+                                                            Надстроить помещение</span>
+                                                    </label>
+                                                </li>
+                                                <li class="reconstruction-form__checkbox-row">
+                                                    <label class="reconstruction-form__checkbox">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="basis" name="basis" value="Фундамент">
+                                                        <span class="reconstruction-form__checkbox-btn"></span>
+                                                        <span class="reconstruction-form__name reconstruction-form__name-checkbox">
+                                                            Встроить помещение</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+
+                                        <li class="reconstruction-form__checkbox-item reconstruction-form__checkbox-item2">
+                                            <ul class="reconstruction-form__checkbox-block">
+                                                <div class="reconstruction-form__checkbox-title">Внутренняя реконструкция</div>
+                                                <li class="reconstruction-form__checkbox-row">
+                                                    <label class="reconstruction-form__checkbox">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="project" name="project" value="Проектирование">
+                                                        <span class="reconstruction-form__checkbox-btn"></span>
+                                                        <span class="reconstruction-form__name reconstruction-form__name-checkbox">
+                                                            Перепланировка</span>
+                                                    </label>
+                                                </li>
+                                                <li class="reconstruction-form__checkbox-row">
+                                                    <label class="reconstruction-form__checkbox">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="building" name="building" value="Монтаж под ключ">
+                                                        <span class="reconstruction-form__checkbox-btn"></span>
+                                                        <span class="reconstruction-form__name reconstruction-form__name-checkbox">
+                                                            Капитальный ремонт</span>
+                                                    </label>
+                                                </li>
+                                                <li class="reconstruction-form__checkbox-row">
+                                                    <label class="reconstruction-form__checkbox">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="basis" name="basis" value="Фундамент">
+                                                        <span class="reconstruction-form__checkbox-btn"></span>
+                                                        <span class="reconstruction-form__name reconstruction-form__name-checkbox">
+                                                            Отделочные работы</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+
+                                        <li class="reconstruction-form__checkbox-item reconstruction-form__checkbox-item3">
+                                            <ul class="reconstruction-form__checkbox-block">
+                                                <div class="reconstruction-form__checkbox-title">Частичная реконструкция</div>
+                                                <li class="reconstruction-form__checkbox-row">
+                                                    <label class="reconstruction-form__checkbox">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="project" name="project" value="Проектирование">
+                                                        <span class="reconstruction-form__checkbox-btn"></span>
+                                                        <span class="reconstruction-form__name reconstruction-form__name-checkbox">
+                                                            Реконструкция фундамента</span>
+                                                    </label>
+                                                </li>
+                                                <li class="reconstruction-form__checkbox-row">
+                                                    <label class="reconstruction-form__checkbox">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="building" name="building" value="Монтаж под ключ">
+                                                        <span class="reconstruction-form__checkbox-btn"></span>
+                                                        <span class="reconstruction-form__name reconstruction-form__name-checkbox">
+                                                            Реконструкция несущих конструкций
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li class="reconstruction-form__checkbox-row">
+                                                    <label class="reconstruction-form__checkbox">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="basis" name="basis" value="Фундамент">
+                                                        <span class="reconstruction-form__checkbox-btn"></span>
+                                                        <span class="reconstruction-form__name reconstruction-form__name-checkbox">
+                                                            Реконструкция инженерных сетей</span>
+                                                    </label>
+                                                </li>
+                                                <li class="reconstruction-form__checkbox-row">
+                                                    <label class="reconstruction-form__checkbox">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="basis" name="basis" value="Фундамент">
+                                                        <span class="reconstruction-form__checkbox-btn"></span>
+                                                        <span class="reconstruction-form__name reconstruction-form__name-checkbox">
+                                                            Реконструкция фасада и кровли</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+                                <div class="reconstruction-form__right">
+                                    <ul class="reconstruction-form__right-list">
+                                        <li class="reconstruction-form__right-row reconstruction-form__right-row1">
+                                            <label class="reconstruction-form__m2">
+                                                <div class="reconstruction-form__title">Площадь</div>
+                                                <input class="reconstruction-form__input reconstruction-form__input-m2" type="text" id="m2" name="m2" placeholder="м2" value="">
+                                            </label>
+                                            <label class="reconstruction-form__floor">
+                                                <div class="reconstruction-form__title">Этажность</div>
+                                                <select class="reconstruction-form__droplist">
+                                                    <option class="reconstruction-form__droplist-option">Этажность</option>
+                                                    <option class="reconstruction-form__droplist-option">1</option>
+                                                    <option class="reconstruction-form__droplist-option">2</option>
+                                                    <option class="reconstruction-form__droplist-option">3</option>
+                                                    <option class="reconstruction-form__droplist-option">4</option>
+                                                    <option class="reconstruction-form__droplist-option">5</option>
+                                                </select>
+                                            </label>
+                                            <label class="reconstruction-form__adress">
+                                                <div class="reconstruction-form__title">Адрес объекта</div>
+                                                <input class="reconstruction-form__input" name="user-object" type="text">
+                                            </label>
+                                        </li>
+
+                                        <li class="reconstruction-form__right-row reconstruction-form__right-row2">
+                                            <label class="reconstruction-form__comment">
+                                                <div class="reconstruction-form__title">Описание объекта</div>
+                                                <textarea class="reconstruction-form__comment-textarea" name="comment" type="text" placeholder="Опишите здесь параметры вашего объекта, которые, как вы считаете, необходимо учесть при расчёте."></textarea>
+                                            </label>
+                                        </li>
+
+                                        <li class="reconstruction-form__right-row reconstruction-form__right-row3">
+                                            <label class="reconstruction-form__block">
+                                                <div class="reconstruction-form__title">Ваше имя*</div>
+                                                <input class="reconstruction-form__input" name="user-name3" type="text" required>
+                                                <div class="reconstruction-form__title">Ваш телефон*</div>
+                                                <input class="reconstruction-form__input" name="user-phone3" type="text" placeholder="+7123456789" required>
+                                            </label>
+
+                                            <label class="reconstruction-form__contacts">
+                                                <div class="reconstruction-form__title">Ваш email*</div>
+                                                <input class="reconstruction-form__input" name="user-mail3" type="text" required>
+                                                <input class="btn btn__reconstruction-form" type="submit" name="submit" value="Рассчитать смету">
+                                                <div class="OPD OPD__reconstruction-form">Нажимая на кнопку, вы подтверждаете своё
+                                                    <a class="OPD__link" href="#">согласие на обработку персональных данных</a>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+                <div class="map" id="map">
+                    <div class="final-question">
+                        <div class="final-question__content">
+                            <h3 class="final-question__title">Есть вопросы?</h3>
+                            <div class="final-question__text">
+                                Напишите нам:
+                                <a class="final__mail" href="№">info@mtrest.ru</a>
+                                <br> Позвоните нам:
+                                <a class="final__phone" href="№">(812) 716-39-39</a>
+                                <br> Или закажите обратный звонок,
+                                <br> мы перезвоним в течение 10 минут
+                                <br> и ответим на все ваши вопросы:
+                            </div>
+                            <input class="btn__page btn__page-final" type="button" name="submit" value="Закажите обратный звонок">
+                            <a class="privacy-policy__link" href="privacy-policy.html" target="_blank">Политика конфиденциальности</a>
+                        </div>
                     </div>
                 </div>
-            </section>
+                <!-- Карта закончилась -->
+            </div>
+            <!-- ОСНОВНОЕ СОДЕРЖАНИЕ СТРАНИЦЫ "Реконструкция" закончилось -->
+        </div>
+        <!-- wrapper закончился -->
+
+
+        <!-- Секция "Соглашение на обработку персональных данных"-->
+        <section class="accept-form">
+            <div class="accept-form__text">
+                <div class="close-btn"></div>
+                <h2 class="accept-form__title">Соглашение на обработку персональных данных</h2>
+                <p>1. Принимая условия настоящего Соглашения, пользователь даёт своё согласие ООО «Буферная бухта» (далее —
+                    Компания, юридический адрес: Россия, Ульяновск, улица Радищева, 68/25, этаж 3) на сбор, хранение и обработку
+                    своих персональных данных, указанных путём заполнения веб-форм на сайте lifehacker.ru и его поддоменов
+                    *.lifehacker.ru (далее — Сайт). Под персональными данными понимается любая информация, относящаяся к
+                    прямо или косвенно определённому или определяемому физическому лицу (гражданину).</p>
+                <p>2. Пользователь также даёт своё согласие на обработку и трансграничную передачу персональных данных подрядной
+                    организации Компании для отправки маркетинговых и информационных рассылок.</p>
+                <p>3. Основанием для обработки персональных данных являются: статья 24 Конституции РФ и статья 6 Федерального
+                    закона № 152-ФЗ «О персональных данных» с дополнениями и изменениями.</p>
+                <p>4. В ходе обработки с персональными данными будут совершены следующие операции: сбор, хранение, уточнение,
+                    передача, блокирование, удаление, уничтожение — все упомянутые действия только в целях, указанных в п.
+                    2 настоящего Соглашения.</p>
+                <p>5. Компания обязуется не передавать полученную от Пользователя информацию третьим лицам. Не считается нарушением
+                    предоставление персональных данных третьим лицам, действующим на основании договора с Компанией, для
+                    исполнения обязательств перед Пользователем и только в рамках настоящего Соглашения.</p>
+                <p>6. Персональные данные хранятся и обрабатываются до завершения всех необходимых процедур либо до ликвидации
+                    Компании.
+                </p>
+                <p>7. Согласие может быть отозвано Пользователем или его представителем путём направления письменного заявления
+                    в Компанию по электронному адресу ask@lifehacker.ru. Пользователь также может отказаться от получения
+                    электронных сообщений, используя ссылку «Отписаться», расположенную в конце каждого письма.</p>
+                <p>8. Пользователь принимает политику использования файлов cookies, используемую на Сайте, и даёт согласие на
+                    получение информации об IP-адресе и иных сведений о его активности на Сайте. Данная информация не используется
+                    для установления личности Пользователя.</p>
+                <p>9. Компания при обработке персональных данных принимает необходимые и достаточные организационные и технические
+                    меры для защиты персональных данных от неправомерного доступа к ним, а также от иных неправомерных действий
+                    в отношении персональных данных.</p>
+            </div>
+        </section>
+
+
+
+
+        <!-- СТРЕЛКА "Наверх" - НЕ МЕНЯЕТСЯ, НА КАЖДОЙ СТРАНИЦЕ -->
+        <a class="arrow__up" href="#">
+            <img class="arrow__up-icon" src="././img/icons/arrow_up_1.png">
+        </a>
+        <!-- -->
+
+
+
+        <!-- Попап для формы -->
+        <div class="form-popup">
+            <div class="form-popup__wrapper">
+                <div class="close-btn" id="close-popup-btn"></div>
+                <h5 class="form-popup__name"></h5>
+            </div>
+        </div>
+        <!-- -->
 
 
 
 
 
 
-
-
-
-
-
-            <div class="map" id="map">
-                <div class="final-question">
-                    <div class="final-question__content">
-                        <h3 class="final-question__title">Есть вопросы?</h3>
-                        <div class="final-question__text">
-                        Напишите нам: <a class="final__mail" href="№">info@mtrest.ru</a><br>
-                        Позвоните нам: <a class="final__phone" href="№">(812) 716-39-39</a><br>
-                        Или закажите обратный звонок,<br> мы перезвоним
-                        в течение 10 минут<br> и ответим на все ваши вопросы:
-                        </div>                                
-                        <input class="btn__page btn__page-final" type="submit" name="submit" value="Закажите обратный звонок">
-                        <a class="privacy-policy__link" href="privacy-policy.html">Политика конфиденциальности</a>
-                    </div>                    
+        <!-- Попап №1 "Реконструкция фундаментов" для секции "Частичная реконструкция" -->
+        <div class="reconstruction-partial__popup">
+            <div class="reconstruction-partial__popup-window">
+                <div class="reconstruction-partial__popup-content">
+                    <h3 class="title title__popup">Реконструкция всех типов фундаментов</h3>
+                    <div class="reconstruction-partial__popup-text">
+                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью поможет подобрать идеальный
+                            бургер и оформить заказ. С радостью поможет подобрать идеальный бургер.</p>
+                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью поможет подобрать идеальный
+                            бургер и оформить заказ. С радостью поможет подобрать идеальный бургер.</p>
+                        <p>С радостью поможет подобрать идеальный бургер и оформить заказ. С радостью поможет подобрать идеальный
+                            бургер и оформить заказ. С радостью поможет подобрать идеальный бургер.</p>
+                    </div>
+                    <ul class="reconstruction-partial__popup-list">
+                        <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row1">
+                            <div class="reconstruction-partial__popup-name">Наименование работы 1</div>
+                            <div class="reconstruction-partial__popup-price">от 500 руб./м
+                                <sup>2</sup>
+                            </div>
+                        </li>
+                        <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row2">
+                            <div class="reconstruction-partial__popup-name">Наименование работы 2</div>
+                            <div class="reconstruction-partial__popup-price">от 500 руб./м
+                                <sup>2</sup>
+                            </div>
+                        </li>
+                        <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row1">
+                            <div class="reconstruction-partial__popup-name">Наименование работы 3</div>
+                            <div class="reconstruction-partial__popup-price">от 500 руб./м
+                                <sup>2</sup>
+                            </div>
+                        </li>
+                        <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row2">
+                            <div class="reconstruction-partial__popup-name">Наименование работы 4</div>
+                            <div class="reconstruction-partial__popup-price">от 500 руб./м
+                                <sup>2</sup>
+                            </div>
+                        </li>
+                        <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row1">
+                            <div class="reconstruction-partial__popup-name">Наименование работы 5</div>
+                            <div class="reconstruction-partial__popup-price">от 500 руб./м
+                                <sup></sup>
+                            </div>
+                        </li>
+                        <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row2">
+                            <div class="reconstruction-partial__popup-name">Наименование работы 6</div>
+                            <div class="reconstruction-partial__popup-price">от 500 руб./м
+                                <sup>2</sup>
+                            </div>
+                        </li>
+                        <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row1">
+                            <div class="reconstruction-partial__popup-name">Наименование работы 7</div>
+                            <div class="reconstruction-partial__popup-price">от 500 руб./м
+                                <sup>2</sup>
+                            </div>
+                        </li>
+                        <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row2">
+                            <div class="reconstruction-partial__popup-name">Наименование работы 8</div>
+                            <div class="reconstruction-partial__popup-price">от 500 руб./м
+                                <sup>2</sup>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="sub-contacts sub-contacts__Kwork">
+                        <div class="TZ reconstruction-partial__TZ">Чтобы заказать реконструкцию фундамента, отправьте запрос по адресу
+                            <a href="№">info@mtrest.ru</a> >или оставьте заявку на бесплатную консультацию
+                            <br>со специалистом:</div>
+                        <input class="btn__page" type="submit" name="submit" value="Получить консультацию">
+                    </div>
                 </div>
+                <a href="#1" class="reconstruction-partial__popup-close"></a>
             </div>
-<!-- Карта закончилась -->  
         </div>
-<!-- ОСНОВНОЕ СОДЕРЖАНИЕ СТРАНИЦЫ "Реконструкция" закончилось -->   
-    </div> 
-<!-- wrapper закончился -->
+        <!-- Попап №1 "Реконструкция фундаментов" для секции "Чсатичная реконструкция" закончился -->
 
 
 
 
 
-
-
-<!-- СТРЕЛКА "Наверх" - НЕ МЕНЯЕТСЯ, НА КАЖДОЙ СТРАНИЦЕ --> 
-    <a class="arrow__up" href="#">
-        <img class="arrow__up-icon" src="././img/icons/arrow_up_1.png">
-    </a>
-<!-- --> 
-
-
-
-<!-- Попап для формы --> 
-    <div class="form-popup">
-		<div class="form-popup__wrapper">
-		  <h5 class="form-popup__name"></h5>
-		  <a href="#" class="close-btn">Закрыть</a>
-		</div>
-    </div>
-<!-- --> 
-    
-
-
-
-
-
-<!-- Попап №1 "Реконструкция фундаментов" для секции "Частичная реконструкция" -->
-    <div class="reconstruction-partial__popup">
-        <div class="reconstruction-partial__popup-window">
-            <div class="reconstruction-partial__popup-content">
-                <h3 class="title title__popup">Реконструкция всех типов фундаментов</h3>
-                <div class="reconstruction-partial__popup-text">
-                    <p>С радостью поможет подобрать идеальный бургер и оформить заказ.
-                    С радостью поможет подобрать идеальный бургер и оформить заказ.
-                    С радостью поможет подобрать идеальный бургер.</p>     
-                    <p>С радостью поможет подобрать идеальный бургер и оформить заказ.
-                    С радостью поможет подобрать идеальный бургер и оформить заказ.
-                    С радостью поможет подобрать идеальный бургер.</p>  
-                    <p>С радостью поможет подобрать идеальный бургер и оформить заказ.
-                    С радостью поможет подобрать идеальный бургер и оформить заказ.
-                    С радостью поможет подобрать идеальный бургер.</p> 
-                </div>	
-                <ul class="reconstruction-partial__popup-list">
-                    <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row1">
-                        <div class="reconstruction-partial__popup-name">Наименование работы 1</div>
-                        <div class="reconstruction-partial__popup-price">от 500 руб./м<sup>2</sup></div>
-                    </li>
-                    <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row2">
-                        <div class="reconstruction-partial__popup-name">Наименование работы 2</div>
-                        <div class="reconstruction-partial__popup-price">от 500 руб./м<sup>2</sup></div>
-                    </li>  
-                    <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row1">
-                        <div class="reconstruction-partial__popup-name">Наименование работы 3</div>
-                        <div class="reconstruction-partial__popup-price">от 500 руб./м<sup>2</sup></div>
-                    </li>
-                    <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row2">
-                        <div class="reconstruction-partial__popup-name">Наименование работы 4</div>
-                        <div class="reconstruction-partial__popup-price">от 500 руб./м<sup>2</sup></div>
-                    </li>  
-                    <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row1">
-                        <div class="reconstruction-partial__popup-name">Наименование работы 5</div>
-                        <div class="reconstruction-partial__popup-price">от 500 руб./м<sup></sup></div>
-                    </li>
-                    <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row2">
-                        <div class="reconstruction-partial__popup-name">Наименование работы 6</div>
-                        <div class="reconstruction-partial__popup-price">от 500 руб./м<sup>2</sup></div>
-                    </li>  
-                    <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row1">
-                        <div class="reconstruction-partial__popup-name">Наименование работы 7</div>
-                        <div class="reconstruction-partial__popup-price">от 500 руб./м<sup>2</sup></div>
-                    </li>
-                    <li class="reconstruction-partial__popup-row reconstruction-partial__popup-row2">
-                        <div class="reconstruction-partial__popup-name">Наименование работы 8</div>
-                        <div class="reconstruction-partial__popup-price">от 500 руб./м<sup>2</sup></div>
-                    </li> 
-                </ul> 
-                <div class="sub-contacts sub-contacts__Kwork">
-                    <div class="TZ reconstruction-partial__TZ">Чтобы заказать реконструкцию фундамента, отправьте запрос по адресу 
-                    <a href="№">info@mtrest.ru</a> >или оставьте заявку на бесплатную консультацию <br>со специалистом:</div>                                
-                    <input class="btn__page" type="submit" name="submit" value="Получить консультацию">
-                </div>   
-            </div>
-            <a href="#1" class="reconstruction-partial__popup-close"></a>
-        </div>
-    </div>
-<!-- Попап №1 "Реконструкция фундаментов" для секции "Чсатичная реконструкция" закончился -->
-
-
-
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./dist/bundle.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./dist/bundle.js"></script>
 </body>
+
 </html>

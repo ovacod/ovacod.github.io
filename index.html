@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,143 +9,149 @@
     <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800,900&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:500i,700i&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">     
-    <link rel="stylesheet" href="css/main.css">   
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    
+
 </head>
+
 <body>
     <div class="wrapper">
 
-<!-- Верхнее меню - НЕ МЕНЯЕТСЯ до стр. 162 --> 
-        <div class="panel__up">            
+        <!-- Верхнее меню - НЕ МЕНЯЕТСЯ до стр. 162 -->
+        <div class="panel__up">
             <nav class="main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item main-nav__item-about">
                         <a class="main-nav__link" href="index.html">О компании</a>
-                        <div class="dropdown dropdown-about">  
-                            <a class="dropdown-link" href="#section_avatar">Портрет нашего заказчика</a>                                                               
+                        <div class="dropdown dropdown-about">
+                            <a class="dropdown-link" href="#section_avatar">Портрет нашего заказчика</a>
                             <a class="dropdown-link" href="#section_who">Кто мы и что делаем
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_who">Услуги</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_who">Гарантии</a>
-                                <a class="dropdown-link dropdown-link__mini-link" href="#section_who">Репутация</a>                                    
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_who">Репутация</a>
                             </a>
-                            <a class="dropdown-link" href="#section_slider-reviews">Отзывы</a>                         
+                            <a class="dropdown-link" href="#section_slider-reviews">Отзывы</a>
                             <a class="dropdown-link" href="#section_director">Миссия компании</a>
-                            <a class="dropdown-link" href="#section_licenses">Лицензии</a>  
-                            <a class="dropdown-link" href="#section_team">Команда</a>                         
+                            <a class="dropdown-link" href="#section_licenses">Лицензии</a>
+                            <a class="dropdown-link" href="#section_team">Команда</a>
                             <a class="dropdown-link" href="#section_partners">Заказчики и партнёры</a>
                         </div>
                     </li>
-                    
-                    <li class="main-nav__item"><a class="main-nav__link" href="project.html">Проектирование</a>
-                        <div class="dropdown dropdown-project">               
+
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="project.html">Проектирование</a>
+                        <div class="dropdown dropdown-project">
                             <a class="dropdown-link" href="#section_project-form">Экспресс-расчёт сметы</a>
-                            <a class="dropdown-link" href="#section_project-advantages">Наши преимущества</a>                 
+                            <a class="dropdown-link" href="#section_project-advantages">Наши преимущества</a>
                             <a class="dropdown-link" href="#section_project-S">Проектирование строительства
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_project-S">Проектирование несущих конструкций</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_project-S">Проектирование инженерных систем</a>
-                                <a class="dropdown-link dropdown-link__mini-link" href="#section_project-S">Проектирование сетей электроснабжения</a>                                                                    
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_project-S">Проектирование сетей электроснабжения</a>
                             </a>
                             <a class="dropdown-link" href="#">Типовые проекты зданий</a>
                             <a class="dropdown-link" href="#section_project-F">Проектирование фундаментов</a>
                             <a class="dropdown-link" href="#section_project-R">Проектирование реконструкции
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_project-R">Техническое обследование зданий</a>
-                                <a class="dropdown-link dropdown-link__mini-link" href="#section_project-R">Проектирование и согласование реконструкции</a>                                    
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_project-R">Проектирование и согласование реконструкции</a>
                             </a>
                             <a class="dropdown-link" href="#section_project-designer">Бесплатная консультация</a>
                             <a class="dropdown-link" href="#section_project-stages">Стадии разработки проекта | состав | цены
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_project-stages">Предпроектный этап</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_project-stages">Этап проектирования</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_project-stages">Этап согласований</a>
-                            </a> 
+                            </a>
                             <a class="dropdown-link" href="#section_project-license">Лицензия</a>
-                            <a class="dropdown-link" href="#section_project-documents">Необходимый пакет документов</a>                     
+                            <a class="dropdown-link" href="#section_project-documents">Необходимый пакет документов</a>
                         </div>
                     </li>
 
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">Строительство</a>
-                        <div class="dropdown dropdown-building">                                                               
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Строительство</a>
+                        <div class="dropdown dropdown-building">
                             <a class="dropdown-link" href="#">Промышленные здания
                                 <a class="dropdown-link dropdown-link__mini-link" href="#">Склад | Ангар</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#">Цех | Производство</a>
-                                <a class="dropdown-link dropdown-link__mini-link" href="#">Котельная</a>                                    
+                                <a class="dropdown-link dropdown-link__mini-link" href="#">Котельная</a>
                             </a>
                             <a class="dropdown-link" href="#">Коммерческие здания
                                 <a class="dropdown-link dropdown-link__mini-link" href="#">АБК</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#">Магазин</a>
-                                <a class="dropdown-link dropdown-link__mini-link" href="#">Офис</a>                                    
-                            </a>       
-                            <a class="dropdown-link" href="#">Выгоды работы с нами</a>                         
+                                <a class="dropdown-link dropdown-link__mini-link" href="#">Офис</a>
+                            </a>
+                            <a class="dropdown-link" href="#">Выгоды работы с нами</a>
                             <a class="dropdown-link" href="#">Порядок работ</a>
                         </div>
                     </li>
 
-                    <li class="main-nav__item"><a class="main-nav__link" href="reconstruction.html">Реконструкция</a>
-                        <div class="dropdown dropdown-reconstruction">                                                               
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="reconstruction.html">Реконструкция</a>
+                        <div class="dropdown dropdown-reconstruction">
                             <a class="dropdown-link" href="#section_reconstruction-1">Типы реконструируемых объектов</a>
                             <a class="dropdown-link" href="#section_external-reconstruction">Внешняя реконструкция
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_external-reconstruction">Пристроенные помещения</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_external-reconstruction">Надстроенные помещения</a>
-                                <a class="dropdown-link dropdown-link__mini-link" href="#section_external-reconstruction">Устройство внутренних помещений</a>                                                                    
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_external-reconstruction">Устройство внутренних помещений</a>
                             </a>
                             <a class="dropdown-link" href="#section_internal-reconstruction">Внутренняя реконструкция
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_internal-reconstruction">Перепланировка</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_internal-reconstruction">Капитальный ремонт</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_internal-reconstruction">Отделочные работы</a>
-                            </a>  
+                            </a>
                             <a class="dropdown-link" href="#section_reconstruction-stages">Этапы реконструкции
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-stages">Техническое обследование зданий</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-stages">Проектирование реконструкции</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-stages">Согласование реконструкции</a>
-                            </a>     
-                            <a class="dropdown-link" href="#section_reconstruction-engineer">Бесплатная консультация с техническим директором</a>    
+                            </a>
+                            <a class="dropdown-link" href="#section_reconstruction-engineer">Бесплатная консультация с техническим директором</a>
                             <a class="dropdown-link" href="#section_reconstruction-partial">Частичная реконструкция отдельных систем
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-partial">Реконструкция фундаментов</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-partial">Реконструкция несущих конструкций</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-partial">Реконструкция инженерных сетей</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_reconstruction-partial">Реконструкция фасада и кровли</a>
-                            </a>                                             
+                            </a>
                             <a class="dropdown-link" href="#section_reconstruction-DO">Реконструкция действующих объектов</a>
                             <a class="dropdown-link" href="#section_reconstruction-documents">Пакет необходимых документов</a>
                             <a class="dropdown-link" href="#section_reconstruction-form">Расчёт сметы на реконструкцию</a>
-                        </div>                    
+                        </div>
                     </li>
 
-                    <li class="main-nav__item"><a class="main-nav__link" href="works.html">Работы</a>
-                        <div class="dropdown dropdown-works">                                                               
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="works.html">Работы</a>
+                        <div class="dropdown dropdown-works">
                             <a class="dropdown-link" href="#section_SMR">Все виды строительно-монтажных работ</a>
-                            <a class="dropdown-link" href="#section_Zwork">Земляные работы | Котлован</a>                                                             
+                            <a class="dropdown-link" href="#section_Zwork">Земляные работы | Котлован</a>
                             <a class="dropdown-link" href="#section_Bwork">Бетонные и монолитные работы</a>
                             <a class="dropdown-link" href="#section_Fwork">Фундаментные работы
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_Fwork">Устройство оснований</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_Fwork">Устройство фундаментов</a>
                             </a>
                             <a class="dropdown-link" href="#section_MK">Монтаж металлоконструкций</a>
-                            <a class="dropdown-link" href="#section_SP">Монтаж сэндвич панелей</a>    
-                            <a class="dropdown-link" href="#section_Kwork">Кровельные работы</a>                            
+                            <a class="dropdown-link" href="#section_SP">Монтаж сэндвич панелей</a>
+                            <a class="dropdown-link" href="#section_Kwork">Кровельные работы</a>
                             <a class="dropdown-link" href="#section_IS">Монтаж инженерных сетей
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_IS">Водоснабжение и водоотведение</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_IS">Канализация</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_IS">Отопление</a>
-                                <a class="dropdown-link dropdown-link__mini-link" href="#section_IS">Вентиляция и кондиционирование</a>                                    
-                            </a>                                
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_IS">Вентиляция и кондиционирование</a>
+                            </a>
                             <a class="dropdown-link" href="#section_EMR">Электромонтажные работы</a>
                             <a class="dropdown-link" href="#section_asphalting">Асфальтирование и благоустройство</a>
-                        </div> 
+                        </div>
                     </li>
 
-                    <li class="main-nav__item"><a class="main-nav__link" href="materials.html">Материалы</a>
-                        <div class="dropdown dropdown-materials">     
-                            <a class="dropdown-link" href="#section_materials-1">Почему материалы выгодно заказывать у нас</a> 
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="materials.html">Материалы</a>
+                        <div class="dropdown dropdown-materials">
+                            <a class="dropdown-link" href="#section_materials-1">Почему материалы выгодно заказывать у нас</a>
                             <a class="dropdown-link" href="#section_materials-MK">Своё производcтво металлоконструкций
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-MK">Металлокаркасы зданий</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-MK">Стеллажные системы</a>
-                            </a>                                                          
+                            </a>
                             <a class="dropdown-link" href="#section_materials-SP-PL">Ограждающие конструкции
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-SP-PL">Сэндвич панели</a>
-                                <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-SP-PL">Профлист</a>                                                                                                        
-                            </a>                                                                                             
+                                <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-SP-PL">Профлист</a>
+                            </a>
                             <a class="dropdown-link" href="#section_materials-beton">Бетон</a>
                             <a class="dropdown-link" href="#section_materials-NM">Нерудные материалы
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-NM">Щебень</a>
@@ -152,30 +159,35 @@
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-NM">Отсев</a>
                                 <a class="dropdown-link dropdown-link__mini-link" href="#section_materials-NM">ЩПС</a>
                             </a>
-                            <a class="dropdown-link" href="#section_materials-asfalt">Асфальт | Асфальтовая крошка</a>                                
-                        </div> 
+                            <a class="dropdown-link" href="#section_materials-asfalt">Асфальт | Асфальтовая крошка</a>
+                        </div>
                     </li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#">Объекты</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a></li>                    
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Объекты</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="contacts.html">Контакты</a>
+                    </li>
                 </ul>
             </nav>
-        </div> 
-<!-- Верхнее меню закончилось-->           
-    
+        </div>
+        <!-- Верхнее меню закончилось-->
 
 
-<!-- Левая прижатая панель - НЕ МЕНЯЕТСЯ до стр. 253 -->  
+
+        <!-- Левая прижатая панель - НЕ МЕНЯЕТСЯ до стр. 253 -->
         <div class="panel__left">
-            <div class="panel__left-wrap">                
+            <div class="panel__left-wrap">
                 <div class="panel__left-description">
-                    <a class="logo" href="index.html"><img src="./img/logo/logo_m.png" alt="logo"></a>
+                    <a class="logo" href="index.html">
+                        <img src="./img/logo/logo_m.png" alt="logo">
+                    </a>
                     <div class="desc">
-                        Проектирование и строительство
-                        промышленных и коммерческих
-                        быстровозводимых зданий от 500м<sup>2</sup><br>
-                        из чёрнометаллического каркаса<br>
-                        в Санкт-Петребурге и Ленобласти
-                    </div>                    
+                        Проектирование и строительство промышленных и коммерческих быстровозводимых зданий от 500м
+                        <sup>2</sup>
+                        <br> из чёрнометаллического каркаса
+                        <br> в Санкт-Петребурге и Ленобласти
+                    </div>
                 </div>
 
 
@@ -198,7 +210,7 @@
                                 <img src="./img/icons/hangar1.png" alt="abk">
                                 <div class="objects__name">Ангары</div>
                             </a>
-                        </li>                        
+                        </li>
                         <li class="objects__item">
                             <a class="objects__item-block" href="#">
                                 <img src="./img/icons/shop1.png" alt="shop">
@@ -217,19 +229,20 @@
                                 <div class="objects__name">Офисы</div>
                             </a>
                         </li>
-                    </ul>                    
+                    </ul>
                 </div>
 
 
                 <div class="panel__left-contacts">
                     <div class="left-contacts__phones-mail">
-                        <a class="left-contacts__phones" href="#">(812) 716-39-39<br>(812) 716-34-34</a>
+                        <a class="left-contacts__phones" href="#">(812) 716-39-39
+                            <br>(812) 716-34-34</a>
                         <a class="left-contacts__mail" href="#">info@mtrest.ru</a>
                     </div>
                     <div class="left-contacts__adress">
-                        Ленобласть, пос. Ропша,<br>
-                        Стрельнинское шоссе, 1Б<br>
-                        ПН-ПТ: 9:30-18:00
+                        Ленобласть, пос. Ропша,
+                        <br> Стрельнинское шоссе, 1Б
+                        <br> ПН-ПТ: 9:30-18:00
                     </div>
                     <ul class="left-contacts__social-list">
                         <li class="social-item">
@@ -251,14 +264,14 @@
                 </div>
             </div>
         </div>
-<!-- Левая прижатая панель закончилась -->  
+        <!-- Левая прижатая панель закончилась -->
 
 
 
-<!-- Правая прижатая панель (до стр. 466) - НА КАЖДОЙ СТРАНИЦЕ МЕНЯЕТСЯ СЕРЕДИНА -> right__center здесь стр. 394-423 -->  
+        <!-- Правая прижатая панель (до стр. 466) - НА КАЖДОЙ СТРАНИЦЕ МЕНЯЕТСЯ СЕРЕДИНА -> right__center здесь стр. 394-423 -->
         <div class="panel__right">
             <div class="panel__right-wrap">
-                
+
                 <div class="right-up">
                     <ul class="buttons__list">
                         <li class="buttons__item buttons__item-callback">
@@ -267,25 +280,26 @@
                             </a>
                             <div class="buttons__content buttons__content-callback">
                                 <div class="buttons__text buttons__text-callback">
-                                    Оставьте свои контактные данные, и наш специалист
-                                    перезвонит вам в ближайшее время, чтобы ответить
-                                    на все интересующие вас вопросы                                                                                                                    
+                                    Оставьте свои контактные данные, и наш специалист перезвонит вам в ближайшее время, чтобы ответить на все интересующие вас
+                                    вопросы
                                 </div>
-                                <form class="form form__callback" action="server.php" method="POST" id="order-form1">                                    
-                                    <label class="form__block">
-                                        <div class="form__title">Ваше имя*</div>
-                                        <input class="form__input" name="user-name1" type="text" required>
-                                    </label>
-                                    <label class="form__block">
-                                        <div class="form__title">Ваш телефон*</div>
-                                        <input class="form__input" name="user-phone1" type="text" placeholder="+7123456789" required>
-                                    </label>                                        
-                                    <input class="btn" type="submit" name="submit" value="Заказать звонок">   
-                                    <div class="OPD">Нажимая на кнопку, вы подтверждаете своё
-                                        <a class="OPD__link" href="#">согласие на обработку персональных данных</a>
-                                    </div>                                 
-                                </form>
-                            </div>                            
+                                <div class="form-wrapper">
+                                    <form class="form form__callback" action="aside-callback-form.php" method="POST" id="order-form1">
+                                        <label class="form__block">
+                                            <div class="form__title">Ваше имя*</div>
+                                            <input class="form__input" name="user-name1" type="text" required>
+                                        </label>
+                                        <label class="form__block">
+                                            <div class="form__title">Ваш телефон*</div>
+                                            <input class="form__input" name="user-phone1" type="text" placeholder="+7123456789" required>
+                                        </label>
+                                        <input class="btn" type="submit" name="submit" value="Заказать звонок">
+                                        <div class="OPD">Нажимая на кнопку, вы подтверждаете своё
+                                            <a class="OPD__link" href="#">согласие на обработку персональных данных</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </li>
 
 
@@ -293,7 +307,7 @@
                             <a class="main__buttons" href="#">
                                 <div class="buttons__title">Расчёт предварительной сметы</div>
                             </a>
-                            <div class="buttons__content buttons__content-calculation">                                
+                            <div class="buttons__content buttons__content-calculation">
                                 <form class="form form__calculation" action="server.php" method="POST" id="order-form2">
                                     <label class="form__block">
                                         <div class="form__title">Тип объекта</div>
@@ -303,37 +317,37 @@
                                         <label class="form__block form__block-row">
                                             <div class="form__title form__title-row">Длина</div>
                                             <input class="form__input form__input-row" name="user-length" type="text" placeholder="м" required>
-                                        </label>  
+                                        </label>
                                         <label class="form__block form__block-row">
                                             <div class="form__title form__title-row">Ширина</div>
                                             <input class="form__input form__input-row" name="user-width" type="text" placeholder="м" required>
-                                        </label> 
+                                        </label>
                                         <label class="form__block form__block-row">
                                             <div class="form__title form__title-row">Высота</div>
                                             <input class="form__input form__input-row" name="user-height" type="text" placeholder="м" required>
-                                        </label> 
-                                    </div>  
+                                        </label>
+                                    </div>
                                     <div class="form__row form__row-checkbox">
-                                        <label class="checkbox">							
+                                        <label class="checkbox">
                                             <input class="checkbox__input" type="checkbox" id="project" name="project" value="Проектирование">
                                             <span class="checkbox__btn"></span>
-                                            <span class="form__title form__title-checkbox">Проектирование</span>	
+                                            <span class="form__title form__title-checkbox">Проектирование</span>
                                         </label>
-                                        <label class="checkbox">							
+                                        <label class="checkbox">
                                             <input class="checkbox__input" type="checkbox" id="building" name="building" value="Монтаж под ключ">
                                             <span class="checkbox__btn"></span>
-                                            <span class="form__title form__title-checkbox">Монтаж здания под ключ</span>	
+                                            <span class="form__title form__title-checkbox">Монтаж здания под ключ</span>
                                         </label>
-                                        <label class="checkbox">							
+                                        <label class="checkbox">
                                             <input class="checkbox__input" type="checkbox" id="basis" name="basis" value="Фундамент">
                                             <span class="checkbox__btn"></span>
-                                            <span class="form__title form__title-checkbox">Отдельные виды работ</span>	
+                                            <span class="form__title form__title-checkbox">Отдельные виды работ</span>
                                         </label>
                                     </div>
                                     <label class="form__block">
                                         <div class="form__title"></div>
                                         <input class="form__input" name="user-adress" type="text" placeholder="Адрес строительства" required>
-                                    </label>                                
+                                    </label>
                                     <label class="form__block">
                                         <div class="form__title"></div>
                                         <input class="form__input " name="user-name2" type="text" placeholder="Ваше имя*" required>
@@ -341,17 +355,17 @@
                                     <label class="form__block">
                                         <div class="form__title"></div>
                                         <input class="form__input" name="user-phone2" type="text" placeholder="Ваш телефон*" required>
-                                    </label>  
+                                    </label>
                                     <label class="form__block">
                                         <div class="form__title"></div>
                                         <input class="form__input" name="user-mail2" type="text" placeholder="Ваш email*" required>
-                                    </label>                                        
-                                    <input class="btn" type="submit" name="submit" value="Рассчитать смету">  
+                                    </label>
+                                    <input class="btn" type="submit" name="submit" value="Рассчитать смету">
                                     <div class="OPD">Нажимая на кнопку, вы подтверждаете своё
                                         <a class="OPD__link" href="#">согласие на обработку персональных данных</a>
                                     </div>
                                 </form>
-                            </div>                            
+                            </div>
                         </li>
 
 
@@ -359,13 +373,12 @@
                             <a class="main__buttons" href="#">
                                 <div class="buttons__title">Задайте вопрос инженеру</div>
                             </a>
-                            <div class="buttons__content buttons__content-question">                                
-                                <form class="form form__question" action="server.php" method="POST" id="order-form3">
+                            <div class="buttons__content buttons__content-question">
+                                <form class="form form__question" action="questionForm.php" method="POST" id="order-form3">
                                     <label class="form__block">
                                         <div class="form__title">Ваш вопрос:</div>
-                                        <textarea class="question" name="user-question" type="text" 
-                                        placeholder="Напишите здесь ваш(и) вопрос(ы). Наш инженер свяжется с вами и даст подробную консультацию бесплатно!"></textarea>
-                                    </label>                                     
+                                        <textarea class="question" name="user-question" type="text" placeholder="Напишите здесь ваш(и) вопрос(ы). Наш инженер свяжется с вами и даст подробную консультацию бесплатно!"></textarea>
+                                    </label>
                                     <label class="form__block">
                                         <div class="form__title">Ваше имя*</div>
                                         <input class="form__input" name="user-name3" type="text" required>
@@ -373,24 +386,24 @@
                                     <label class="form__block">
                                         <div class="form__title">Ваш телефон*</div>
                                         <input class="form__input" name="user-phone3" type="text" placeholder="+7123456789" required>
-                                    </label>   
+                                    </label>
                                     <label class="form__block">
                                         <div class="form__title">Ваш email*</div>
                                         <input class="form__input" name="user-mail3" type="text" required>
-                                    </label>                                     
+                                    </label>
                                     <input class="btn" type="submit" name="submit" value="Задать вопрос">
                                     <div class="OPD">Нажимая на кнопку, вы подтверждаете своё
                                         <a class="OPD__link" href="#">согласие на обработку персональных данных</a>
                                     </div>
                                 </form>
-                            </div>                            
+                            </div>
                         </li>
                     </ul>
                 </div>
 
 
 
-<!-- БОКОВОЕ МЕНЮ -  МЕНЯЕТСЯ НА КАЖДОЙ СТРАНИЦЕ -->
+                <!-- БОКОВОЕ МЕНЮ -  МЕНЯЕТСЯ НА КАЖДОЙ СТРАНИЦЕ -->
                 <div class="right-center" id="right-center">
                     <ul class="menu-page__list menu-page__list-about" id="menu-page_list">
                         <li class="menu-page__item">
@@ -404,9 +417,10 @@
                                     <li class="menu-page__mini">Репутация</li>
                                 </ul>
                             </a>
-                        </li>                        
+                        </li>
                         <li class="menu-page__item">
-                            <a class="menu-page__link" href="#section_slider-reviews">Отзывы</a></li>                        
+                            <a class="menu-page__link" href="#section_slider-reviews">Отзывы</a>
+                        </li>
                         <li class="menu-page__item">
                             <a class="menu-page__link" href="#section_director">Миссия компании</a>
                         </li>
@@ -418,10 +432,10 @@
                         </li>
                         <li class="menu-page__item">
                             <a class="menu-page__link" href="#section_partners">Заказчики и партнёры</a>
-                        </li>                        
+                        </li>
                     </ul>
                 </div>
-<!-- БОКОВОЕ МЕНЮ закончилось -->
+                <!-- БОКОВОЕ МЕНЮ закончилось -->
 
 
 
@@ -433,10 +447,9 @@
                                 <div class="triggers__title">Аудит проекта бесплатно</div>
                             </a>
                             <div class="triggers__text triggers__text-audit">
-                                Речевой акт редуцирует диалектический характер. Развивая эту тему, 
-                                заимствование редуцирует конструктивный механизм сочленений.
-                                Лирический субъект начинает диссонансный анжамбеман. 
-                            </div>                            
+                                Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                Лирический субъект начинает диссонансный анжамбеман.
+                            </div>
                         </li>
 
                         <li class="triggers__item triggers__item-15">
@@ -444,10 +457,9 @@
                                 <div class="triggers__title">Снижение затрат до 15%</div>
                             </a>
                             <div class="triggers__text triggers__text-15">
-                                Речевой акт редуцирует диалектический характер. Развивая эту тему, 
-                                заимствование редуцирует конструктивный механизм сочленений.
-                                Лирический субъект начинает диссонансный анжамбеман. 
-                            </div>                            
+                                Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                Лирический субъект начинает диссонансный анжамбеман.
+                            </div>
                         </li>
 
                         <li class="triggers__item triggers__item-5years">
@@ -455,18 +467,15 @@
                                 <div class="triggers__title">Гарантия - от 5 лет</div>
                             </a>
                             <div class="triggers__text triggers__text-5years">
-                                Речевой акт редуцирует диалектический характер. Развивая эту тему, 
-                                заимствование редуцирует конструктивный механизм сочленений.
-                                Лирический субъект начинает диссонансный анжамбеман. 
-                            </div>                        
-                        </li>                        
+                                Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                Лирический субъект начинает диссонансный анжамбеман.
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-<!-- Правая прижатая панель закончилась -->
-
-        
+        <!-- Правая прижатая панель закончилась -->
 
 
 
@@ -488,45 +497,45 @@
 
 
 
-<!-- ОСНОВНОЕ СОДЕРЖАНИЕ СТРАНИЦЫ "О компании" до стр. 1014 -->
+
+
+        <!-- ОСНОВНОЕ СОДЕРЖАНИЕ СТРАНИЦЫ "О компании" до стр. 1014 -->
         <div class="maincontent maincontent__about">
 
             <section class="section section__avatar" id="section_avatar">
                 <div class="container">
                     <div class="wrap wrap__avatar">
                         <div class="resume">
-                            <h2 class="resume__title">Наш<br>заказчик</h2>
+                            <h2 class="resume__title">Наш
+                                <br>заказчик</h2>
                             <ul class="resume__list">
                                 <li class="resume__item">
                                     <h4 class="resume__punct">1</h4>
-                                    <div class="resume__text">имеет потребность в проектировании, строительстве,
-                                    реконструкции объекта промышленного или коммерческого назначения
-                                    общей площадью от 500м2 в СПб или ЛО</div>
+                                    <div class="resume__text">имеет потребность в проектировании, строительстве, реконструкции объекта промышленного
+                                        или коммерческого назначения общей площадью от 500м2 в СПб или ЛО</div>
                                 </li>
                                 <li class="resume__item">
                                     <h4 class="resume__punct">2</h4>
-                                    <div class="resume__text">имеет потребность в проектировании, строительстве,
-                                    реконструкции объекта промышленного или коммерческого назначения
-                                    общей площадью от 500м2 в СПб или ЛО</div>
+                                    <div class="resume__text">имеет потребность в проектировании, строительстве, реконструкции объекта промышленного
+                                        или коммерческого назначения общей площадью от 500м2 в СПб или ЛО</div>
                                 </li>
                                 <li class="resume__item">
                                     <h4 class="resume__punct">3</h4>
-                                    <div class="resume__text">имеет потребность в проектировании, строительстве,
-                                    реконструкции объекта промышленного или коммерческого назначения
-                                    общей площадью от 500м2 в СПб или ЛО</div>
+                                    <div class="resume__text">имеет потребность в проектировании, строительстве, реконструкции объекта промышленного
+                                        или коммерческого назначения общей площадью от 500м2 в СПб или ЛО</div>
                                 </li>
                                 <li class="resume__item">
                                     <h4 class="resume__punct">4</h4>
-                                    <div class="resume__text">имеет потребность в проектировании, строительстве,
-                                    реконструкции объекта промышленного или коммерческого назначения
-                                    общей площадью от 500м2 в СПб или ЛО</div>
-                                </li>                               
+                                    <div class="resume__text">имеет потребность в проектировании, строительстве, реконструкции объекта промышленного
+                                        или коммерческого назначения общей площадью от 500м2 в СПб или ЛО</div>
+                                </li>
                             </ul>
                         </div>
                         <div class="avatar__right">
-                            <h1 class="caption1 caption1__about">Профиль нашего потен-<br>циального заказчика</h1>
+                            <h1 class="caption1 caption1__about">Профиль нашего потен-
+                                <br>циального заказчика</h1>
                             <div class="avatar__desc">Давайте посмотрим, подходим ли мы друг другу</div>
-                        </div>                       
+                        </div>
                     </div>
                 </div>
             </section>
@@ -545,131 +554,134 @@
                             <label class="who-label who-label1" for="tab1" title="Вкладка 1">
                                 <h4>Услуги</h4>
                             </label>
-                            
+
                             <input class="who-tab who-tab2" id="tab2" type="radio" name="tabs">
                             <label class="who-label who-label2" for="tab2" title="Вкладка 2">
-                                <h4>Гарантии</h4></label>
-                            
+                                <h4>Гарантии</h4>
+                            </label>
+
                             <input class="who-tab who-tab3" id="tab3" type="radio" name="tabs">
                             <label class="who-label who-label3" for="tab3" title="Вкладка 3">
-                                <h4>Репутация</h4></label>                            
-                            
+                                <h4>Репутация</h4>
+                            </label>
+
                             <div class="who-tabs__content who-tabs__content1">
                                 <ul class="tab-service__list">
                                     <li class="tab-service__item">
-                                        <div class="service__icon service__icon1"><img src="./img/icons/proba.png"></div>
+                                        <div class="service__icon service__icon1">
+                                            <img src="./img/icons/proba.png">
+                                        </div>
                                         <div class="service__text service__text1">
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                        </div>                                            
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                            любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое
+                                            содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь
+                                            размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                            любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое
+                                            содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание....
+                                        </div>
                                     </li>
                                     <li class="tab-service__item">
                                         <div class="service__icon service__icon1">
                                             <img src="./img/icons/proba.png">
                                         </div>
                                         <div class="service__text service__text1">
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                        </div>                                            
-                                    </li> 
-                                </ul>                                                          
-                            </div>  
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                            любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое
+                                            содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь
+                                            размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                            любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое
+                                            содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                            Здесь размещаете любое содержание....
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
 
-                            <div class="who-tabs__content who-tabs__content2">                               
+                            <div class="who-tabs__content who-tabs__content2">
                                 <ul class="tab-guarantees__list">
                                     <li class="tab-guarantees__item">
-                                        <div class="guarantees__icon guarantees__icon1"><img src="./img/icons/proba.png"></div>
+                                        <div class="guarantees__icon guarantees__icon1">
+                                            <img src="./img/icons/proba.png">
+                                        </div>
                                         <div class="guarantees__text guarantees__text1">
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....                                            
-                                        </div>                                            
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                            любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое
+                                            содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                        </div>
                                     </li>
                                     <li class="tab-guarantees__item">
                                         <div class="guarantees__icon guarantees__icon1">
                                             <img src="./img/icons/proba.png">
                                         </div>
                                         <div class="guarantees__text guarantees__text1">
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....  
-                                        </div>                                            
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                            любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое
+                                            содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                        </div>
                                     </li>
                                     <li class="tab-guarantees__item">
                                         <div class="guarantees__icon guarantees__icon1">
                                             <img src="./img/icons/proba.png">
                                         </div>
                                         <div class="guarantees__text guarantees__text1">
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....  
-                                        </div>                                            
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                            любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое
+                                            содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                        </div>
                                     </li>
-                                </ul>                         
-                            </div> 
+                                </ul>
+                            </div>
 
-                            <div class="who-tabs__content who-tabs__content3">                                
+                            <div class="who-tabs__content who-tabs__content3">
                                 <ul class="tab-status__list">
                                     <li class="tab-status__item">
-                                        <div class="status__icon status__icon1"><img src="./img/icons/proba.png"></div>
+                                        <div class="status__icon status__icon1">
+                                            <img src="./img/icons/proba.png">
+                                        </div>
                                         <div class="status__text status__text1">
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                        </div>                                            
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                            любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое
+                                            содержание....
+                                        </div>
                                     </li>
                                     <li class="tab-status__item">
                                         <div class="status__icon status__icon1">
                                             <img src="./img/icons/proba.png">
                                         </div>
                                         <div class="status__text status__text1">
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                        </div>                                            
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                            любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое
+                                            содержание....
+                                        </div>
                                     </li>
                                     <li class="tab-status__item">
                                         <div class="status__icon status__icon1">
                                             <img src="./img/icons/proba.png">
                                         </div>
                                         <div class="status__text status__text1">
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                        </div>                                            
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                            любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое
+                                            содержание....
+                                        </div>
                                     </li>
                                     <li class="tab-status__item">
                                         <div class="status__icon status__icon1">
                                             <img src="./img/icons/proba.png">
                                         </div>
                                         <div class="status__text status__text1">
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                        </div>                                            
+                                            Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                            любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое
+                                            содержание....
+                                        </div>
                                     </li>
-                                </ul>                                
-                            </div>                                
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>                    
+                </div>
             </section>
 
 
@@ -683,142 +695,121 @@
                 <div class="container">
                     <h2 class="caption2 caption2__about">Отзывы</h2>
                     <div class="wrap wrap__reviews">
-                        
+
                         <ul class="slider-reviews">
-                            
-                            <input type="radio" name="slider1" id="slider1_1" checked="checked">
-                            <label for="slider1_1"></label>
-                            <li class="slider-reviews__item">
-                                <img class="arrow__left" src="././img/icons//arrow_left.png" alt=''> 
-                                <div class="slider-reviews__left">                                                                       
+                            <div class="slider-arrow  slider-arrow__prew"></div>
+                            <li class="slider-reviews__item  slider-reviews__item--active">
+                                <div class="slider-reviews__left">
                                     <img src="././img/photo//reviews/reviews_SU.png" alt=''>
                                 </div>
                                 <div class="slider-reviews__right">
                                     <h4 class="reviews__name">ООО "СтройУдача"</h4>
                                     <div class="reviews__text">
-                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                                        добавлением экзотического соуса чураско.</p>
-                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                                        добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками
+                                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь
+                                            с добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками
+                                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь
+                                            с добавлением экзотического соуса чураско.</p>
                                         <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины.</p>
                                     </div>
                                     <div class="reviews__position">Скорлупкин В. Г.
-                                    <span>Генеральный директор ООО "СтройУдача"</span>  
-                                    </div>                                    
-                                </div>     
-                                <img class="arrow__right" src="././img/icons//arrow_right.png" alt=''>                          
+                                        <span>Генеральный директор ООО "СтройУдача"</span>
+                                    </div>
+                                </div>
                             </li>
-                            <label for="slider1_2"></label>                            
-
-                        
-                            <input type="radio" name="slider1" id="slider1_2">
-                            <label for="slider1_2"></label>
+                            
                             <li class="slider-reviews__item">
-                                <img class="arrow__left" src="././img/icons//arrow_left.png" alt=''>
                                 <div class="slider-reviews__left">
                                     <img src="././img/photo//reviews/reviews_PD1.png" alt=''>
                                 </div>
                                 <div class="slider-reviews__right">
                                     <h4 class="reviews__name">ООО "ТД Петродиет"</h4>
                                     <div class="reviews__text">
-                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                                        добавлением экзотического соуса чураско.</p>
-                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                                        добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками
+                                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь
+                                            с добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками
+                                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь
+                                            с добавлением экзотического соуса чураско.</p>
                                         <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины.</p>
                                     </div>
                                     <div class="reviews__position">Минаева М. А.
-                                    <span>Генеральный директор ООО "ТД Петродиет"</span>  
+                                        <span>Генеральный директор ООО "ТД Петродиет"</span>
                                     </div>
-                                </div> 
-                                <img class="arrow__right" src="././img/icons//arrow_right.png" alt=''>                             
+                                </div>
                             </li>
-                            <label for="slider1_3"></label>
 
-
-                            <input type="radio" name="slider1" id="slider1_3">
-                            <label for="slider1_3"></label>
                             <li class="slider-reviews__item">
-                                <img class="arrow__left" src="././img/icons//arrow_left.png" alt=''>
                                 <div class="slider-reviews__left">
                                     <img src="././img/photo//reviews/reviews_GR.png" alt=''>
                                 </div>
                                 <div class="slider-reviews__right">
                                     <h4 class="reviews__name">ООО "Гранит-Развитие"</h4>
                                     <div class="reviews__text">
-                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                                        добавлением экзотического соуса чураско.</p>
-                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                                        добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками
+                                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь
+                                            с добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками
+                                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь
+                                            с добавлением экзотического соуса чураско.</p>
                                         <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины.</p>
                                     </div>
                                     <div class="reviews__position">Михайлов А. В.
-                                    <span>Генеральный директор ООО "Гранит-Развитие"</span>  
+                                        <span>Генеральный директор ООО "Гранит-Развитие"</span>
                                     </div>
-                                </div>   
-                                <img class="arrow__right" src="././img/icons//arrow_right.png" alt=''>                            
+                                </div>
                             </li>
-                            <label for="slider1_4"></label>
 
-
-                            <input type="radio" name="slider1" id="slider1_4">
-                            <label for="slider1_4"></label>
                             <li class="slider-reviews__item">
-                                <img class="arrow__left" src="././img/icons//arrow_left.png" alt=''>
                                 <div class="slider-reviews__left">
                                     <img src="././img/photo//reviews/reviews_STS.png" alt=''>
                                 </div>
                                 <div class="slider-reviews__right">
                                     <h4 class="reviews__name">ООО "СТС"</h4>
                                     <div class="reviews__text">
-                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                                        добавлением экзотического соуса чураско.</p>
-                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                                        добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками
+                                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь
+                                            с добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками
+                                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь
+                                            с добавлением экзотического соуса чураско.</p>
                                         <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины.</p>
                                     </div>
                                     <div class="reviews__position">Мороз А. А.
-                                    <span>Генеральный директор ООО "СТС"</span>  
+                                        <span>Генеральный директор ООО "СТС"</span>
                                     </div>
-                                </div>  
-                                <img class="arrow__right" src="././img/icons//arrow_right.png" alt=''>                             
+                                </div>
                             </li>
-                            <label for="slider1_5"></label>                           
 
-                                                    
-                            <input type="radio" name="slider1" id="slider1_5">
-                            <label for="slider1_5"></label>
                             <li class="slider-reviews__item">
-                                <img class="arrow__left" src="././img/icons//arrow_left.png" alt=''>
                                 <div class="slider-reviews__left">
                                     <img src="././img/photo//reviews/reviews_Temp.png" alt=''>
                                 </div>
                                 <div class="slider-reviews__right">
                                     <h4 class="reviews__name">ООО "Темп"</h4>
                                     <div class="reviews__text">
-                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                                        добавлением экзотического соуса чураско.</p>
-                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками 
-                                        нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с 
-                                        добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками
+                                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь
+                                            с добавлением экзотического соуса чураско.</p>
+                                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками
+                                            нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь
+                                            с добавлением экзотического соуса чураско.</p>
                                         <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины.</p>
                                     </div>
                                     <div class="reviews__position">Кямяря А. И.
-                                    <span>Генеральный директор ООО "Темп"</span>  
+                                        <span>Генеральный директор ООО "Темп"</span>
                                     </div>
-                                </div>  
-                                <img class="arrow__right" src="././img/icons//arrow_right.png" alt=''>                            
+                                </div>
                             </li>
-                            <label for="slider1_1"></label>
+                            <div class="slider-arrow slider-arrow__next"></div>
+                        </ul>
+                        <ul class="slider-paginator">
+                            <li class="slider-paginator__item  slider-paginator__item--active"></li>
+                            <li class="slider-paginator__item"></li>
+                            <li class="slider-paginator__item"></li>
+                            <li class="slider-paginator__item"></li>
+                            <li class="slider-paginator__item"></li>
                         </ul>
                     </div>
                 </div>
@@ -828,7 +819,7 @@
 
 
 
-           
+
 
 
 
@@ -842,18 +833,21 @@
                         <div class="director__right">
                             <h3 class="director__title">"Определяющее в нашем деле - это люди..."</h3>
                             <div class="director__text">
-                                <p>Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                Здесь размещаете любое содержание.... Здесь размещаете любое содержание</p>
-                                <p>Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                Здесь размещаете любое содержание.... Здесь размещаете любое содержание</p>
-                                <p>Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
-                                Здесь размещаете любое содержание.... Здесь размещаете любое содержание</p>
+                                <p>Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                    любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание....
+                                    Здесь размещаете любое содержание</p>
+                                <p>Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                    любое содержание.... Здесь размещаете любое содержание</p>
+                                <p>Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
+                                    любое содержание.... Здесь размещаете любое содержание</p>
                             </div>
                             <div class="director__position">
-                                Дмитрий Владимирович Новиков<br><span>Генеральный директор<br>ООО "МультиТрест"</span>
+                                Дмитрий Владимирович Новиков
+                                <br>
+                                <span>Генеральный директор
+                                    <br>ООО "МультиТрест"</span>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
                 </div>
             </section>
@@ -883,7 +877,7 @@
                                 <img src="./img/photo/licenses/MCHS.png">
                                 <h5 class="licenses__mark">Лицензия МЧС</h5>
                             </li>
-                        </ul>                        
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -896,70 +890,87 @@
 
 
 
-            <section class="section section__team" id="section_team">	
-                <div class="container">	
+            <section class="section section__team" id="section_team">
+                <div class="container">
                     <h2 class="caption2 caption2__about caption2__about-team">Команда</h2>
-                    <div class="wrap wrap__team">		
+                    <div class="wrap wrap__team">
                         <ul class="team__list">
-                            <li class="team__item">	
-                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo1.jpg)"></div> 	
+                            <li class="team__item">
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo1.jpg)"></div>
                                 <div class="team__content">
-                                    <h3 class="title title__team">Елена Маслова</h3>				 				
-                                    <div class="team__text"><p>Специалист отдела снабжения</p></div>	 			
-                                </div>					 					 		
+                                    <h3 class="title title__team">Елена Маслова</h3>
+                                    <div class="team__text">
+                                        <p>Специалист отдела снабжения</p>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="team__item">	
-                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo2.jpg);"></div> 	
+                            <li class="team__item">
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo2.jpg);"></div>
                                 <div class="team__content">
-                                    <h3 class="title title__team">Сергей Прокофьев</h3>				 				
-                                    <div class="team__text"><p>Руководитель отдела развития</p></div>	 			
-                                </div>					 					 		
+                                    <h3 class="title title__team">Сергей Прокофьев</h3>
+                                    <div class="team__text">
+                                        <p>Руководитель отдела развития</p>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="team__item">	
-                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo3.jpg)"></div> 	
+                            <li class="team__item">
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo3.jpg)"></div>
                                 <div class="team__content">
-                                    <h3 class="title title__team">Максим Баишев</h3>				 				
-                                    <div class="team__text"><p>Заместитель дирек-<br>тора по производству</p></div>
-                                </div>					 					 		
+                                    <h3 class="title title__team">Максим Баишев</h3>
+                                    <div class="team__text">
+                                        <p>Заместитель дирек-
+                                            <br>тора по производству</p>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="team__item">	
-                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo4.jpg);"></div> 	
+                            <li class="team__item">
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo4.jpg);"></div>
                                 <div class="team__content">
-                                    <h3 class="title title__team">Ольга Бурчихина</h3>				 				
-                                    <div class="team__text"><p>Ведущий инженер-сметчик</p></div>		 			
-                                </div>					 					 		
+                                    <h3 class="title title__team">Ольга Бурчихина</h3>
+                                    <div class="team__text">
+                                        <p>Ведущий инженер-сметчик</p>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="team__item">	
-                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo5.jpg)"></div> 	
+                            <li class="team__item">
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo5.jpg)"></div>
                                 <div class="team__content">
-                                    <h3 class="title title__team">Ирина Мотырева</h3>				 				
-                                    <div class="team__text"><p>Директор по персоналу</p></div>	                                    				 			
-                                </div>					 					 		
+                                    <h3 class="title title__team">Ирина Мотырева</h3>
+                                    <div class="team__text">
+                                        <p>Директор по персоналу</p>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="team__item">	
-                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo6.jpg);"></div> 	
+                            <li class="team__item">
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo6.jpg);"></div>
                                 <div class="team__content">
-                                    <h3 class="title title__team">Антон Матвеев</h3>				 				
-                                    <div class="team__text"><p>Начальник строительного участка</p></div>			
-                                </div>					 					 		
-                            </li>	
-                            <li class="team__item">	
-                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo7.jpg)"></div> 	
-                                <div class="team__content">
-                                    <h3 class="title title__team">Иван Смирнов</h3>				 				
-                                    <div class="team__text"><p>Начальник строительного участка</p></div>			
-                                </div>					 					 		
+                                    <h3 class="title title__team">Антон Матвеев</h3>
+                                    <div class="team__text">
+                                        <p>Начальник строительного участка</p>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="team__item">	
-                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo8.jpg);"></div> 	
+                            <li class="team__item">
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo7.jpg)"></div>
                                 <div class="team__content">
-                                    <h3 class="title title__team">Михаил Карнелик</h3>				 				
-                                    <div class="team__text"><p>Начальник строительного участка</p></div>			
-                                </div>					 					 		
-                            </li> 	
-                        </ul> 
-                    </div>                       
-                </div>								
+                                    <h3 class="title title__team">Иван Смирнов</h3>
+                                    <div class="team__text">
+                                        <p>Начальник строительного участка</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__photo" style="background-image: url(img/photo/reviews/photo8.jpg);"></div>
+                                <div class="team__content">
+                                    <h3 class="title title__team">Михаил Карнелик</h3>
+                                    <div class="team__text">
+                                        <p>Начальник строительного участка</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
 
 
@@ -974,16 +985,34 @@
                     <h2 class="caption2 caption2__about caption2__about-partners">Заказчики и партнёры</h2>
                     <div class="wrap wrap__partners">
                         <ul class="partners__list">
-                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/SU.png"></li>
-                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/LE.png"></li>
-                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/BKM.png"></li>
-                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/Triniti.png"></li>
-                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/GR.png"></li>
-                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/GP.png"></li>                            
-                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/BKM1.png"></li>
-                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/BKM1.png"></li>
-                            <li class="partners__item licenses__item1"><img src="./img/photo/logos/BKM1.png"></li>
-                        </ul>                        
+                            <li class="partners__item licenses__item1">
+                                <img src="./img/photo/logos/SU.png">
+                            </li>
+                            <li class="partners__item licenses__item1">
+                                <img src="./img/photo/logos/LE.png">
+                            </li>
+                            <li class="partners__item licenses__item1">
+                                <img src="./img/photo/logos/BKM.png">
+                            </li>
+                            <li class="partners__item licenses__item1">
+                                <img src="./img/photo/logos/Triniti.png">
+                            </li>
+                            <li class="partners__item licenses__item1">
+                                <img src="./img/photo/logos/GR.png">
+                            </li>
+                            <li class="partners__item licenses__item1">
+                                <img src="./img/photo/logos/GP.png">
+                            </li>
+                            <li class="partners__item licenses__item1">
+                                <img src="./img/photo/logos/BKM1.png">
+                            </li>
+                            <li class="partners__item licenses__item1">
+                                <img src="./img/photo/logos/BKM1.png">
+                            </li>
+                            <li class="partners__item licenses__item1">
+                                <img src="./img/photo/logos/BKM1.png">
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -994,52 +1023,88 @@
 
 
 
-<!-- Карта - НЕ МЕНЯЕТСЯ -->                                
+            <!-- Карта - НЕ МЕНЯЕТСЯ -->
             <div class="map" id="map">
                 <div class="final-question">
                     <div class="final-question__content">
                         <h3 class="final-question__title">Есть вопросы?</h3>
                         <div class="final-question__text">
-                        Напишите нам: <a class="final__mail" href="№">info@mtrest.ru</a><br>
-                        Позвоните нам: <a class="final__phone" href="№">(812) 716-39-39</a><br>
-                        Или закажите обратный звонок,<br> мы перезвоним
-                        в течение 10 минут<br> и ответим на все ваши вопросы:
-                        </div>                                
-                        <input class="btn__page btn__page-final" type="submit" name="submit" value="Закажите обратный звонок">
-                        <a class="privacy-policy__link" href="privacy-policy.html">Политика конфиденциальности</a>
-                    </div>                    
+                            Напишите нам:
+                            <a class="final__mail" href="№">info@mtrest.ru</a>
+                            <br> Позвоните нам:
+                            <a class="final__phone" href="№">(812) 716-39-39</a>
+                            <br> Или закажите обратный звонок,
+                            <br> мы перезвоним в течение 10 минут
+                            <br> и ответим на все ваши вопросы:
+                        </div>
+                        <input class="btn__page btn__page-final" type="button" name="submit" value="Закажите обратный звонок">
+                        <a class="privacy-policy__link" href="privacy-policy.html" target="_blank">Политика конфиденциальности</a>
+                    </div>
                 </div>
             </div>
-<!-- Карта закончилась --> 
+            <!-- Карта закончилась -->
         </div>
-<!-- ОСНОВНОЕ СОДЕРЖАНИЕ СТРАНИЦЫ "О компании" закончилось -->
-    </div> 
-<!-- wrapper закончился -->
+        <!-- ОСНОВНОЕ СОДЕРЖАНИЕ СТРАНИЦЫ "О компании" закончилось -->
+    </div>
+    <!-- wrapper закончился -->
+
+    <!-- Секция "Соглашение на обработку персональных данных"-->
+    <section class="accept-form">
+        <div class="accept-form__text">
+            <div class="close-btn"></div>
+            <h2 class="accept-form__title">Соглашение на обработку персональных данных</h2>
+            <p>1. Принимая условия настоящего Соглашения, пользователь даёт своё согласие ООО «Буферная бухта» (далее — Компания,
+                юридический адрес: Россия, Ульяновск, улица Радищева, 68/25, этаж 3) на сбор, хранение и обработку своих
+                персональных данных, указанных путём заполнения веб-форм на сайте lifehacker.ru и его поддоменов *.lifehacker.ru
+                (далее — Сайт). Под персональными данными понимается любая информация, относящаяся к прямо или косвенно определённому
+                или определяемому физическому лицу (гражданину).</p>
+            <p>2. Пользователь также даёт своё согласие на обработку и трансграничную передачу персональных данных подрядной
+                организации Компании для отправки маркетинговых и информационных рассылок.</p>
+            <p>3. Основанием для обработки персональных данных являются: статья 24 Конституции РФ и статья 6 Федерального закона
+                № 152-ФЗ «О персональных данных» с дополнениями и изменениями.</p>
+            <p>4. В ходе обработки с персональными данными будут совершены следующие операции: сбор, хранение, уточнение, передача,
+                блокирование, удаление, уничтожение — все упомянутые действия только в целях, указанных в п. 2 настоящего
+                Соглашения.
+            </p>
+            <p>5. Компания обязуется не передавать полученную от Пользователя информацию третьим лицам. Не считается нарушением
+                предоставление персональных данных третьим лицам, действующим на основании договора с Компанией, для исполнения
+                обязательств перед Пользователем и только в рамках настоящего Соглашения.</p>
+            <p>6. Персональные данные хранятся и обрабатываются до завершения всех необходимых процедур либо до ликвидации Компании.</p>
+            <p>7. Согласие может быть отозвано Пользователем или его представителем путём направления письменного заявления
+                в Компанию по электронному адресу ask@lifehacker.ru. Пользователь также может отказаться от получения электронных
+                сообщений, используя ссылку «Отписаться», расположенную в конце каждого письма.</p>
+            <p>8. Пользователь принимает политику использования файлов cookies, используемую на Сайте, и даёт согласие на получение
+                информации об IP-адресе и иных сведений о его активности на Сайте. Данная информация не используется для
+                установления личности Пользователя.</p>
+            <p>9. Компания при обработке персональных данных принимает необходимые и достаточные организационные и технические
+                меры для защиты персональных данных от неправомерного доступа к ним, а также от иных неправомерных действий
+                в отношении персональных данных.</p>
+        </div>
+    </section>
 
 
 
 
 
-
-
-<!-- СТРЕЛКА "Наверх" - НЕ МЕНЯЕТСЯ, НА КАЖДОЙ СТРАНИЦЕ -->
+    <!-- СТРЕЛКА "Наверх" - НЕ МЕНЯЕТСЯ, НА КАЖДОЙ СТРАНИЦЕ -->
     <a class="arrow__up" href="#">
         <img class="arrow__up-icon" src="././img/icons/arrow_up_1.png">
     </a>
-<!-- -->
+    <!-- -->
 
 
-<!-- Попап для формы --> 
+    <!-- Попап для формы -->
     <div class="form-popup">
-		<div class="form-popup__wrapper">
-		  <h5 class="form-popup__name"></h5>
-		  <a href="#" class="close-btn">Закрыть</a>
-		</div>
-	</div>
-<!-- -->   
+        <div class="form-popup__wrapper">
+            <div class="close-btn" id="close-popup-btn"></div>
+            <h5 class="form-popup__name"></h5>
+        </div>
+    </div>
+    <!-- -->
 
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    <
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./dist/bundle.js"></script>
 </body>
+
 </html>

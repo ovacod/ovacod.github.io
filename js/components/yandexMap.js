@@ -3,7 +3,7 @@ module.exports = function () {
 
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
-                center: [59.720748, 29.846675],
+                center: [59.723996, 30.404666],
                 zoom: 9
             }, {
                 searchControlProvider: 'yandex#search'
@@ -14,7 +14,7 @@ module.exports = function () {
                 '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
             ),
 
-            myPlacemark1 = new ymaps.Placemark(myMap.getCenter(), {
+            myPlacemark1 = new ymaps.Placemark([59.720748, 29.846675], {
                 hintContent: 'Собственный значок метки',
                 balloonContent: 'Мы находимся здесь',
             }, {
