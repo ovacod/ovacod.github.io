@@ -46,11 +46,26 @@ rehubPopup();
 const acceptLink = require('./components/acceptLink.js');
 acceptLink();
 
+const designerForm = require('./components/designerForm.js');
+designerForm();
+
+const orderProect = require('./components/orderProect.js');
+orderProect();
+
+const orderDesignerForm = require('./components/orderDesignerForm.js');
+orderDesignerForm();
+
+const reconstructionEngineerForm = require('./components/reconstruction-engineer-form.js');
+reconstructionEngineerForm();
+
+const orderReconstructionForm = require('./components/orderReconstructionForm.js');
+orderReconstructionForm();
+
 const yandexMap = require('./components/yandexMap.js');
 yandexMap();
 
-const slider = require('./components/slider.js');
-slider();
+/*const slider = require('./components/slider.js');
+slider();*/
 
 
 

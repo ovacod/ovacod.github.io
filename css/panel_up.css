@@ -1,34 +1,45 @@
 .panel__up {
     min-height: 2.45rem;
     line-height: 2.45rem;
-    width: 100vw;          
+    width: 100vw;
     position: fixed;
     padding-left: 16rem;
     padding-right: 15.625rem;
     background-color: #fff;
     border-bottom: 2px solid #f2effd;
-    z-index: 1000; }
+    z-index: 1000;
+}
 
 .main-nav__list {
     width: 52.5rem;
     list-style: none;
-    text-transform: uppercase;     
+    text-transform: uppercase;
     font-size: 0.7rem;
     font-weight: 700;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+}
 
 .main-nav__item {
-    display: inline-block;  
-    position: relative; }
+    display: inline-block;
+    position: relative;
+}
 
 .main-nav__link {
     text-decoration: none;
-    color: #1e1e28; }
+    color: #1e1e28;
+}
 
-.main-nav__link:hover, .dropdown-link:hover {
+.main-nav__link:hover,
+.dropdown-link:hover {
     color: #aa2c36;
-    font-weight: 700; }
+    font-weight: 700;
+}
+
+.main-nav__link--active {
+    color: #aa2c36;
+    font-weight: 700;
+}
 
 .main-nav__item:after {
     content: '';
@@ -37,60 +48,67 @@
     height: 0.35rem;
     border-radius: 50%;
     margin-left: 0.7rem;
-    background-color: #aa2c36; }
+    background-color: #aa2c36;
+}
 
 .main-nav__item:last-child:after {
-    display: none; }
+    display: none;
+}
 
-
-
-
-
-
-.dropdown {        
+.dropdown {
     background-color: #f2effd;
-    position: absolute;  
-    top: 2rem;   
-    left: -7rem;  
+    position: absolute;
+    top: 2rem;
+    left: -7rem;
     line-height: 2.5;
     padding-top: 1rem;
     padding-left: 2rem;
-    padding-bottom: 1rem;    
-    display: none; }
+    padding-bottom: 1rem;
+    display: none;
+}
 
 .main-nav__item:hover .dropdown {
     display: flex;
-    flex-flow: column wrap; }
+    flex-flow: column wrap;
+}
 
 .dropdown-link {
-    text-decoration: none;    
+    text-decoration: none;
     font-size: 0.6rem;
     color: #002;
-    font-weight: initial; }
+    font-weight: initial;
+}
 
 .dropdown-link__mini-link {
     font-size: 0.5rem;
     color: gray;
-    margin-left: 2rem; }
+    margin-left: 2rem;
+}
 
 .dropdown-about {
     width: 13rem;
-    left: -1.5rem; }
-    
+    left: -1.5rem;
+}
+
 .dropdown-project {
-    width: 20rem; }
-    
+    width: 20rem;
+}
+
 .dropdown-building {
     width: 12rem;
-    left: -3rem; }
-    
+    left: -3rem;
+}
+
 .dropdown-reconstruction {
     width: 23rem;
-    left: -8rem; }  
-    
+    left: -8rem;
+}
+
 .dropdown-works {
-    width: 18rem; }
+    width: 18rem;
+}
 
 .dropdown-materials {
     width: 20rem;
-    left: -8rem; }    
+    left: -8rem;
+}

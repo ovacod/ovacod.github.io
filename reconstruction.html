@@ -85,7 +85,7 @@
                     </li>
 
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="reconstruction.html">Реконструкция</a>
+                        <a class="main-nav__link  main-nav__link--active" href="reconstruction.html">Реконструкция</a>
                         <div class="dropdown dropdown-reconstruction">
                             <a class="dropdown-link" href="#section_reconstruction-1">Типы реконструируемых объектов</a>
                             <a class="dropdown-link" href="#section_external-reconstruction">Внешняя реконструкция
@@ -847,7 +847,7 @@
                                         Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
                                         любое содержание....
                                     </div>
-                                    <form class="reconstruction-engineer__form" action="server.php" method="POST" id="order-engineer__form">
+                                    <form class="reconstruction-engineer__form" action="reconstruction-engineer-form.php" method="POST" id="order-engineer__form">
                                         <label class="reconstruction-engineer__form-block reconstruction-engineer__form-block1">
                                             <div class="reconstruction-engineer__form-title">Комментарий:</div>
                                             <textarea class="reconstruction-engineer__form-question" name="reconstruction-engineer__form-question" type="text" placeholder="Опишите подробно вашу задачу, задайте вопрос(ы)"></textarea>
@@ -1074,7 +1074,7 @@
                             <br> и вы получите предварительную стоимость на работы по реконструкции уже сегодня.
                         </div>
                         <div class="wrap wrap__reconstruction-form">
-                            <form class="reconstruction-form" action="server.php" method="POST" id="order-reconstruction-form">
+                            <form class="reconstruction-form" action="order-reconstruction-form.php" method="POST" id="order-reconstruction-form">
                                 <div class="reconstruction-form__left">
                                     <label class="reconstruction-form__block">
                                         <div class="reconstruction-form__title">Тип объекта</div>
@@ -1117,7 +1117,7 @@
                                                 <div class="reconstruction-form__checkbox-title">Внутренняя реконструкция</div>
                                                 <li class="reconstruction-form__checkbox-row">
                                                     <label class="reconstruction-form__checkbox">
-                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="project" name="project" value="Проектирование">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="project" name="project2" value="Проектирование">
                                                         <span class="reconstruction-form__checkbox-btn"></span>
                                                         <span class="reconstruction-form__name reconstruction-form__name-checkbox">
                                                             Перепланировка</span>
@@ -1125,7 +1125,7 @@
                                                 </li>
                                                 <li class="reconstruction-form__checkbox-row">
                                                     <label class="reconstruction-form__checkbox">
-                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="building" name="building" value="Монтаж под ключ">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="building" name="building2" value="Монтаж под ключ">
                                                         <span class="reconstruction-form__checkbox-btn"></span>
                                                         <span class="reconstruction-form__name reconstruction-form__name-checkbox">
                                                             Капитальный ремонт</span>
@@ -1133,7 +1133,7 @@
                                                 </li>
                                                 <li class="reconstruction-form__checkbox-row">
                                                     <label class="reconstruction-form__checkbox">
-                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="basis" name="basis" value="Фундамент">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="basis" name="basis2" value="Фундамент">
                                                         <span class="reconstruction-form__checkbox-btn"></span>
                                                         <span class="reconstruction-form__name reconstruction-form__name-checkbox">
                                                             Отделочные работы</span>
@@ -1148,7 +1148,7 @@
                                                 <div class="reconstruction-form__checkbox-title">Частичная реконструкция</div>
                                                 <li class="reconstruction-form__checkbox-row">
                                                     <label class="reconstruction-form__checkbox">
-                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="project" name="project" value="Проектирование">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="project" name="project3" value="Проектирование">
                                                         <span class="reconstruction-form__checkbox-btn"></span>
                                                         <span class="reconstruction-form__name reconstruction-form__name-checkbox">
                                                             Реконструкция фундамента</span>
@@ -1156,7 +1156,7 @@
                                                 </li>
                                                 <li class="reconstruction-form__checkbox-row">
                                                     <label class="reconstruction-form__checkbox">
-                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="building" name="building" value="Монтаж под ключ">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="building" name="building3" value="Монтаж под ключ">
                                                         <span class="reconstruction-form__checkbox-btn"></span>
                                                         <span class="reconstruction-form__name reconstruction-form__name-checkbox">
                                                             Реконструкция несущих конструкций
@@ -1165,7 +1165,7 @@
                                                 </li>
                                                 <li class="reconstruction-form__checkbox-row">
                                                     <label class="reconstruction-form__checkbox">
-                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="basis" name="basis" value="Фундамент">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="basis" name="basis3" value="Фундамент">
                                                         <span class="reconstruction-form__checkbox-btn"></span>
                                                         <span class="reconstruction-form__name reconstruction-form__name-checkbox">
                                                             Реконструкция инженерных сетей</span>
@@ -1173,7 +1173,7 @@
                                                 </li>
                                                 <li class="reconstruction-form__checkbox-row">
                                                     <label class="reconstruction-form__checkbox">
-                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="basis" name="basis" value="Фундамент">
+                                                        <input class="reconstruction-form__checkbox-input" type="checkbox" id="basis" name="basis-rec" value="Фундамент">
                                                         <span class="reconstruction-form__checkbox-btn"></span>
                                                         <span class="reconstruction-form__name reconstruction-form__name-checkbox">
                                                             Реконструкция фасада и кровли</span>
@@ -1195,7 +1195,7 @@
                                             </label>
                                             <label class="reconstruction-form__floor">
                                                 <div class="reconstruction-form__title">Этажность</div>
-                                                <select class="reconstruction-form__droplist">
+                                                <select class="reconstruction-form__droplist" name="floor">
                                                     <option class="reconstruction-form__droplist-option">Этажность</option>
                                                     <option class="reconstruction-form__droplist-option">1</option>
                                                     <option class="reconstruction-form__droplist-option">2</option>
@@ -1206,7 +1206,7 @@
                                             </label>
                                             <label class="reconstruction-form__adress">
                                                 <div class="reconstruction-form__title">Адрес объекта</div>
-                                                <input class="reconstruction-form__input" name="user-object" type="text">
+                                                <input class="reconstruction-form__input" name="user-adress" type="text">
                                             </label>
                                         </li>
 

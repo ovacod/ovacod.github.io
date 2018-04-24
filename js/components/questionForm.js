@@ -19,7 +19,7 @@ module.exports = function () {
         let formPopup = document.querySelector('.form-popup'),
             formPopupName = document.querySelector('.form-popup__name'),
             closeBtn = document.querySelector('#close-popup-btn');
-            console.log(closeBtn);
+          
         request.done(function (msg) {
             formPopup.classList.add('form-popup-active');
             closeBtn.classList.add('close-btn--active');
