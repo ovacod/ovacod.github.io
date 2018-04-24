@@ -40,7 +40,7 @@
                     </li>
 
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="project.html">Проектирование</a>
+                        <a class="main-nav__link  main-nav__link--active" href="project.html">Проектирование</a>
                         <div class="dropdown dropdown-project">
                             <a class="dropdown-link" href="#section_project-form">Экспресс-расчёт сметы</a>
                             <a class="dropdown-link" href="#section_project-advantages">Наши преимущества</a>
@@ -518,55 +518,55 @@
                         <br> и вы получите предварительную стоимость разработки проектной документации в течение 1-3 часов.
                     </div>
                     <div class="wrap wrap__project-form">
-                        <form class="project-form" action="server.php" method="POST" id="order-project-form">
+                        <form class="project-form" action="order-proect.php" method="POST" id="order-project-form">
 
                             <div class="project-form__up">
                                 <ul class="project-form__list">
                                     <li class="project-form__item-up">
                                         <label class="project-form__picture project-form__picture1">
-                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage" value="Склад">
+                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage1" value="Склад">
                                             <h3 class="project-form__picture-name">Офис</h3>
                                         </label>
                                     </li>
                                     <li class="project-form__item-up">
                                         <label class="project-form__picture project-form__picture2">
-                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage" value="Склад">
+                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage2" value="Склад">
                                             <h3 class="project-form__picture-name">Магазин</h3>
                                         </label>
                                     </li>
                                     <li class="project-form__item-up">
                                         <label class="project-form__picture project-form__picture3">
-                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage" value="Склад">
+                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage3" value="Склад">
                                             <h3 class="project-form__picture-name">АБК</h3>
                                         </label>
                                     </li>
                                     <li class="project-form__item-up">
                                         <label class="project-form__picture project-form__picture4">
-                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage" value="Склад">
+                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage4" value="Склад">
                                             <h3 class="project-form__picture-name">Цех</h3>
                                         </label>
                                     </li>
                                     <li class="project-form__item-up">
                                         <label class="project-form__picture project-form__picture5">
-                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage" value="Склад">
+                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage5" value="Склад">
                                             <h3 class="project-form__picture-name">Склад</h3>
                                         </label>
                                     </li>
                                     <li class="project-form__item-up">
                                         <label class="project-form__picture project-form__picture6">
-                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage" value="Склад">
+                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage6" value="Склад">
                                             <h3 class="project-form__picture-name">Ангар</h3>
                                         </label>
                                     </li>
                                     <li class="project-form__item-up">
                                         <label class="project-form__picture project-form__picture7">
-                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage" value="Склад">
+                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage7" value="Склад">
                                             <h3 class="project-form__picture-name">Котельная</h3>
                                         </label>
                                     </li>
                                     <li class="project-form__item-up">
                                         <label class="project-form__picture project-form__picture8">
-                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage" value="Склад">
+                                            <input class="project-form__checkbox" type="checkbox" id="storage" name="storage8" value="Склад">
                                             <h3 class="project-form__picture-name">Другое</h3>
                                         </label>
                                     </li>
@@ -579,12 +579,12 @@
                                     <li class="project-form__item-down project-form__item-down1">
                                         <div class="project-form__row project-form__row1">
                                             <label class="project-form__radio">
-                                                <input class="project-form__input project-form__input-radio" type="radio" name="pay" id="delivery" value="1">
+                                                <input class="project-form__input project-form__input-radio" type="radio" name="type" id="delivery" value="1">
                                                 <span class="project-form__radio-btn"></span>
                                                 <span class="project-form__title project-form__title-radio">Проектирование строительства</span>
                                             </label>
                                             <label class="project-form__radio">
-                                                <input class="project-form__input project-form__input-radio" type="radio" name="pay" id="delivery" value="2">
+                                                <input class="project-form__input project-form__input-radio" type="radio" name="type" id="delivery" value="2">
                                                 <span class="project-form__radio-btn"></span>
                                                 <span class="project-form__title project-form__title-radio">Проектирование реконструкции</span>
                                             </label>
@@ -594,7 +594,7 @@
                                                 <div class="project-form__title">Площадь и этажность объекта:</div>
                                                 <input class="project-form__input project-form__input-m2" type="text" id="m2" name="m2" placeholder="Площадь (м2)" value="">
                                             </label>
-                                            <select class="project-form__droplist">
+                                            <select class="project-form__droplist" name="floor">
                                                 <option class="project-form__droplist-option">Этажность</option>
                                                 <option class="project-form__droplist-option">1</option>
                                                 <option class="project-form__droplist-option">2</option>
@@ -878,7 +878,7 @@
                                     Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете любое содержание.... Здесь размещаете
                                     любое содержание....
                                 </div>
-                                <form class="designer__form" action="server.php" method="POST" id="order-designer__form">
+                                <form class="designer__form" action="order-designer-form.php" method="POST" id="order-designer__form">
                                     <label class="designer__form-block designer__form-block1">
                                         <div class="designer__form-title">Комментарий:</div>
                                         <textarea class="designer__form-question" name="designer__form-question" type="text" placeholder="Опишите подробно вашу задачу, задайте вопрос(ы)"></textarea>

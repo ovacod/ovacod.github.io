@@ -1,7 +1,7 @@
 module.exports = function () {
-    // Форма-2 из правой прижатой панели - Расчёт предварительной сметы //
+    
 
-    $('#order-form2').on('submit', submitForm);
+    $('#order-project-form').on('submit', submitForm);
 
     function submitForm(e) {
         e.preventDefault();
@@ -19,7 +19,7 @@ module.exports = function () {
         let formPopup = document.querySelector('.form-popup'),
             formPopupName = document.querySelector('.form-popup__name'),
             closeBtn = document.querySelector('#close-popup-btn');
-           
+         
         request.done(function (msg) {
             formPopup.classList.add('form-popup-active');
             closeBtn.classList.add('close-btn--active');
@@ -42,14 +42,14 @@ module.exports = function () {
 
             formPopup.classList.remove('form-popup-active');
             closeBtn.classList.remove('close-btn--active');
-            $("#order-form2")[0].reset();
+            $("#order-project-form")[0].reset();
         })
 
         formPopup.addEventListener('click', function(event){
             if(event.target == formPopup){
                 formPopup.classList.remove('form-popup-active');
                 closeBtn.classList.remove('close-btn--active');
-                $("#order-form2")[0].reset();
+                $("#order-project-form")[0].reset();
             }
         });
     };
