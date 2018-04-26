@@ -73,13 +73,11 @@
 
 
 /* Стили для активной вкладки */
-.reconstruction-stages__tab:checked + .reconstruction-stages__label {    
+.reconstruction-stages__label--active {    
     background-color: #b2414a; }
     
 /* Активация секций с помощью псевдокласса :checked */
-.reconstruction-stages__tab1:checked ~ .reconstruction-stages__tabs-content1, 
-.reconstruction-stages__tab2:checked ~ .reconstruction-stages__tabs-content2, 
-.reconstruction-stages__tab3:checked ~ .reconstruction-stages__tabs-content3 {
+ .reconstruction-stages__tabs-content--active {
     display: block; }
 /* */
 

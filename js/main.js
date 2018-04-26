@@ -64,6 +64,18 @@ orderReconstructionForm();
 const yandexMap = require('./components/yandexMap.js');
 yandexMap();
 
+/*const indexTab = require('./components/indexTab.js');
+indexTab();*/
+
+/*const projectTab = require('./components/projectTab.js');
+projectTab();*/
+
+/*const reconstTab = require('./components/reconstTab.js');
+reconstTab();*/
+
+const materialsTab = require('./components/materialsTab.js');
+materialsTab();
+
 /*const slider = require('./components/slider.js');
 slider();*/
 

@@ -69,7 +69,13 @@
     background-color: #FFF;
     padding: 2rem;
     border-radius: 0.2rem;  
-    width: 40%; }
+    width: 40%;
+    display: none;
+ }
+
+ .materials-NM__popup-window--active {
+     display: block;
+ }
 
 .materials-NM__popup {
     padding-bottom: 0.5rem; }
