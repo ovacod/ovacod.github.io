@@ -4,9 +4,8 @@ module.exports = function () {
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
                 center: [59.723996, 30.404666],
-                zoom: 9
-            }, {
-                searchControlProvider: 'yandex#search'
+                zoom: 9,
+                controls: []
             }),
 
             // Создаём макет содержимого.
