@@ -1,5 +1,7 @@
 .section__IS {
-    background: linear-gradient(to top, #ddd4d4, #fff); }
+    background: linear-gradient(to top, #ddd4d4, #fff);
+    overflow: hidden;
+}
 
 .IS__wrap {
     width: 100%;
@@ -14,7 +16,7 @@
 
 .right-side {
     width: 48%;
-    height: 83vh; }
+    height: 100vh; }
 
 .right-side__IS {    
     background-image: url(../../img/background/works/IS/IS.jpg);

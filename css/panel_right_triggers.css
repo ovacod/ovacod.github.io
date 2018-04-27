@@ -1,7 +1,13 @@
 .right-down {         
     width: 100%;
+    position: relative; }
+
+.triggers__list {
     position: absolute;
-    bottom: 0.75rem; }
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 
 .triggers__text {
     height: 0rem;
@@ -18,9 +24,12 @@
     font-size: 0.85rem;
     line-height: 2.5rem; }
 
+.triggers__item-active{
+    height: 17rem;
+}
+
 .triggers__item-active .triggers__text {
     height: 10rem;
-    position: absolute;
     background-color: #e7e7e8;
     height: 20rem;
     border-top: 2px solid #1e1e28;

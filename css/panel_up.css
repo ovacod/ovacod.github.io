@@ -12,6 +12,7 @@
 
 .main-nav__list {
     width: 52.5rem;
+    margin: 0 auto;
     list-style: none;
     text-transform: uppercase;
     font-size: 0.7rem;
