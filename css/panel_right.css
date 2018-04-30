@@ -13,8 +13,14 @@
     background-size: cover;
     background-position: top; }
 
+.panel__right-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .right-center {    
-    margin-top: 2rem;
     margin-left: 3rem;
     width: 75%;
     text-align: left;
@@ -75,7 +81,17 @@
 
 .menu-page__mini {
     list-style: initial;
+    font-size: 0.75rem;
+    color: #1e1e28;
     margin-top: 0.4rem;
     margin-bottom: 0.4rem;
     margin-left: 1rem;
     padding-right: 0.5rem; }
+
+.menu-page__mini:hover {
+   color: #aa2c36;
+}
+
+.menu-page__mini--active {
+    color: #aa2c36;
+}

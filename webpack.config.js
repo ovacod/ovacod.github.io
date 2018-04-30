@@ -1,9 +1,17 @@
 const path = require('path');
 
 module.exports = {
-  entry: './js/main.js',
+  entry: {
+    index: './js/index.js',
+    project: './js/project.js',
+    reconstruction: './js/reconstruction.js',
+    works: './js/works.js',
+    materials: './js/materials.js',
+    contacts: './js/contacts.js',
+    privacy: './js/privacy.js'
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name]-min.js',
     path: path.resolve(__dirname, 'dist')
   },
   devtool: 'source-map'

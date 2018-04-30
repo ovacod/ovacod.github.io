@@ -12,6 +12,7 @@
 
 .main-nav__list {
     width: 52.5rem;
+    margin: 0 auto;
     list-style: none;
     text-transform: uppercase;
     font-size: 0.7rem;
@@ -39,15 +40,18 @@
 .main-nav__link--active {
     color: #aa2c36;
     font-weight: 700;
+    text-decoration-line: underline;
 }
 
 .main-nav__item:after {
     content: '';
-    display: inline-block;
-    width: 0.35rem;
-    height: 0.35rem;
+    display: block;
+    position: absolute;
+    top: 39%;
+    right: -18px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
-    margin-left: 0.7rem;
     background-color: #aa2c36;
 }
 

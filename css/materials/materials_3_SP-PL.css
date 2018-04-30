@@ -38,11 +38,7 @@
         
 
 
-/* Прячем чекбоксы */
-.materials-SP-PL__tab {
-	display: none;
-    position: absolute; }
-/* */  
+
 
 
 
@@ -69,12 +65,11 @@
 
 
 /* Стили для активной вкладки */
-.materials-SP-PL__tab:checked + .materials-SP-PL__label {    
+.materials-SP-PL__label--active {    
     background-color: #b2414a; }
     
-/* Активация секций с помощью псевдокласса :checked */
-.materials-SP-PL__tab1:checked ~ .materials-SP-PL__tabs-content1, 
-.materials-SP-PL__tab2:checked ~ .materials-SP-PL__tabs-content2 {
+/* Активация секций  */
+ .materials-SP-PL__tabs-content--active {
     display: block; }
 /* */
 

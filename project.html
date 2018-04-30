@@ -57,9 +57,9 @@
                             </a>
                             <a class="dropdown-link" href="#section_project-designer">Бесплатная консультация</a>
                             <a class="dropdown-link" href="#section_project-stages">Стадии разработки проекта | состав | цены
-                                <a class="dropdown-link dropdown-link__mini-link" href="#section_project-stages">Предпроектный этап</a>
-                                <a class="dropdown-link dropdown-link__mini-link" href="#section_project-stages">Этап проектирования</a>
-                                <a class="dropdown-link dropdown-link__mini-link" href="#section_project-stages">Этап согласований</a>
+                                <a class="dropdown-link dropdown-link__mini-link  dropdown-tab-link" href="#section_project-stages">Предпроектный этап</a>
+                                <a class="dropdown-link dropdown-link__mini-link  dropdown-tab-link" href="#section_project-stages">Этап проектирования</a>
+                                <a class="dropdown-link dropdown-link__mini-link  dropdown-tab-link" href="#section_project-stages">Этап согласований</a>
                             </a>
                             <a class="dropdown-link" href="#section_project-license">Лицензия</a>
                             <a class="dropdown-link" href="#section_project-documents">Необходимый пакет документов</a>
@@ -917,22 +917,19 @@
                         Стадии разработки проектной документации, состав и стоимость</h2>
                     <div class="wrap wrap__project-stages">
                         <div class="project-stages__tabs">
-                            <input class="project-stages__tab project-stages__tab1" id="tab1" type="radio" name="tabs" checked>
-                            <label class="project-stages__label project-stages__label1" for="tab1" title="Вкладка 1">
+                            <div class="project-stages__label project-stages__label1  project-stages__label--active"  title="Вкладка 1">
                                 <h4>Предпроектный этап</h4>
-                            </label>
+                            </div>
 
-                            <input class="project-stages__tab project-stages__tab2" id="tab2" type="radio" name="tabs">
-                            <label class="project-stages__label project-stages__label2" for="tab2" title="Вкладка 2">
+                            <div class="project-stages__label project-stages__label2"  title="Вкладка 2">
                                 <h4>Этап проектирования</h4>
-                            </label>
+                            </div>
 
-                            <input class="project-stages__tab project-stages__tab3" id="tab3" type="radio" name="tabs">
-                            <label class="project-stages__label project-stages__label3" for="tab3" title="Вкладка 3">
+                            <div class="project-stages__label project-stages__label3"  title="Вкладка 3">
                                 <h4>Этап согласований</h4>
-                            </label>
+                            </div>
 
-                            <div class="project-stages__tabs-content project-stages__tabs-content1">
+                            <div class="project-stages__tabs-content project-stages__tabs-content1  project-stages__tabs-content--active">
                                 <div class="project-stages__descriptor project-stages__descriptor-preproject">
                                     Любой объект начинается с идеи заказчика и эскизного проекта (ЭП), который визуализирует эту идею в двух- или трёхмерную
                                     картинку с изображением внешнего вида здания, внутренних планировок и благоустройства
@@ -1264,7 +1261,7 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./dist/bundle.js"></script>
+    <script src="./dist/project-min.js"></script>
 </body>
 
 </html>

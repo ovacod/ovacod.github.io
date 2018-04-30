@@ -42,14 +42,6 @@
         
 
 
-/* Прячем чекбоксы */
-.who-tab {
-	display: none;
-    position: absolute; }
-/* */ 
-
-
-
 /* Стили переключателей вкладок (табов) */
 .who-label {
 	display: inline-block;
@@ -73,16 +65,14 @@
    
 
 /* Стили для активной вкладки */
-.who-tab:checked + .who-label {    
+.who-label--active {    
     background-color: #b2414a; }
 /* */
 
 
 
 /* Активация секций с помощью псевдокласса :checked */
-.who-tab1:checked ~ .who-tabs__content1, 
-.who-tab2:checked ~ .who-tabs__content2, 
-.who-tab3:checked ~ .who-tabs__content3 {
+.who-tabs__content--active {
     display: block; }
 /* */
 
