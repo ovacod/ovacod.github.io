@@ -10,9 +10,13 @@
 .resume {
     width: 47%;
     height: 100%;   
+    margin-left: 30px;
     background-color: rgba(142, 142, 147, 0.8);
     color: #fff;
-    padding: 2rem; }
+    padding: 2rem;
+    position: relative;
+
+}
 
 .resume__title {        
     font-size: 2rem;
@@ -24,30 +28,32 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
 
-.resume__title:before {
+.resume:before {
     content: '';
     display: block;
     width: 10%;
     height: 2px;
     background-color: #fff;
     position: absolute;
-    top: 2rem; }
+    left: 6rem;
+    top: 3.6rem; }
 
-.resume__title:after {
+.resume:after {
     content: '';
     display: block;
     width: 10%;
     height: 2px;
     background-color: #fff;
     position: absolute;
-    top: 2rem;
-    left: 17.5rem; }
+    top: 3.6rem;
+    right: 6rem; }
 
 .avatar__right {
     display: flex;
     flex-wrap: wrap;   
     align-content: flex-end; 
     color: #fff;
+    padding-right: 30px;
     width: 47%;
     height: 100%; }
 

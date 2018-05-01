@@ -8,12 +8,13 @@
 .project-S__item {
     display: flex;
     flex-direction: column;
-    width: 280px;
+    width: 33.4%;
     overflow: hidden;       
     padding-top: 2rem;
     padding-left: 1rem;
     position: relative; 
     background-size: cover;
+    transition-duration: 0.3s;
     filter: grayscale(0.5); }
 
 .project-S__item1 {       
