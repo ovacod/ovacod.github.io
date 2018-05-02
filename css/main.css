@@ -234,7 +234,9 @@ p  {
     justify-content: space-between;   
     padding-top: 2rem;
     height: 90vh; }
-
+.wrap__reconstruction-1 {
+    height: 90vh;
+}
 .wrap__team {
     height: 75vh;
     width: 100%;

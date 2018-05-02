@@ -16,6 +16,10 @@
     background-position: center;
     filter: grayscale(0.8); }
 
+.Bwork__TZ {
+    width: 70%;
+}
+
 .Bwork__photo:hover {
     filter: none; }
 
@@ -34,4 +38,6 @@
 
 .sub-contacts__Bwork {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; }
