@@ -165,6 +165,10 @@ h2, h3, h4, h5, h6 {
     .caption2__about {
         padding-left: 30px;
     }
+
+    .caption2__about-team {
+        padding-top: 0;
+    }
 /* */
 
 
@@ -223,8 +227,16 @@ p  {
     padding-top: 0 }
 /* */   
 
+/*Вертикальное выравнивание блоков*/
+.vertical-align__wrap {
+    display: flex;
+    align-items: center;
+}
 
-
+.vertical-align {
+    width: 100%;
+}
+/* */
 
 .wrap {
     height: 62vh; }
