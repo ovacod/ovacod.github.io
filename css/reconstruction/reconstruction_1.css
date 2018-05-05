@@ -2,6 +2,7 @@
     background-image: url(../../img/background/reconstruction/reconstruction1.jpg);
     background-size: cover;
     background-position: center;
+    overflow: hidden;
     filter: grayscale(0.8); }
 
 .section__reconstruction-1:hover {
@@ -20,7 +21,7 @@
 
 .reconstruction-1__objects {    
     width: 48%;
-    height: 33rem;   
+    height: 100%;   
     background-color: rgba(97, 97, 104, 0.8);
     color: #fff;
     padding: 2rem;
@@ -37,7 +38,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
 
-.reconstruction-1__title:before {
+/*.reconstruction-1__title:before {
     content: '';
     display: block;
     width: 10%;
@@ -54,7 +55,7 @@
     background-color: #fff;
     position: absolute;
     top: 1rem;
-    left: 18rem; }
+    left: 18rem; }*/
 
 .reconstruction-1__list {
     display: flex;

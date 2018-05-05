@@ -1,6 +1,12 @@
 .section__slider-reviews {
     background: linear-gradient(to top, #ddd4d4, #fff);
+    height: 100vh;
+    width: 100%;
+    padding: 0 260px;
+    padding-top: 2rem;
 }
+
+
 
 .wrap__reviews {
     position: relative;
@@ -73,13 +79,17 @@
     right: 0;
 }
 
-.slider-reviews__left,
+.slider-reviews__left
     {
     width: 35%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .slider-reviews__right {
     width: 51%;
+    flex: 1;
 }
 
 .reviews__name {

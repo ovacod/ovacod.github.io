@@ -160,7 +160,15 @@ h2, h3, h4, h5, h6 {
     line-height: 0.8; }     
 
 .descriptor-h2 {
-    font-size: 1rem; }    
+    font-size: 1rem; }   
+    
+    .caption2__about {
+        padding-left: 30px;
+    }
+
+    .caption2__about-team {
+        padding-top: 0;
+    }
 /* */
 
 
@@ -197,7 +205,7 @@ p  {
     overflow: hidden; }
 
 .container {
-    max-width: 50rem;
+    /*max-width: 50rem;*/
     max-height: 38.625rem;    
     margin: 0 auto; }
 
@@ -206,7 +214,8 @@ p  {
 
 .section {    
     height: 100vh;
-    width: 100%;     
+    width: 100%;   
+    padding: 0 260px;  
     padding-top: 2rem; }
 
 .section__privacy-policy {
@@ -215,23 +224,36 @@ p  {
 /* Отменяем padding-top в 2rem у этих секций, т.к. их плашки должы стартовать с верхнего края секции */ 
 .section__director,
 .section__project-R {
-    padding: inherit; }
+    padding-top: 0 }
 /* */   
 
+/*Вертикальное выравнивание блоков*/
+.vertical-align__wrap {
+    display: flex;
+    align-items: center;
+}
 
-
+.vertical-align {
+    width: 100%;
+}
+/* */
 
 .wrap {
     height: 62vh; }
     
 .wrap__avatar {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;   
     padding-top: 2rem;
     height: 90vh; }
-
+.wrap__reconstruction-1 {
+    height: 90vh;
+}
 .wrap__team {
-    height: 75vh; }
+    height: 75vh;
+    width: 100%;
+
+}
 
 .wrap__materials-1 {
     height: 100%; }
